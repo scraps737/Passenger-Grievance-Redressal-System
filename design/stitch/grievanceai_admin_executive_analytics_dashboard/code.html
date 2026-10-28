@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GrievanceAI Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#b8c7e6","on-secondary-fixed":"#001e2f","secondary":"#006591","on-tertiary-container":"#009687","on-background":"#0b1c30","tertiary-fixed":"#71f8e4","primary-fixed":"#d7e3ff","surface-bright":"#f8f9ff","on-primary":"#ffffff","on-primary-container":"#7886a3","outline":"#75777e","surface-tint":"#515f7a","surface-container-high":"#dce9ff","background":"#f8f9ff","tertiary":"#000605","surface-container-highest":"#d3e4fe","secondary-fixed":"#c9e6ff","on-secondary-fixed-variant":"#004c6e","tertiary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","on-surface":"#0b1c30","secondary-container":"#39b8fd","on-tertiary-fixed":"#00201c","inverse-on-surface":"#eaf1ff","on-primary-fixed-variant":"#394761","on-secondary":"#ffffff","on-error":"#ffffff","inverse-surface":"#213145","surface-container":"#e5eeff","surface-dim":"#cbdbf5","inverse-primary":"#b8c7e6","on-error-container":"#93000a","surface-variant":"#d3e4fe","primary":"#000412","secondary-fixed-dim":"#89ceff","on-surface-variant":"#44474d","on-secondary-container":"#004666","surface-container-low":"#eff4ff","on-primary-fixed":"#0c1b33","surface-container-lowest":"#ffffff","primary-container":"#0f1e36","error":"#ba1a1a","outline-variant":"#c5c6ce","on-tertiary-fixed-variant":"#005048","tertiary-container":"#00231e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1.25rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"data-mono":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">commute</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">Grievance<span class="text-secondary">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rail &amp; Transit Ops</span></div></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm">PNR 4829103810: Sync Active</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="overview-dashboard" href="#">Overview</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="grievanceai-officer-complaint-queue-dispatch-ledger" href="#">Queue Ledger</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="escalation-assignment" href="#">Escalation &amp; Assignment</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="my-grievance-tickets" href="#">My Tickets</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="active-journeys" href="#">Active Journeys</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="resolution-proofs" href="#">Resolution Proofs</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="account" href="#">Account</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>SOS Quick</span></button><div class="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center leading-none text-[9px]">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden xl:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">PNR: 4829103810</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Command Center Header & Filter Bar -->
+<div class="w-full bg-surface-container-lowest shadow-sm px-gutter py-space-md">
+<div class="flex flex-col gap-space-md max-w-[1720px] mx-auto">
+<!-- Breadcrumb Context & System Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">token</span>
+            Operations Command
+          </span>
+<span class="text-outline-variant">/</span>
+<span>Executive Oversight</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Systemwide Redressal Analytics &amp; Performance BI</span>
+</div>
+<div class="flex items-center gap-space-md">
+<!-- Real-Time Telemetry Node -->
+<div class="flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shadow-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary"></span>
+</span>
+<span>Live Stream Synced: 10s Cycle</span>
+<span class="text-outline-variant font-data-mono text-data-mono">WR-HQ-GW01</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant bg-surface-container-low px-2.5 py-1 rounded-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>ISO 9001:2015 SLA Protocol</span>
+</div>
+</div>
+</div>
+<!-- Action & Filter Bar Matrix -->
+<div class="flex flex-col xl:flex-row items-stretch xl:items-center justify-between gap-space-md pt-space-xs">
+<!-- Time Horizon Pill Selector -->
+<div class="flex items-center overflow-x-auto p-1 rounded-xl bg-surface-container-low space-x-1" role="tablist">
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" type="button">Today</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" type="button">Last 7 Days</button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-xs whitespace-nowrap" type="button">Last 30 Days</button>
+<button class="px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" type="button">Current Quarter (Q1 2025)</button>
+<button class="flex items-center gap-1 px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors whitespace-nowrap" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span>Custom Range</span>
+</button>
+</div>
+<!-- Filter Dropdowns & Quick Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Zone Filter -->
+<div class="relative min-w-[210px]">
+<div class="flex items-center justify-between px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm shadow-xs cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[18px] text-secondary">train</span>
+<span class="font-semibold truncate">All Zones (WR HQ Focus)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_drop_down</span>
+</div>
+</div>
+<!-- Corridor Filter -->
+<div class="relative min-w-[210px]">
+<div class="flex items-center justify-between px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm shadow-xs cursor-pointer hover:bg-surface-container transition-colors">
+<div class="flex items-center gap-1.5 truncate">
+<span class="material-symbols-outlined text-[18px] text-secondary">route</span>
+<span class="truncate">All Corridors (Express/Sub)</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">arrow_drop_down</span>
+</div>
+</div>
+<!-- Threshold Settings Action -->
+<button class="flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md shadow-xs" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span class="hidden sm:inline">SLA Limits</span>
+</button>
+<!-- Audit Export Action -->
+<button class="flex items-center gap-1.5 px-space-lg py-2 rounded-lg bg-primary-container text-on-primary hover:bg-inverse-surface transition-all font-label-md text-label-md shadow-md" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">file_download</span>
+<span>Export Executive Audit</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Canvas -->
+<div class="w-full px-gutter py-space-lg max-w-[1720px] mx-auto flex flex-col gap-space-xl">
+<!-- Executive KPI Grid (6 Metric Cards) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-space-md">
+<!-- Metric 1: Total Complaints -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Complaints</span>
+<span class="p-1 rounded-md bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none tracking-tight">148,924</span>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">trending_up</span>
+<span class="font-semibold">+12.4%</span>
+<span class="text-on-surface-variant font-normal">vs prev 30d</span>
+</div>
+</div>
+<!-- Inline Sparkline Visualization -->
+<div class="my-space-sm pt-1">
+<svg class="w-full h-7 overflow-visible" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0,18 Q15,10 30,16 T60,8 T80,12 L100,4 L100,24 L0,24 Z" fill="#c9e6ff" opacity="0.4"></path>
+<path d="M0,18 Q15,10 30,16 T60,8 T80,12 L100,4" fill="none" stroke="#006591" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="flex flex-col gap-1 pt-1 bg-surface-container-low p-2 rounded-lg text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex justify-between">
+<span>App / Web Portal:</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">142,108</span>
+</div>
+<div class="flex justify-between">
+<span>RailMadad 139 Sync:</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">6,816</span>
+</div>
+</div>
+</div>
+<!-- Metric 2: Resolution Rate -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Resolution Rate</span>
+<span class="p-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[16px]">task_alt</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none tracking-tight">96.4%</span>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">arrow_upward</span>
+<span class="font-semibold">+1.8%</span>
+<span class="text-on-surface-variant font-normal">above mandate</span>
+</div>
+</div>
+<!-- Custom Progress Metric -->
+<div class="my-space-sm">
+<div class="flex justify-between font-label-sm text-label-sm mb-1 text-on-surface-variant">
+<span>Progress to Target</span>
+<span class="font-semibold text-on-surface">96.4% / 92.0%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 96.4%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span>Statutory Target:</span>
+<span class="px-1.5 py-0.5 rounded font-semibold bg-surface-container text-on-surface">92.0% Min</span>
+</div>
+</div>
+<!-- Metric 3: Avg Resolution Time (MTTR) -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Turnaround (MTTR)</span>
+<span class="p-1 rounded-md bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">timer</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none tracking-tight">18.6<span class="font-headline-sm text-headline-sm font-normal text-on-surface-variant ml-1">min</span></span>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span class="font-semibold">-4.2m</span>
+<span class="text-on-surface-variant font-normal">velocity gain</span>
+</div>
+</div>
+<div class="my-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>SLA Benchmark Ceiling:</span>
+<span class="font-data-mono text-data-mono font-semibold text-secondary">&lt; 30.0 mins</span>
+</div>
+<div class="grid grid-cols-3 gap-1 p-1.5 rounded-lg bg-surface-container-low text-center font-label-sm text-label-sm">
+<div>
+<span class="block text-on-surface-variant text-[10px]">T1 Alert</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">6.2m</span>
+</div>
+<div class="border-x border-surface-container">
+<span class="block text-on-surface-variant text-[10px]">T2 Mid</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">14.8m</span>
+</div>
+<div>
+<span class="block text-on-surface-variant text-[10px]">T3 Major</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">28.4m</span>
+</div>
+</div>
+</div>
+<!-- Metric 4: Overdue & SLA Breached Cases -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SLA Breached Cases</span>
+<span class="p-1 rounded-md bg-error-container text-on-error-container">
+<span class="material-symbols-outlined text-[16px]">fmd_bad</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg font-bold text-error leading-none tracking-tight">42</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Cases</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="font-data-mono text-data-mono font-semibold text-error">0.03%</span>
+<span>of total ingested volume</span>
+</div>
+</div>
+<div class="my-space-sm">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-pulse"></span>
+            Divisional Escalation Triggered
+          </span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span>War Room Routing:</span>
+<span class="font-semibold text-on-surface">84% DRM Office</span>
+</div>
+</div>
+<!-- Metric 5: Active Open Complaints -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Open Feed</span>
+<span class="p-1 rounded-md bg-surface-container-high text-on-surface">
+<span class="material-symbols-outlined text-[16px]">pending_actions</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none tracking-tight">318</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Live In-Flight</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Telemetry verified real-time</span>
+</div>
+</div>
+<div class="my-space-sm flex flex-col gap-1.5">
+<div class="w-full bg-surface-container h-1.5 rounded-full flex overflow-hidden">
+<div class="bg-secondary h-full" style="width: 28%"></div>
+<div class="bg-secondary-container h-full" style="width: 44%"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 28%"></div>
+</div>
+</div>
+<div class="flex flex-col gap-1 p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex justify-between">
+<span>In-Transit Dispatch:</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">88</span>
+</div>
+<div class="flex justify-between">
+<span>Station Depot Staged:</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">142</span>
+</div>
+<div class="flex justify-between">
+<span>Dual-OTP Awaiting:</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">88</span>
+</div>
+</div>
+</div>
+<!-- Metric 6: CSAT Rating -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Passenger CSAT</span>
+<span class="p-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[16px]">stars</span>
+</span>
+</div>
+<div class="flex items-baseline gap-2 mt-1">
+<span class="font-display-lg text-display-lg font-bold text-on-surface leading-none tracking-tight">4.72<span class="font-headline-sm text-headline-sm font-normal text-on-surface-variant ml-1">/ 5.0</span></span>
+</div>
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span class="font-semibold">92.8%</span>
+<span class="text-on-surface-variant font-normal">5-star marks</span>
+</div>
+</div>
+<div class="my-space-sm flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star_half</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span>Verified Feedbacks:</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">94,120 OTP Valid</span>
+</div>
+</div>
+</div>
+<!-- Center Section: Master Visuals & Intake-Velocity Engine (2-Column Grid) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- Primary Large Visual: Intake vs. Resolution Velocity (8 Cols) -->
+<div class="xl:col-span-8 flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Systemwide Intake &amp; Resolution Velocity</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">30-day temporal trajectory tracking AI routing load vs operational closure throughput</span>
+</div>
+<!-- Dynamic Legend Badges -->
+<div class="flex flex-wrap items-center gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low">
+<span class="w-3 h-0.5 bg-primary-container rounded"></span>
+<span class="text-on-surface-variant">Intake (148.9k)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low">
+<span class="w-3 h-0.5 bg-secondary rounded"></span>
+<span class="text-on-surface-variant">Resolved &lt; SLA (143.5k)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-surface-container-low">
+<span class="w-3 h-0.5 bg-error rounded"></span>
+<span class="text-on-surface-variant">Breached (5.4k)</span>
+</div>
+</div>
+</div>
+<!-- SVG Comprehensive Chart Visualization -->
+<div class="relative w-full h-[320px] bg-surface-container-lowest pt-4">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 800 280">
+<defs>
+<lineargradient id="intakeGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#006591" stop-opacity="0.25"></stop>
+<stop offset="100%" stop-color="#006591" stop-opacity="0.0"></stop>
+</lineargradient>
+<lineargradient id="resolvedGrad" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#39b8fd" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#39b8fd" stop-opacity="0.0"></stop>
+</lineargradient>
+</defs>
+<!-- Gridlines & Y-Axis Reference -->
+<line stroke="#e5eeff" stroke-width="1" x1="40" x2="780" y1="20" y2="20"></line>
+<text class="text-[10px] fill-outline font-data-mono" text-anchor="end" x="32" y="24">6k/d</text>
+<line stroke="#e5eeff" stroke-width="1" x1="40" x2="780" y1="80" y2="80"></line>
+<text class="text-[10px] fill-outline font-data-mono" text-anchor="end" x="32" y="84">4.5k</text>
+<line stroke="#e5eeff" stroke-width="1" x1="40" x2="780" y1="140" y2="140"></line>
+<text class="text-[10px] fill-outline font-data-mono" text-anchor="end" x="32" y="144">3.0k</text>
+<line stroke="#e5eeff" stroke-width="1" x1="40" x2="780" y1="200" y2="200"></line>
+<text class="text-[10px] fill-outline font-data-mono" text-anchor="end" x="32" y="204">1.5k</text>
+<line stroke="#cbdbf5" stroke-width="1" x1="40" x2="780" y1="240" y2="240"></line>
+<text class="text-[10px] fill-outline font-data-mono" text-anchor="end" x="32" y="244">0</text>
+<!-- SLA Safe Band Fill -->
+<rect fill="#f8f9ff" height="210" opacity="0.6" width="740" x="40" y="30"></rect>
+<!-- Area Shading for Intake -->
+<polygon fill="url(#intakeGrad)" points="40,240 40,160 90,150 140,140 190,130 240,110 290,95 340,75 390,90 440,110 490,120 540,105 590,85 640,95 690,115 740,100 780,95 780,240"></polygon>
+<!-- Resolved Area -->
+<polygon fill="url(#resolvedGrad)" points="40,240 40,165 90,156 140,144 190,135 240,118 290,102 340,84 390,98 440,116 490,128 540,112 590,92 640,101 690,120 740,106 780,100 780,240"></polygon>
+<!-- Lines -->
+<!-- Intake Curve (Navy) -->
+<path d="M40,160 Q65,155 90,150 T140,140 T190,130 T240,110 T290,95 T340,75 T390,90 T440,110 T490,120 T540,105 T590,85 T640,95 T690,115 T740,100 T780,95" fill="none" stroke="#0f1e36" stroke-width="2.5"></path>
+<!-- Resolved Curve (Teal/Sky) -->
+<path d="M40,165 Q65,160 90,156 T140,144 T190,135 T240,118 T290,102 T340,84 T390,98 T440,116 T490,128 T540,112 T590,92 T640,101 T690,120 T740,106 T780,100" fill="none" stroke="#006591" stroke-dasharray="0" stroke-width="2.5"></path>
+<!-- Breached Curve (Crimson accent) -->
+<path d="M40,235 Q90,234 140,236 T240,232 T340,225 T390,230 T490,234 T590,228 T690,235 T780,232" fill="none" stroke="#ba1a1a" stroke-dasharray="3,3" stroke-width="1.8"></path>
+<!-- Peak Incident Pin 1: Festival Rush Surge -->
+<g transform="translate(340, 75)">
+<circle cx="0" cy="0" fill="#ba1a1a" r="5"></circle>
+<circle cx="0" cy="0" fill="none" opacity="0.6" r="9" stroke="#ba1a1a" stroke-width="1.5"></circle>
+<line stroke="#ba1a1a" stroke-width="1" x1="0" x2="0" y1="-5" y2="-32"></line>
+<rect fill="#0f1e36" height="23" rx="4" width="130" x="-65" y="-55"></rect>
+<text class="text-[10px] font-semibold fill-white font-label-sm" text-anchor="middle" x="0" y="-40">Festival Travel Peak (+32%)</text>
+</g>
+<!-- Peak Incident Pin 2: Monsoon Corridor Delays -->
+<g transform="translate(590, 85)">
+<circle cx="0" cy="0" fill="#006591" r="4"></circle>
+<line stroke="#006591" stroke-width="1" x1="0" x2="0" y1="-5" y2="-28"></line>
+<rect fill="#0f1e36" height="22" rx="4" width="120" x="-60" y="-50"></rect>
+<text class="text-[10px] font-semibold fill-white font-label-sm" text-anchor="middle" x="0" y="-36">Monsoon Flash Delay Spike</text>
+</g>
+<!-- X-Axis Timeline Markers -->
+<text class="text-[11px] fill-outline font-data-mono" text-anchor="middle" x="40" y="260">Day 1</text>
+<text class="text-[11px] fill-outline font-data-mono" text-anchor="middle" x="190" y="260">Day 7</text>
+<text class="text-[11px] fill-outline font-data-mono" text-anchor="middle" x="340" y="260">Day 14</text>
+<text class="text-[11px] fill-outline font-data-mono" text-anchor="middle" x="490" y="260">Day 21</text>
+<text class="text-[11px] fill-outline font-data-mono" text-anchor="middle" x="640" y="260">Day 28</text>
+<text class="text-[11px] fill-outline font-data-mono" text-anchor="end" x="780" y="260">Live (Day 30)</text>
+</svg>
+</div>
+<!-- Integrated Telemetry Bottom Summary Bar -->
+<div class="mt-4 pt-space-sm grid grid-cols-2 sm:grid-cols-4 gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Peak Volume</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">5,842 cases</span>
+<span class="font-label-sm text-label-sm text-secondary">Nov 14 Diwali Special</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Daily Mean Intake</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">4,964 cases</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stabilized intake baseline</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Peak Redressal Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-tertiary-container">98.1%</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">Day 22 Post-Depot Flush</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Dual-OTP Signoffs</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">143,210</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">99.8% tamper verification</span>
+</div>
+</div>
+</div>
+<!-- AI Accuracy & Category Distribution Matrix (4 Cols) -->
+<div class="xl:col-span-4 flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm h-full">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">psychology</span>
+</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">AI Categorization Matrix</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">97.4% Avg Conf</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Real-time NLP triage reliability and classification volume distribution across grievance taxonomies.</p>
+<!-- Category Progress Stack -->
+<div class="flex flex-col gap-space-md flex-1 justify-between">
+<!-- Category 1: Electrical & HVAC -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5 font-semibold text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span>
+<span>Electrical &amp; HVAC Systems</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">34%</span>
+<span class="text-on-surface-variant font-data-mono text-[11px]">(50,634)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 34%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Primary: AC Unit Failure, Charging Port</span>
+<span class="text-on-tertiary-container font-semibold">98.4% AI Accuracy</span>
+</div>
+</div>
+<!-- Category 2: Cleanliness & Sanitation -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5 font-semibold text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary-container"></span>
+<span>Cleanliness &amp; Sanitation / OBHS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">26%</span>
+<span class="text-on-surface-variant font-data-mono text-[11px]">(38,720)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full" style="width: 26%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Primary: Lavatory Flush, Bio-Toilet Clean</span>
+<span class="text-on-tertiary-container font-semibold">97.8% AI Accuracy</span>
+</div>
+</div>
+<!-- Category 3: Mechanical -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5 font-semibold text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<span>Mechanical, Doors &amp; Vestibules</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">16%</span>
+<span class="text-on-surface-variant font-data-mono text-[11px]">(23,828)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 16%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Primary: Berth Lock, Window Shutter Jam</span>
+<span class="text-on-surface font-semibold">96.1% AI Accuracy</span>
+</div>
+</div>
+<!-- Category 4: Catering & Hospitality -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5 font-semibold text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-outline"></span>
+<span>Pantry, Food &amp; Catering (IRCTC)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">14%</span>
+<span class="text-on-surface-variant font-data-mono text-[11px]">(20,850)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 14%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Primary: Meal Quality, Overcharging</span>
+<span class="text-on-surface font-semibold">95.2% AI Accuracy</span>
+</div>
+</div>
+<!-- Category 5: Safety & Medical SOS -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5 font-semibold text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-error"></span>
+<span>Safety, Security &amp; Medical SOS</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-error">7%</span>
+<span class="text-on-surface-variant font-data-mono text-[11px]">(10,425)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-error h-full rounded-full" style="width: 7%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Primary: Medical Triage, RPF Escort Req</span>
+<span class="text-error font-semibold">99.6% AI Accuracy (Crit)</span>
+</div>
+</div>
+<!-- Category 6: Ticketing Verification -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between font-label-md text-label-md">
+<div class="flex items-center gap-1.5 font-semibold text-on-surface">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-tint"></span>
+<span>Ticketing &amp; Concession Verification</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">3%</span>
+<span class="text-on-surface-variant font-data-mono text-[11px]">(4,467)</span>
+</div>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-surface-tint h-full rounded-full" style="width: 3%"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] text-on-surface-variant font-label-sm">
+<span>Primary: TTE Berth Allocation, Refunds</span>
+<span class="text-on-surface-variant font-semibold">94.0% AI Accuracy</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between text-on-surface font-label-sm text-label-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[16px]">smart_toy</span>
+            AI Auto-Triage Routing Engine:
+          </span>
+<span class="font-bold text-on-tertiary-container">89.2% Direct Squad Dispatch</span>
+</div>
+</div>
+</div>
+<!-- Section: Transport Mode & Rolling Stock Performance Matrix -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">directions_transit</span>
+</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Fleet &amp; Service Class Performance Ledger</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Benchmarking resolution efficacy, MTTR velocity, and CSAT scores across train categories</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Service Roster:</span>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold text-on-surface">1,420 Active Trains</span>
+</div>
+</div>
+<!-- Fleet Performance Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md">
+<!-- Fleet Item 1: Vande Bharat Express -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold tracking-wide">Semi-High Speed</span>
+<span class="text-on-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.88
+              </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Vande Bharat Express</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">16 Rakes Operating</span>
+<div class="mt-space-md flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolution Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">98.9%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 98.9%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">MTTR VELOCITY</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">11.2 mins</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block text-[10px]">VOLUME</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">18,400 cases</span>
+</div>
+</div>
+</div>
+<!-- Fleet Item 2: Rajdhani & Tejas Express -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold tracking-wide">Premium Express</span>
+<span class="text-on-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.81
+              </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Rajdhani &amp; Tejas</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">34 Rakes Operating</span>
+<div class="mt-space-md flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolution Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">97.6%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 97.6%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">MTTR VELOCITY</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">14.4 mins</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block text-[10px]">VOLUME</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">42,120 cases</span>
+</div>
+</div>
+</div>
+<!-- Fleet Item 3: Shatabdi Express -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold tracking-wide">Intercity Day</span>
+<span class="text-on-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 4.69
+              </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Shatabdi Express</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">28 Rakes Operating</span>
+<div class="mt-space-md flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolution Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">96.2%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 96.2%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">MTTR VELOCITY</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">16.8 mins</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block text-[10px]">VOLUME</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">31,500 cases</span>
+</div>
+</div>
+</div>
+<!-- Fleet Item 4: Mail / Superfast Express -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold tracking-wide">Long-Haul Core</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span> 4.45
+              </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Mail / Superfast</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">112 Rakes Operating</span>
+<div class="mt-space-md flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolution Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">94.1%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 94.1%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">MTTR VELOCITY</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">24.5 mins</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block text-[10px]">VOLUME</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">48,204 cases</span>
+</div>
+</div>
+</div>
+<!-- Fleet Item 5: Suburban Transit Mainlines -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold tracking-wide">Suburban EMU</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span> 4.52
+              </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Suburban Transit</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">84 Rakes Operating</span>
+<div class="mt-space-md flex flex-col gap-2">
+<div class="flex justify-between items-baseline">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Resolution Rate</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">95.0%</span>
+</div>
+<div class="w-full bg-surface-container-highest h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 95.0%"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 border-t border-surface-container flex items-center justify-between font-label-sm text-label-sm">
+<div>
+<span class="text-on-surface-variant block text-[10px]">MTTR VELOCITY</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">19.1 mins</span>
+</div>
+<div class="text-right">
+<span class="text-on-surface-variant block text-[10px]">VOLUME</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">8,700 cases</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Section: Departmental Performance & SLA Scorecard Ledger -->
+<div class="flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Departmental Performance &amp; Squad SLA Scorecard</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Live statutory dispatch auditing, frontline response turnaround, and escalation flags</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sort by:</span>
+<button class="px-space-md py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center gap-1" type="button">
+<span>On-Time Redressal %</span>
+<span class="material-symbols-outlined text-[16px]">expand_more</span>
+</button>
+</div>
+</div>
+<!-- Data Density Ledger Table -->
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4 rounded-l-lg">Department &amp; Frontline Unit</th>
+<th class="py-3 px-4">Squads Deployed</th>
+<th class="py-3 px-4">Volume (Cases)</th>
+<th class="py-3 px-4">On-Time %</th>
+<th class="py-3 px-4">Avg MTTR</th>
+<th class="py-3 px-4">Overdue Breaches</th>
+<th class="py-3 px-4 rounded-r-lg">Audit Status</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y divide-surface-container">
+<!-- Row 1: Electrical -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</div>
+<div>
+<span class="block leading-tight font-semibold">Electrical &amp; AC Maintenance</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">SSE Elec / Power Car Ops</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">48 Rapid Squads</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">50,634</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">97.2%</span>
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 97.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">14.8 mins</td>
+<td class="py-3.5 px-4">
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">8 cases</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Compliant
+                </span>
+</td>
+</tr>
+<!-- Row 2: OBHS -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">sanitizer</span>
+</div>
+<div>
+<span class="block leading-tight font-semibold">On-Board Housekeeping (OBHS)</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">EnHM Depot Squads</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">62 Mobile Squads</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">38,720</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-tertiary-container">98.1%</span>
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 98.1%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">12.4 mins</td>
+<td class="py-3.5 px-4">
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">4 cases</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  High Performer
+                </span>
+</td>
+</tr>
+<!-- Row 3: C&W Mech -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">build</span>
+</div>
+<div>
+<span class="block leading-tight font-semibold">Carriage &amp; Wagon Mechanical</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">C&amp;W Depot Engineers</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">34 Squads</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">23,828</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">94.8%</span>
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-outline h-full rounded-full" style="width: 94.8%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">21.6 mins</td>
+<td class="py-3.5 px-4">
+<span class="font-data-mono text-data-mono font-bold text-error">16 cases</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-outline"></span>
+                  Watchlist
+                </span>
+</td>
+</tr>
+<!-- Row 4: Catering -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<div>
+<span class="block leading-tight font-semibold">IRCTC Catering &amp; Hospitality</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">Zonal Quality Inspectors</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">22 Inspectors</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">20,850</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">95.4%</span>
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 95.4%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">18.2 mins</td>
+<td class="py-3.5 px-4">
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">11 cases</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Compliant
+                </span>
+</td>
+</tr>
+<!-- Row 5: RPF & Medical -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4 font-semibold text-on-surface">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">local_hospital</span>
+</div>
+<div>
+<span class="block leading-tight font-semibold">RPF &amp; Rapid Transit Medical Cell</span>
+<span class="text-on-surface-variant font-label-sm text-[11px]">Emergency First Response</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-on-surface">18 Rapid Units</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">10,425</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-data-mono font-bold text-on-tertiary-container">99.4%</span>
+<div class="w-16 bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 99.4%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-data-mono text-data-mono text-error font-bold">6.1 mins</td>
+<td class="py-3.5 px-4">
+<span class="font-data-mono text-data-mono font-bold text-on-tertiary-container">3 cases</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  Exemplary
+                </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section: High-Risk Corridor Insights & AI Predictive Watchlist -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-stretch">
+<!-- Critical Hotspots Map / Live Section (7 Cols) -->
+<div class="xl:col-span-7 flex flex-col p-space-lg rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">map</span>
+</span>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">High-Risk Corridor Telemetry Watchlist</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Automated geo-spatial grievance density alerts &amp; weather-coupled incident tracking</span>
+</div>
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+            3 Monitored Sections
+          </span>
+</div>
+<!-- Corridor Cards Stack -->
+<div class="flex flex-col gap-space-sm flex-1 justify-between">
+<!-- Corridor Card 1 -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container-highest text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">explore</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Mumbai Central — Ahmedabad Line</h4>
+<span class="px-2 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Low Anomaly</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Western Railway Core • 52 Trains in Block • Zero Power Disruptions</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div>
+<span class="text-on-surface-variant block font-label-sm text-[11px]">SLA INDEX</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">97.4%</span>
+</div>
+<div>
+<span class="text-on-surface-variant block font-label-sm text-[11px]">ACTIVE LOAD</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">24 cases</span>
+</div>
+</div>
+</div>
+<!-- Corridor Card 2 -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container-highest text-error mt-0.5">
+<span class="material-symbols-outlined text-[20px]">foggy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">New Delhi — Kanpur Trunk Section</h4>
+<span class="px-2 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">Fog Delay Spike</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Northern Railway • Heavy visibility delay compensation claims &amp; pantry supply buffer alerts</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div>
+<span class="text-on-surface-variant block font-label-sm text-[11px]">SLA INDEX</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">93.1%</span>
+</div>
+<div>
+<span class="text-on-surface-variant block font-label-sm text-[11px]">ACTIVE LOAD</span>
+<span class="font-data-mono text-data-mono font-bold text-error">94 cases</span>
+</div>
+</div>
+</div>
+<!-- Corridor Card 3 -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="p-2 rounded-lg bg-surface-container-highest text-secondary mt-0.5">
+<span class="material-symbols-outlined text-[20px]">terrain</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Kalyan — Pune Thull Ghat Incline</h4>
+<span class="px-2 py-0.2 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold">Sensor Alert</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Central Railway • Banking locomotive telemetry verified, minor HVAC pressure differential flags</span>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right">
+<div>
+<span class="text-on-surface-variant block font-label-sm text-[11px]">SLA INDEX</span>
+<span class="font-data-mono text-data-mono font-bold text-on-surface">96.8%</span>
+</div>
+<div>
+<span class="text-on-surface-variant block font-label-sm text-[11px]">ACTIVE LOAD</span>
+<span class="font-data-mono text-data-mono font-bold text-secondary">19 cases</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Real-Time AI Dispatch & Governance Efficiency Summary (5 Cols) -->
+<div class="xl:col-span-5 flex flex-col p-space-lg rounded-xl bg-primary-container text-on-primary shadow-sm justify-between">
+<div>
+<div class="flex items-center justify-between pb-space-sm border-b border-on-primary-container/20">
+<div class="flex items-center gap-2">
+<span class="p-1 rounded bg-secondary text-on-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</span>
+<span class="font-headline-md text-headline-md text-on-primary font-semibold tracking-tight">AI Dispatch Governance</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Autonomous Protocol</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-space-sm">
+            Self-auditing operational telemetry preventing ticket fabrication, ghost closures, and unverified contractor handoffs.
+          </p>
+<!-- Metrics Panel -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md mt-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-md flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Direct AI Dispatch Rate</span>
+<span class="font-display-lg text-display-lg font-bold text-secondary-container my-1">89.2%</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Bypasses manual controller rerouting directly to coach attendants.</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest/5 backdrop-blur-md flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Dual-OTP Sign-Off</span>
+<span class="font-display-lg text-display-lg font-bold text-tertiary-fixed my-1">99.8%</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Passenger code validation eliminates phantom resolution claims.</span>
+</div>
+</div>
+<!-- Contractor Penalty Ledger Block -->
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-lowest/10 backdrop-blur-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-error flex items-center justify-center text-on-error">
+<span class="material-symbols-outlined text-[22px]">gavel</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">Contractor SLA Penalties</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-primary">₹18.4 Lakhs Assessed</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary-container font-data-mono">Auto-Deducted</span>
+</div>
+</div>
+<div class="pt-space-md mt-space-md border-t border-on-primary-container/20 flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm">
+<div class="flex items-center gap-1.5 text-on-primary-container">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">lock_clock</span>
+<span>Ledger Block #849,201 Synced</span>
+</div>
+<button class="px-space-md py-1.5 rounded-lg bg-secondary text-on-secondary font-semibold hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-xs" type="button">
+            Open Audit War Room
+          </button>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col md:flex-row items-center gap-space-md text-center md:text-left"><div class="flex items-center gap-space-xs text-error font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">call</span><span>Emergency Railway Helpline: Dial 139 (24x7)</span></div><span class="hidden md:inline text-outline-variant">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Transit Grievance Redressal &amp; AI Escalation Monitoring Cell</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 GrievanceAI National Transit Authority.</span><a class="hover:text-on-surface transition-colors" data-path="account" href="#">Security &amp; SLA Terms</a></div></div></footer></body></html>

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GrievanceAI Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#b8c7e6","on-secondary-fixed":"#001e2f","secondary":"#006591","on-tertiary-container":"#009687","on-background":"#0b1c30","tertiary-fixed":"#71f8e4","primary-fixed":"#d7e3ff","surface-bright":"#f8f9ff","on-primary":"#ffffff","on-primary-container":"#7886a3","outline":"#75777e","surface-tint":"#515f7a","surface-container-high":"#dce9ff","background":"#f8f9ff","tertiary":"#000605","surface-container-highest":"#d3e4fe","secondary-fixed":"#c9e6ff","on-secondary-fixed-variant":"#004c6e","tertiary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","on-surface":"#0b1c30","secondary-container":"#39b8fd","on-tertiary-fixed":"#00201c","inverse-on-surface":"#eaf1ff","on-primary-fixed-variant":"#394761","on-secondary":"#ffffff","on-error":"#ffffff","inverse-surface":"#213145","surface-container":"#e5eeff","surface-dim":"#cbdbf5","inverse-primary":"#b8c7e6","on-error-container":"#93000a","surface-variant":"#d3e4fe","primary":"#000412","secondary-fixed-dim":"#89ceff","on-surface-variant":"#44474d","on-secondary-container":"#004666","surface-container-low":"#eff4ff","on-primary-fixed":"#0c1b33","surface-container-lowest":"#ffffff","primary-container":"#0f1e36","error":"#ba1a1a","outline-variant":"#c5c6ce","on-tertiary-fixed-variant":"#005048","tertiary-container":"#00231e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1.25rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"data-mono":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">commute</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">Grievance<span class="text-secondary">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rail &amp; Transit Ops</span></div></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm">PNR 4829103810: Sync Active</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="overview-dashboard" href="#">Overview</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="my-grievance-tickets" href="#">My Tickets</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="active-journeys" href="#">Active Journeys</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="resolution-proofs" href="#">Resolution Proofs</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="account-notifications" href="#">Account</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>SOS Quick</span></button><div class="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center leading-none text-[9px]">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden xl:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">PNR: 4829103810</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Toast Notification (Interactivity Feedback) -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-lg py-space-md bg-primary-container text-on-primary rounded-xl shadow-xl" id="toastNotification">
+<span class="material-symbols-outlined text-secondary-container" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-md text-body-md font-medium" id="toastMessage">Preferences updated successfully.</span>
+</div>
+<div class="w-full px-gutter py-space-lg flex flex-col gap-space-lg">
+<!-- Breadcrumb Navigation -->
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-secondary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="#">Passenger Dashboard</a>
+<span class="material-symbols-outlined text-[16px] text-outline-variant">chevron_right</span>
+<span class="text-on-surface font-semibold">Notifications &amp; Activity Stream</span>
+</nav>
+<!-- Page Header & Action Bar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Notifications &amp; Dispatch Telemetry</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-sm text-label-sm uppercase tracking-wide">Live Feed</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">
+          Live alerts across incident status lifecycles, technician communications, proof submissions, and statutory SLA countdowns for synched PNR: 4829103810.
+        </p>
+</div>
+<!-- Quick Action Bar -->
+<div class="flex items-center gap-space-sm self-start lg:self-center">
+<button class="flex items-center gap-1.5 px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all" id="markAllReadBtn">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Mark all as read</span>
+</button>
+<button class="flex items-center gap-1.5 px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md rounded-lg shadow-sm transition-all" id="pauseAlertsBtn">
+<span class="material-symbols-outlined text-[18px]" id="pauseIcon">notifications_paused</span>
+<span id="pauseText">Pause non-critical</span>
+</button>
+<button class="lg:hidden flex items-center gap-1.5 px-space-md py-2 bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-sm transition-all" onclick="document.getElementById('settingsPanel').scrollIntoView({behavior: 'smooth'})">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Preferences</span>
+</button>
+</div>
+</div>
+<!-- Summary KPI Metric Ribbons -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-md">
+<!-- Total Alerts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Alerts</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">inbox</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-xs mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface" id="kpiTotal">14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">recorded</span>
+</div>
+</div>
+<!-- Unread Priority Alerts -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-secondary/5 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Unread Priority</span>
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-secondary"></span>
+</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-sm">
+<span class="font-display-lg text-display-lg text-secondary" id="kpiUnread">3</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">High Attention</span>
+</div>
+</div>
+<!-- Action Required / Pending Clarification -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Action Pending</span>
+<div class="w-8 h-8 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[18px]">chat_error</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-sm">
+<span class="font-display-lg text-display-lg text-error" id="kpiAction">1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Berth feedback</span>
+</div>
+</div>
+<!-- SLA Breaches -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SLA Escalations</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">timer</span>
+</div>
+</div>
+<div class="flex items-baseline gap-space-sm mt-space-sm">
+<span class="font-display-lg text-display-lg text-on-surface">0</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">In SLA Bounds</span>
+</div>
+</div>
+</div>
+<!-- Main Content Grid (Split 70/30) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: Activity Stream (8 cols / ~68%) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Filter Tabs & Quick Search -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Filter Tabs Strip -->
+<div class="flex items-center gap-1 overflow-x-auto pb-1 md:pb-0 scrollbar-none" id="filterTabs">
+<button class="filter-tab active px-3 py-1.5 rounded-lg font-label-md text-label-md transition-all bg-primary-container text-on-primary" data-filter="all">
+              All Alerts <span class="ml-1 opacity-70">(14)</span>
+</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low" data-filter="unread">
+              Unread <span class="ml-1 text-secondary font-bold">(3)</span>
+</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low" data-filter="status">
+              Status <span class="ml-1 opacity-70">(5)</span>
+</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low" data-filter="replies">
+              Officer Replies <span class="ml-1 opacity-70">(3)</span>
+</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low" data-filter="action">
+              Clarification <span class="ml-1 text-error font-bold">(1)</span>
+</button>
+<button class="filter-tab px-3 py-1.5 rounded-lg font-label-md text-label-md transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low" data-filter="proof">
+              Proofs <span class="ml-1 opacity-70">(5)</span>
+</button>
+</div>
+<!-- Search Input -->
+<div class="relative w-full md:w-64 flex-shrink-0">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-outline text-[18px]">search</span>
+<input class="w-full pl-9 pr-3 py-1.5 bg-surface-container-low text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-lowest transition-colors shadow-inner" id="alertSearch" placeholder="Filter Ticket #, Squad, Keyword..." type="text"/>
+</div>
+</div>
+<!-- Chronological Feed Group: TODAY -->
+<div class="flex flex-col gap-space-md" id="feedContainer">
+<div class="flex items-center gap-space-sm pl-1">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Today — Real-time Transit Telemetry</span>
+<div class="flex-grow h-0.5 bg-surface-container-high rounded-full"></div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Live Sync: 14:38 IST</span>
+</div>
+<!-- CARD 1: Unread, High Urgency / Clarification Request -->
+<div class="alert-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-category="action unread">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-error-container text-on-error-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">contact_support</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">Clarification Needed</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Ticket #GAI-2025-8831</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant">AC Thermostat Failure</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-medium text-secondary">6 mins ago (14:32 IST)</span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1 font-data-mono text-data-mono text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">airline_seat_recline_extra</span> Coach B-4 Berth 28
+                    </span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-sm" title="Unread"></span>
+<button class="mark-card-read p-1 text-outline hover:text-on-surface transition-colors" title="Dismiss">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+<!-- Content Quote Box -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface font-label-md text-label-md">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-[10px]">RS</span>
+<span class="font-bold">SSE Electrical Officer R. S. Murthy</span>
+<span class="text-on-surface-variant font-normal">dispatched via Coach Intercom:</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface pl-7">
+                “We are currently at the B-4 electrical switchboard. Could you confirm if the cold draft issue is venting directly above Berth 28 or if it is escaping from the gangway ceiling damper?”
+              </p>
+</div>
+<!-- Quick Inline Reply & Dispatch Action Strip -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm pt-space-xs">
+<div class="relative flex-grow">
+<input class="w-full px-3 py-2 bg-surface-container text-on-surface placeholder:text-outline-variant font-body-sm text-body-sm rounded-lg outline-none focus:bg-surface-container-low transition-all" placeholder="Type quick clarification (e.g. Vent directly above Berth 28)..." type="text"/>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<button class="px-space-md py-2 bg-secondary text-on-secondary rounded-lg font-label-md text-label-md hover:opacity-90 transition-opacity flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span>Confirm Berth</span>
+</button>
+<button class="px-3 py-2 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-label-md text-label-md transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">photo_camera</span>
+<span class="hidden sm:inline">Add Photo</span>
+</button>
+<a class="p-2 bg-surface-container-low hover:bg-error-container hover:text-on-error-container text-on-surface rounded-lg transition-colors flex items-center" href="tel:139" title="Call Squad Lead via 139">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CARD 2: Unread, Officer Reply & Squad Proximity Alert -->
+<div class="alert-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-category="replies unread">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">engineering</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm font-semibold">Squad In-Transit</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Ticket #GAI-2025-8819</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Bio-Toilet Flush Malfunction</span>
+</div>
+<div class="flex items-center gap-space-sm mt-0.5 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-medium">24 mins ago (14:14 IST)</span>
+<span class="text-outline-variant">•</span>
+<span>Assigned Squad #4 (Western Railways)</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-sm" title="Unread"></span>
+<button class="mark-card-read p-1 text-outline hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</button>
+</div>
+</div>
+<!-- Content Statement -->
+<p class="font-body-md text-body-md text-on-surface">
+              Station Housekeeping Lead <span class="font-semibold">Dinesh K. Sharma</span>: “OBHS Sanitation Squad #4 is boarding coach B-4 at Platform 2 Ratlam Jn halt (ETA 14:48 IST). High-pressure pneumatic vacuum replacement will be completed during scheduled stop.”
+            </p>
+<!-- Telemetry Context Box -->
+<div class="bg-surface-container-low rounded-xl p-space-sm flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-data-mono text-data-mono">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 text-secondary font-semibold">
+<span class="material-symbols-outlined text-[18px]">speed</span> 112 km/h
+                </span>
+<span class="text-outline-variant">•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">pin_drop</span> Approaching Ratlam Jn Outer (km 408.4)
+                </span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 bg-surface-container hover:bg-surface-container-high rounded text-on-surface font-label-sm text-label-sm transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">departure_board</span> View Halts
+                </button>
+<button class="px-2.5 py-1 bg-primary text-on-primary rounded font-label-sm text-label-sm hover:opacity-90 transition-opacity">
+                  Acknowledge
+                </button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Unread, SLA Milestone & Escalation Guard -->
+<div class="alert-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-category="status unread">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-high text-on-secondary-fixed-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">timer_10</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">SLA Milestone Watch</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Ticket #GAI-2025-8831</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">35 mins ago (14:03 IST)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs flex-shrink-0">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary shadow-sm" title="Unread"></span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-data-mono text-data-mono font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">alarm</span> 18m left
+                </span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+<strong class="text-secondary font-semibold">Autonomous SLA Guard:</strong> Tier-2 Priority Ticket has reached 50% elapsed threshold (32 of 50 minutes). Advisory ping dispatched to Divisional Central Rail Control Room.
+            </p>
+<!-- SLA Progress Micro Bar (inline SVG) -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-space-sm rounded-xl">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Standard Resolution Window: 50 Mins</span>
+<span class="font-semibold text-on-surface">64% elapsed</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full transition-all duration-500" style="width: 64%"></div>
+</div>
+</div>
+</div>
+<!-- CARD 6: Ingest Confirmation & NLP Categorization -->
+<div class="alert-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md opacity-90" data-category="status">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-on-surface-variant flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">AI Ticket Ingestion</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Ticket #GAI-2025-8831</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Today, 14:22 IST</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Verified</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              Grievance successfully transcribed from In-App Voice Dictation. AI Model assigned category: <span class="font-semibold">Electrical &amp; Climate Control</span> (Confidence: 94.6%). Train GPS sync confirmed at Section km 342.1.
+            </p>
+</div>
+<!-- Feed Group: EARLIER / YESTERDAY -->
+<div class="flex items-center gap-space-sm pl-1 pt-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Earlier This Journey &amp; Yesterday</span>
+<div class="flex-grow h-0.5 bg-surface-container-high rounded-full"></div>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Archived Redressals</span>
+</div>
+<!-- CARD 4: Read, Verification Proof & OTP Signature -->
+<div class="alert-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-category="proof">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Closure Proof Logged</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Ticket #GAI-2025-8742</span>
+<span class="text-outline-variant text-[12px]">•</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Clean Linen &amp; Bedroll</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">3 hours ago (11:20 IST) • Delivered &amp; Signed</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">100% SLA Compliant</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              Train Attendant Vikramjeet S. has supplied a sealed sanitized linen packet. Verified closure signature recorded using OTP: <span class="font-data-mono text-data-mono px-2 py-0.5 bg-surface-container rounded font-bold text-on-surface">8492</span>.
+            </p>
+<!-- Media Preview & Feedback Action Strip -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md bg-surface-container-low rounded-xl p-space-md">
+<div class="relative w-full sm:w-28 h-20 rounded-lg overflow-hidden bg-surface-container flex-shrink-0 shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High quality close up photograph of a vacuum sealed Indian Railways bedroll packet placed neatly on an air-conditioned train berth with sanitary certification badge and clear plastic wrapping." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA57OEMVtB6JOWmMi80R9x0YCM1VZntq0yqQW19EGcToMs4Ao56c98t9BHkkJ_Pyj-D4yD5QCrPGfJb3pGOoGZDtSL5h37rYRHj7dtmHIOc4thCCUfV7tp6eNYx6PDOuCcZkBUsHVUEP0g1N_NTpygO-G7hduxLEcu5vop1jA05vcHRllNT23KxphkHVrXwltXiY25ecNmSXbAWsF5aJ86rCDkO14PvL-sLhEOx7AU"/>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 bg-primary-container/80 text-on-primary font-label-sm text-label-sm text-[9px] rounded">Geo-Tagged</span>
+</div>
+<div class="flex flex-col justify-between flex-grow w-full">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rate Sanitation Officer Service</span>
+<div class="flex items-center gap-0.5 text-secondary">
+<span class="material-symbols-outlined text-[18px] cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] cursor-pointer" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px] cursor-pointer">star</span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2 pt-2 border-t-0">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Closed in 18 minutes</span>
+<button class="font-label-md text-label-md text-secondary hover:underline">View Digital Certificate</button>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 5: Financial Redressal Refund -->
+<div class="alert-card bg-surface-container-lowest rounded-xl p-space-lg shadow-sm hover:shadow-md transition-all flex flex-col gap-space-md" data-category="proof status">
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex items-start gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container-low text-secondary flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">account_balance_wallet</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Financial Redressal</span>
+<span class="font-data-mono text-data-mono font-semibold text-on-surface">Ticket #GAI-2025-8604</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Yesterday, 16:45 IST • Pantry Overcharging Penalty</span>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container text-secondary font-data-mono text-data-mono font-bold">+ ₹5.00 Refund</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+              IRCTC Commercial Redressal Cell completed instant direct reversal to customer UPI handle <span class="font-data-mono text-data-mono">priya***@okhdfcbank</span>. Penalty surcharge voucher Ref <span class="font-data-mono text-data-mono font-semibold">#TXN-994821-C</span> filed against Pantry Car Vendor.
+            </p>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock_reset</span> Autonomous UPI Gateway Reconciliation
+              </span>
+<button class="flex items-center gap-1 text-secondary font-label-md text-label-md hover:underline">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span> Download Credit Receipt
+              </button>
+</div>
+</div>
+</div>
+<!-- End of Feed Pagination Trigger -->
+<div class="flex items-center justify-center py-space-md">
+<button class="px-space-lg py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors flex items-center gap-space-sm shadow-sm">
+<span class="material-symbols-outlined text-[18px]">history</span>
+<span>Load Archived Grievances (Prior 30 Days)</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Settings & Channel Preferences (4 cols / ~32%) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg sticky top-20" id="settingsPanel">
+<!-- Preferences Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Dispatch Delivery Channels</h2>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">PNR Bound</span>
+</div>
+<!-- Channel Toggle Switches -->
+<div class="flex flex-col gap-space-md">
+<!-- SMS Express Alerts -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SMS Express Alerts</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm text-[9px] uppercase">Mandatory</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Critical OTPs, SOS dispatch, safety warnings.</span>
+</div>
+<!-- Always ON toggle -->
+<div class="relative inline-flex items-center cursor-not-allowed opacity-80 flex-shrink-0">
+<div class="w-11 h-6 bg-secondary rounded-full"></div>
+<div class="absolute right-1 top-1 bg-on-secondary w-4 h-4 rounded-full transition-transform"></div>
+</div>
+</div>
+<!-- WhatsApp Live Updates -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface font-semibold">WhatsApp Live Updates</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm text-[9px]">Fastest</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Squad tracking maps, officer photos, quick chats.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer preference-toggle" data-pref="WhatsApp" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- In-App Sound & Banners -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">In-App Browser Chime</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Audio chime when an officer sends a clarification message.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer preference-toggle" data-pref="Audio Chime" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Email Digest & Closure PDF -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Email Resolution PDF</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Consolidated closure reports sent to priya.sharma@...</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input checked="" class="sr-only peer preference-toggle" data-pref="Email PDF" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- DigiLocker Sync -->
+<div class="flex items-start justify-between gap-space-md">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">DigiLocker Push Sync</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automatically store statutory resolution certificates in Aadhaar locker.</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer flex-shrink-0">
+<input class="sr-only peer preference-toggle" data-pref="DigiLocker" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<!-- Alert Threshold & Active Hours -->
+<div class="flex flex-col gap-space-sm pt-space-md border-t-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Notification SLA Filtering</span>
+<div class="space-y-2">
+<label class="flex items-center gap-space-sm cursor-pointer p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<input checked="" class="accent-secondary" name="threshold" type="radio"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Urgent &amp; Active Journey Mode</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Interrupts 24x7 for Safety, SOS, &amp; In-coach Repairs.</span>
+</div>
+</label>
+<label class="flex items-center gap-space-sm cursor-pointer p-2 rounded-lg hover:bg-surface-container-low transition-colors">
+<input class="accent-secondary" name="threshold" type="radio"/>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-medium text-on-surface">Quiet Night Transit (22:00 - 06:00)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mute non-critical technician logs while sleeping.</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Save Button -->
+<button class="w-full py-2.5 bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary/90 transition-colors shadow-sm flex items-center justify-center gap-space-xs" id="savePreferencesBtn">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Update Delivery Channels</span>
+</button>
+</div>
+<!-- Emergency / Special Needs Override Card -->
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[24px]">hearing_disabled</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Accessibility Mode</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Passengers with hearing or visual impairments can enforce maximum haptic pulses and automatic speech-to-text TTY intercom alerts.
+          </p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-md text-label-md text-on-surface font-medium">Haptic &amp; High-Contrast Strobe</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm hover:bg-secondary hover:text-on-secondary transition-all" id="toggleAccessBtn">
+              Activate
+            </button>
+</div>
+</div>
+<!-- Active Journey Mini-Card -->
+<div class="bg-primary-container text-on-primary rounded-xl p-space-lg shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container">Transit Synced</span>
+<span class="font-data-mono text-data-mono text-secondary-container">12952 / Mumbai Rajdhani</span>
+</div>
+<div class="flex items-baseline justify-between pt-1">
+<div>
+<span class="font-headline-md text-headline-md font-bold">NDLS</span>
+<p class="font-body-sm text-body-sm text-on-primary-container">New Delhi</p>
+</div>
+<span class="material-symbols-outlined text-secondary-container">trending_flat</span>
+<div class="text-right">
+<span class="font-headline-md text-headline-md font-bold">MMCT</span>
+<p class="font-body-sm text-body-sm text-on-primary-container">Mumbai Central</p>
+</div>
+</div>
+<div class="w-full bg-on-primary/10 h-1.5 rounded-full overflow-hidden mt-space-xs">
+<div class="bg-secondary-container h-full rounded-full" style="width: 58%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-primary-container text-center pt-1">Next Junction: Ratlam Jn (Sch Arr: 14:48 IST)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function () {
+    // Interactive Elements
+    const toast = document.getElementById('toastNotification');
+    const toastMessage = document.getElementById('toastMessage');
+    const markAllBtn = document.getElementById('markAllReadBtn');
+    const pauseBtn = document.getElementById('pauseAlertsBtn');
+    const pauseIcon = document.getElementById('pauseIcon');
+    const pauseText = document.getElementById('pauseText');
+    const savePrefBtn = document.getElementById('savePreferencesBtn');
+    const toggleAccessBtn = document.getElementById('toggleAccessBtn');
+    const searchInput = document.getElementById('alertSearch');
+    const filterTabs = document.querySelectorAll('.filter-tab');
+    const alertCards = document.querySelectorAll('.alert-card');
+    const kpiUnread = document.getElementById('kpiUnread');
+
+    let paused = false;
+    let accessActive = false;
+
+    function showToast(msg) {
+      if (!toast) return;
+      toastMessage.textContent = msg;
+      toast.classList.remove('translate-y-24', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+      setTimeout(() => {
+        toast.classList.add('translate-y-24', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3200);
+    }
+
+    // Mark All As Read
+    if (markAllBtn) {
+      markAllBtn.addEventListener('click', () => {
+        const unreadDots = document.querySelectorAll('.alert-card [title="Unread"]');
+        unreadDots.forEach(dot => {
+          dot.classList.remove('bg-secondary');
+          dot.classList.add('bg-outline-variant');
+          dot.setAttribute('title', 'Read');
+        });
+        if (kpiUnread) kpiUnread.textContent = '0';
+        showToast('All 14 dispatch alerts marked as acknowledged.');
+      });
+    }
+
+    // Individual Mark as Read buttons
+    document.querySelectorAll('.mark-card-read').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const card = btn.closest('.alert-card');
+        const dot = card.querySelector('[title="Unread"]');
+        if (dot) {
+          dot.classList.remove('bg-secondary');
+          dot.classList.add('bg-outline-variant');
+          dot.setAttribute('title', 'Read');
+          let current = parseInt(kpiUnread.textContent, 10);
+          if (current > 0) kpiUnread.textContent = (current - 1).toString();
+          showToast('Alert marked as read.');
+        }
+      });
+    });
+
+    // Pause Alerts Toggle
+    if (pauseBtn) {
+      pauseBtn.addEventListener('click', () => {
+        paused = !paused;
+        if (paused) {
+          pauseText.textContent = 'Resume Alerts';
+          pauseIcon.textContent = 'notifications_active';
+          pauseBtn.classList.add('bg-secondary', 'text-on-secondary');
+          pauseBtn.classList.remove('bg-surface-container-low', 'text-on-surface');
+          showToast('Non-critical alerts paused until next station halt.');
+        } else {
+          pauseText.textContent = 'Pause non-critical';
+          pauseIcon.textContent = 'notifications_paused';
+          pauseBtn.classList.remove('bg-secondary', 'text-on-secondary');
+          pauseBtn.classList.add('bg-surface-container-low', 'text-on-surface');
+          showToast('Real-time notifications resumed.');
+        }
+      });
+    }
+
+    // Save Preferences
+    if (savePrefBtn) {
+      savePrefBtn.addEventListener('click', () => {
+        showToast('Dispatch channels & SLA rules synchronized with PNR.');
+      });
+    }
+
+    // Accessibility Mode Toggle
+    if (toggleAccessBtn) {
+      toggleAccessBtn.addEventListener('click', () => {
+        accessActive = !accessActive;
+        if (accessActive) {
+          toggleAccessBtn.textContent = 'Enabled';
+          toggleAccessBtn.classList.remove('bg-surface-container-lowest', 'text-secondary');
+          toggleAccessBtn.classList.add('bg-secondary', 'text-on-secondary');
+          showToast('High-contrast & Haptic Telemetry ping enabled.');
+        } else {
+          toggleAccessBtn.textContent = 'Activate';
+          toggleAccessBtn.classList.remove('bg-secondary', 'text-on-secondary');
+          toggleAccessBtn.classList.add('bg-surface-container-lowest', 'text-secondary');
+          showToast('Accessibility override reset to default.');
+        }
+      });
+    }
+
+    // Filter Tabs
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+          t.classList.add('text-on-surface-variant');
+        });
+        tab.classList.add('bg-primary-container', 'text-on-primary', 'active');
+        tab.classList.remove('text-on-surface-variant');
+
+        const filter = tab.getAttribute('data-filter');
+        alertCards.forEach(card => {
+          const categories = card.getAttribute('data-category') || '';
+          if (filter === 'all' || categories.includes(filter)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+
+    // Search Filter
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        alertCards.forEach(card => {
+          const text = card.textContent.toLowerCase();
+          if (text.includes(query)) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col md:flex-row items-center gap-space-md text-center md:text-left"><div class="flex items-center gap-space-xs text-error font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">call</span><span>Emergency Railway Helpline: Dial 139 (24x7)</span></div><span class="hidden md:inline text-outline-variant">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Transit Grievance Redressal &amp; AI Escalation Monitoring Cell</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 GrievanceAI National Transit Authority.</span><a class="hover:text-on-surface transition-colors" data-path="account-notifications" href="#">Security &amp; SLA Terms</a></div></div></footer></body></html>

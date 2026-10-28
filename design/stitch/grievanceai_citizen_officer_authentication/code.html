@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#009687", "error-container": "#ffdad6", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "tertiary": "#000605", "surface-container": "#e5eeff", "secondary-container": "#39b8fd", "inverse-surface": "#213145", "primary-container": "#0f1e36", "on-primary-fixed": "#0c1b33", "surface-tint": "#515f7a", "on-surface-variant": "#44474d", "surface": "#f8f9ff", "error": "#ba1a1a", "secondary-fixed-dim": "#89ceff", "inverse-on-surface": "#eaf1ff", "outline": "#75777e", "on-primary-container": "#7886a3", "inverse-primary": "#b8c7e6", "background": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001e2f", "surface-container-high": "#dce9ff", "on-secondary": "#ffffff", "outline-variant": "#c5c6ce", "on-tertiary-fixed": "#00201c", "surface-container-highest": "#d3e4fe", "primary": "#000412", "tertiary-fixed": "#71f8e4", "on-background": "#0b1c30", "secondary": "#006591", "surface-variant": "#d3e4fe", "on-secondary-fixed-variant": "#004c6e", "on-secondary-container": "#004666", "tertiary-container": "#00231e", "primary-fixed": "#d7e3ff", "on-error-container": "#93000a", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#005048", "on-primary-fixed-variant": "#394761", "on-primary": "#ffffff", "on-surface": "#0b1c30", "tertiary-fixed-dim": "#4fdbc8", "secondary-fixed": "#c9e6ff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "primary-fixed-dim": "#b8c7e6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin": "1.5rem", "gutter": "1.25rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-lg": "1.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "data-mono": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(15,30,54,0.06)]"><div class="bg-primary-container text-on-surface-variant font-label-sm text-label-sm"><div class="w-full px-gutter flex items-center justify-between h-7"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="text-surface font-label-sm text-label-sm uppercase tracking-wider">National Transport Authority Grievance Portal</span><span class="text-on-primary-container">|</span><span class="text-inverse-primary font-label-sm text-label-sm">Official Passenger Redressal System</span></div><div class="flex items-center gap-space-md"><span class="text-inverse-primary font-label-sm text-label-sm hidden sm:inline">Citizen Assistance &amp; Escalation Protocol Active</span><div class="flex items-center gap-space-xs text-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">language</span><span>English (EN)</span></div></div></div></div><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="GrievanceAI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UyEwPkpea1GzCEA0nVdRs07Bnuh2GAMcpjx4SaLBTYN6saG46ui4mVPDjRuayhP74vx5eBvlbggubduq3Ci6QKwtbBl5oa8Wvfo_gjdjxjWpcpZn4CPA89RfqLAvYaZO05DE-fOFbfIhEAN1wl54h4SclI4AkqyVDx9SiBREMG8wRmjKchFT8jA4MY2wHuWejtTXEeq_z0oTbfI9Y2AsYt_AHtqRbKhu0ZtzL24vL2"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">GrievanceAI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Transit Redressal System</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="home" href="#">Home</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="track-grievance" href="#">Track Grievance</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="file-complaint" href="#">File Complaint</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="resolution-insights" href="#">Resolution Insights</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="citizen-login" href="#">Citizen Login</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="registration" href="#">Registration</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="officer-login" href="#">Officer Sign In</a></nav><div class="flex items-center gap-space-md"><a class="hidden md:flex items-center gap-space-xs px-space-md py-space-sm bg-error text-on-error rounded-full font-label-md text-label-md shadow-sm hover:bg-on-error-container hover:text-on-error transition-all" href="tel:139"><span class="material-symbols-outlined text-[16px]">call</span><span>139 Helpline</span></a><a class="hidden lg:flex items-center gap-space-xs px-space-md py-space-sm bg-surface-container-high text-on-secondary-container rounded-lg font-label-md text-label-md hover:bg-surface-variant transition-colors" data-path="citizen-login" href="#"><span class="material-symbols-outlined text-[16px]">account_circle</span><span>Citizen Login</span></a><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container hover:text-surface transition-colors" data-path="officer-login" href="#"><span class="material-symbols-outlined text-[16px]">lock_open</span><span>Officer Sign In</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-27rem)]"><div class="flex flex-col w-full">
+<!-- Security Notice Banner -->
+<div class="w-full bg-surface-container-high px-gutter py-space-sm flex items-center justify-between shadow-sm">
+<div class="max-w-7xl mx-auto w-full flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+<span class="font-label-md text-label-md text-on-surface">Security Protocol Alert:</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant hidden md:inline">GrievanceAI officials will never request passwords, 6-digit OTP codes, or financial credentials via SMS or call.</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant md:hidden">Never share OTP or credentials.</span>
+</div>
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm text-secondary">
+<span class="inline-flex items-center gap-1 bg-surface-container-lowest px-space-sm py-0.5 rounded-full shadow-sm text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+          256-Bit SSL Enforced
+        </span>
+</div>
+</div>
+</div>
+<!-- Breadcrumb Navigation Bar -->
+<div class="w-full px-gutter py-space-md">
+<div class="max-w-7xl mx-auto flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">home</span>
+<span>Home</span>
+</a>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span>Portal Access</span>
+<span class="material-symbols-outlined text-[14px] text-outline">chevron_right</span>
+<span class="text-primary font-semibold" id="breadcrumbCurrent">Citizen Authentication</span>
+</div>
+</div>
+<!-- Main Dual-Pane Auth Architecture -->
+<div class="w-full px-gutter pb-space-xl">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT COLUMN: Institutional Telemetry & Key Benefits Pane -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Hero Overview Card -->
+<div class="bg-primary-container text-surface rounded-xl p-space-xl shadow-md relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-56 h-56 rounded-full bg-secondary-container/10 pointer-events-none blur-2xl"></div>
+<div class="flex items-center gap-space-sm mb-space-md">
+<span class="px-space-sm py-1 rounded-full bg-secondary-container/20 text-secondary-container font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+              Mission-Critical AI Telemetry
+            </span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-surface tracking-tight mb-space-sm">
+            Empowered Transit Redressal &amp; Rapid Dispatch
+          </h1>
+<p class="font-body-md text-body-md text-inverse-primary mb-space-lg">
+            Directly bridge real-time passenger grievances with rail superintendents, transit police, and technical crews via autonomous NLP routing.
+          </p>
+<!-- Core Capability Highlights -->
+<div class="flex flex-col gap-space-md">
+<!-- Feature 1 -->
+<div class="flex items-start gap-space-md bg-surface-container-lowest/5 rounded-lg p-space-md">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">train</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-surface text-[15px]">Automated PNR &amp; Pass Telemetry</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Live synchronization with National Rail &amp; Regional Metro systems to pinpoint onboard coaches and stations instantly.</span>
+</div>
+</div>
+<!-- Feature 2 -->
+<div class="flex items-start gap-space-md bg-surface-container-lowest/5 rounded-lg p-space-md">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-surface text-[15px]">AI Urgency Triage &amp; Sentiment Routing</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Identifies distress, medical emergencies, and safety risks in &lt;1.8 seconds with automatic Tier-1 duty dispatch.</span>
+</div>
+</div>
+<!-- Feature 3 -->
+<div class="flex items-start gap-space-md bg-surface-container-lowest/5 rounded-lg p-space-md">
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 text-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">folder_shared</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-surface text-[15px]">National DigiLocker &amp; SSO Integration</span>
+<span class="font-body-sm text-body-sm text-on-primary-container">Authenticate with MeriPehchaan or DigiLocker for instant citizen credential verification and swift RTI filing.</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Institutional Metrics & Operational SLA Grid -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Mandatory SLA Adherence</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-lg text-display-lg text-primary">98.4%</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">↑ On-time</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Resolved within charter limits</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Citizen Cases Handled</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-display-lg text-display-lg text-primary">1.4M+</span>
+<span class="font-label-md text-label-md text-secondary font-semibold">Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Across 780+ transit junctions</span>
+</div>
+</div>
+<!-- Real-Time Telemetry / Visual Graphic -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-primary text-[15px]">Live Node Response Telemetry</span>
+<span class="inline-flex items-center gap-1 font-data-mono text-data-mono text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+              ACTIVE DISPATCH
+            </span>
+</div>
+<!-- Inline Telemetry SVG Graph -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant mb-1">
+<span>Avg. Resolution Latency (Past 6 Hours)</span>
+<span class="text-primary font-semibold">14.2 Mins</span>
+</div>
+<svg class="w-full h-16 text-secondary" fill="none" viewbox="0 0 360 60" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 45 C 30 42, 60 50, 90 35 C 120 20, 150 28, 180 18 C 210 8, 240 22, 270 14 C 300 6, 330 16, 360 10" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<path d="M0 45 C 30 42, 60 50, 90 35 C 120 20, 150 28, 180 18 C 210 8, 240 22, 270 14 C 300 6, 330 16, 360 10 L 360 60 L 0 60 Z" fill="currentColor" fill-opacity="0.08"></path>
+<circle class="fill-primary-container" cx="180" cy="18" r="4" stroke="white" stroke-width="2"></circle>
+<circle class="fill-secondary-container" cx="270" cy="14" r="4" stroke="white" stroke-width="2"></circle>
+<circle class="fill-secondary" cx="360" cy="10" r="4" stroke="white" stroke-width="2"></circle>
+</svg>
+<div class="flex justify-between font-data-mono text-[11px] text-on-surface-variant mt-1">
+<span>06:00 HRS</span>
+<span>08:30 HRS</span>
+<span>11:00 HRS</span>
+<span>LIVE</span>
+</div>
+</div>
+<!-- Trust Badges & Compliance Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs text-on-surface-variant">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>ISO 27001 Certified</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">shield_lock</span>
+<span>DPDP Act 2023 Compliant</span>
+</div>
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span>TLS 1.3 Strict HTTPS</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Interactive High-Trust Auth Engine Card -->
+<div class="lg:col-span-7">
+<div class="bg-surface-container-lowest rounded-xl shadow-md p-space-xl flex flex-col gap-space-lg relative">
+<!-- Role Switcher Segmented Control -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold">Select Access Profile</span>
+<div class="bg-surface-container-low p-1 rounded-xl flex items-center gap-1">
+<button class="flex-1 py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-space-xs transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold" id="roleCitizenBtn" onclick="switchRole('citizen')" type="button">
+<span class="material-symbols-outlined text-[18px]">person</span>
+<span>Citizen / Passenger</span>
+</button>
+<button class="flex-1 py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-space-xs transition-all text-on-surface-variant hover:text-primary" id="roleOfficerBtn" onclick="switchRole('officer')" type="button">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>Transit Officer / Staff</span>
+<span class="bg-primary-container text-surface text-[10px] font-bold px-1.5 py-0.5 rounded uppercase tracking-wide">Official</span>
+</button>
+</div>
+</div>
+<!-- Mode Selector Segment (Sign In vs Register - Citizen only) -->
+<div class="flex items-center justify-between bg-surface-container-low/60 p-1 rounded-lg" id="citizenTabSegment">
+<button class="flex-1 py-2 rounded-lg font-headline-sm text-headline-sm text-[14px] transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold text-center" id="tabSignInBtn" onclick="switchTab('signin')" type="button">
+              Sign In to Account
+            </button>
+<button class="flex-1 py-2 rounded-lg font-headline-sm text-headline-sm text-[14px] transition-all text-on-surface-variant hover:text-primary text-center" id="tabRegisterBtn" onclick="switchTab('register')" type="button">
+              Create New Account
+            </button>
+</div>
+<!-- VIEW A: CITIZEN SIGN IN FORM -->
+<div class="flex flex-col gap-space-lg" id="citizenSignInPane">
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-primary">Passenger Sign In</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Access lodged grievances, submit urgent coach complaints, and track redressal progress.</p>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="handleCitizenLogin(event)">
+<!-- Identifier Input (Email or Mobile) -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Registered Mobile or Email Address</span>
+<span class="font-label-sm text-label-sm text-secondary">PNR Linked Recommended</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3 flex items-center gap-1 text-on-surface-variant font-label-md text-label-md pr-2">
+<span class="material-symbols-outlined text-[18px]">smartphone</span>
+<span class="text-on-surface font-semibold">+91</span>
+</div>
+<input class="w-full h-11 pl-20 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="citizenIdentifier" placeholder="Enter 10-digit mobile or passenger@domain.gov" required="" type="text"/>
+</div>
+</div>
+<!-- Password Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Account Password</label>
+<button class="font-label-sm text-label-sm text-secondary hover:underline" onclick="openForgotPasswordModal()" type="button">
+                    Forgot Password?
+                  </button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">lock</span>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="citizenPassword" placeholder="••••••••••••" required="" type="password"/>
+<button class="absolute right-3 text-on-surface-variant hover:text-primary" onclick="togglePasswordVisibility('citizenPassword', 'eyeIconCitizen')" type="button">
+<span class="material-symbols-outlined text-[18px]" id="eyeIconCitizen">visibility</span>
+</button>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Min. 8 characters with at least one number and special symbol.</span>
+</div>
+<!-- Remember Me & Captcha Simulation -->
+<div class="flex items-center justify-between py-1">
+<label class="flex items-center gap-2 cursor-pointer select-none">
+<input checked="" class="w-4 h-4 rounded text-secondary focus:ring-secondary-container accent-secondary cursor-pointer" type="checkbox"/>
+<span class="font-body-sm text-body-sm text-on-surface">Keep me signed in for 30 days on this device</span>
+</label>
+<div class="flex items-center gap-1 text-on-tertiary-container font-label-sm text-label-sm bg-surface-container px-2 py-0.5 rounded">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>reCAPTCHA Protected</span>
+</div>
+</div>
+<!-- Primary Action CTA -->
+<button class="w-full h-11 bg-primary-container hover:bg-primary text-surface rounded-lg font-headline-sm text-headline-sm text-[15px] flex items-center justify-center gap-2 transition-all shadow-md group" type="submit">
+<span>Sign In to GrievanceAI</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</form>
+<!-- Alternative Auth / SSO Divider -->
+<div class="flex items-center gap-space-md my-1">
+<div class="flex-1 h-[1px] bg-surface-container-high"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Instant Express Login</span>
+<div class="flex-1 h-[1px] bg-surface-container-high"></div>
+</div>
+<!-- Alternative Authentication Methods -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<button class="w-full h-11 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-headline-sm text-headline-sm text-[13px] flex items-center justify-center gap-2 transition-all shadow-sm" onclick="handleOtpFlowTrigger()" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">sms</span>
+<span>Login via 6-Digit OTP</span>
+</button>
+<button class="w-full h-11 bg-surface-container-low hover:bg-surface-container text-on-surface rounded-lg font-headline-sm text-headline-sm text-[13px] flex items-center justify-center gap-2 transition-all shadow-sm" onclick="handleDigiLockerSSO()" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">fingerprint</span>
+<span>Sign in with MeriPehchaan</span>
+</button>
+</div>
+<!-- Registration Footer Prompt -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[13px] text-primary">New passenger or commuter?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Register once to track complaints across all transit networks.</span>
+</div>
+<button class="px-space-md py-1.5 bg-surface-container-lowest text-secondary hover:text-primary rounded-lg font-headline-sm text-headline-sm text-[13px] shadow-sm transition-colors" onclick="switchTab('register')" type="button">
+                Register Free
+              </button>
+</div>
+</div>
+<!-- VIEW B: CITIZEN REGISTRATION FORM -->
+<div class="hidden flex-col gap-space-lg" id="citizenRegisterPane">
+<div class="flex flex-col gap-1">
+<h2 class="font-headline-md text-headline-md text-primary">Register Passenger Account</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Create your official citizen redressal profile for verified grievance escalation and instant compensation tracking.</p>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="handleRegistrationSubmit(event)">
+<!-- Legal Full Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Full Legal Name (as per Gov ID / Ticket)</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">person</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="regName" placeholder="e.g. Vikramaditya Sharma" required="" type="text"/>
+</div>
+</div>
+<!-- Two Column Contact Details -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Mobile with Validated Badge -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Mobile Number</label>
+<span class="text-on-tertiary-container font-label-sm text-label-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">check_circle</span> Linked to PNR
+                    </span>
+</div>
+<div class="relative flex items-center">
+<span class="font-semibold text-on-surface text-[13px] absolute left-3">+91</span>
+<input class="w-full h-11 pl-12 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="regPhone" maxlength="10" placeholder="98765 43210" required="" type="tel"/>
+</div>
+</div>
+<!-- Verified Email -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Email Address</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">mail</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="regEmail" placeholder="passenger@domain.com" required="" type="email"/>
+</div>
+</div>
+</div>
+<!-- Password Creation with Dynamic Strength Meter -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Create Secure Password</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">key</span>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="regPassword" oninput="calculatePasswordStrength(this.value)" placeholder="Create strong passphrase" required="" type="password"/>
+<button class="absolute right-3 text-on-surface-variant hover:text-primary" onclick="togglePasswordVisibility('regPassword', 'eyeIconReg')" type="button">
+<span class="material-symbols-outlined text-[18px]" id="eyeIconReg">visibility</span>
+</button>
+</div>
+<!-- Live Dynamic Strength Bar -->
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Security Evaluation:</span>
+<span class="font-semibold text-error" id="strengthText">Weak</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden flex gap-1">
+<div class="h-full w-1/3 bg-error transition-all" id="strengthBar1"></div>
+<div class="h-full w-1/3 bg-surface-container-low transition-all" id="strengthBar2"></div>
+<div class="h-full w-1/3 bg-surface-container-low transition-all" id="strengthBar3"></div>
+</div>
+<div class="grid grid-cols-2 gap-x-2 gap-y-1 mt-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1 text-on-surface-variant" id="ruleLength">
+<span class="material-symbols-outlined text-[14px]">circle</span> 8+ Characters
+                    </span>
+<span class="flex items-center gap-1 text-on-surface-variant" id="ruleNumber">
+<span class="material-symbols-outlined text-[14px]">circle</span> At least 1 number
+                    </span>
+<span class="flex items-center gap-1 text-on-surface-variant" id="ruleSpecial">
+<span class="material-symbols-outlined text-[14px]">circle</span> Special symbol (@, $, !)
+                    </span>
+<span class="flex items-center gap-1 text-on-surface-variant" id="ruleCase">
+<span class="material-symbols-outlined text-[14px]">circle</span> Mixed case letters
+                    </span>
+</div>
+</div>
+</div>
+<!-- Confirm Password -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Confirm Password</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">lock_reset</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="regConfirmPassword" placeholder="Repeat entered password" required="" type="password"/>
+</div>
+</div>
+<!-- Optional Transit Credential Sync -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Optional: IRCTC User ID / Metro Smartcard Number</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">For Instant PNR Sync</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">credit_card</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="regTransitId" placeholder="e.g. IRCTC_USER_4021 or METRO-DMR-8820" type="text"/>
+</div>
+</div>
+<!-- Terms Acceptance -->
+<div class="flex items-start gap-2 py-1">
+<input class="w-4 h-4 mt-0.5 rounded text-secondary focus:ring-secondary-container accent-secondary cursor-pointer" id="termsCheck" required="" type="checkbox"/>
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer select-none" for="termsCheck">
+                  I accept the <a class="text-secondary hover:underline font-semibold" href="#">Citizen Redressal Charter</a>, <a class="text-secondary hover:underline font-semibold" href="#">Data Protection Policy</a>, and consent to official communication via SMS/WhatsApp regarding registered transit complaints.
+                </label>
+</div>
+<!-- Registration Submit Button -->
+<button class="w-full h-11 bg-primary-container hover:bg-primary text-surface rounded-lg font-headline-sm text-headline-sm text-[15px] flex items-center justify-center gap-2 transition-all shadow-md group" type="submit">
+<span class="material-symbols-outlined text-[18px]">person_add</span>
+<span>Create GrievanceAI Account</span>
+</button>
+</form>
+</div>
+<!-- VIEW C: OFFICER / STAFF SIGN IN FORM -->
+<div class="hidden flex-col gap-space-lg" id="officerSignInPane">
+<!-- High Security Official Notice Banner -->
+<div class="bg-error-container/40 p-space-md rounded-lg flex items-start gap-space-sm text-error">
+<span class="material-symbols-outlined text-[20px] shrink-0">gavel</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[13px] text-error font-semibold">Restricted Government Personnel Gateway</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[12px]">Authorized Indian Railways and Urban Transit staff only. Unauthorized access attempts are monitored and prosecutable under the Transit Cyber Security Regulations.</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-primary">Nodal Officer Access</h2>
+<span class="bg-primary-container text-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+                  2FA MANDATORY
+                </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sign in to review escalated emergency dispatches, assign field personnel, and execute redressal actions.</p>
+</div>
+<form class="flex flex-col gap-space-md" onsubmit="handleOfficerLogin(event)">
+<!-- Officer Service ID -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Officer Government Employee ID / Service Code</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Format: IR-EMP-XXXXX</span>
+</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">badge</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-lowest rounded-lg font-data-mono text-data-mono text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm uppercase" id="officerId" placeholder="e.g. IR-EMP-88421" required="" type="text"/>
+</div>
+</div>
+<!-- Department Selector -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Operational Wing / Department</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">domain</span>
+<select class="w-full h-11 pl-10 pr-8 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm appearance-none cursor-pointer" id="officerDepartment" required="">
+<option disabled="" selected="" value="">Select Your Assigned Deployment Division</option>
+<option value="OBHS">OBHS (Onboard Housekeeping &amp; Sanitation Service)</option>
+<option value="RPF">RPF / Transit Police (Passenger Safety &amp; Anti-Harassment)</option>
+<option value="MECH_ELEC">Mechanical, C&amp;W, &amp; Electrical Maintenance</option>
+<option value="COMMERCIAL">Commercial / TTE (Ticketing, Catering &amp; Passenger Amenities)</option>
+<option value="SIGNAL">Signaling &amp; Station Infrastructure Operations</option>
+<option value="HQ">Divisional Grievance Control Room (DRM Office)</option>
+</select>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute right-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Officer Master Password -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">Security Password</label>
+<a class="font-label-sm text-label-sm text-secondary hover:underline" href="#">Contact NIC / IT Nodal Desk</a>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">vpn_key</span>
+<input class="w-full h-11 pl-10 pr-10 bg-surface-container-lowest rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="officerPassword" placeholder="••••••••••••" required="" type="password"/>
+<button class="absolute right-3 text-on-surface-variant hover:text-primary" onclick="togglePasswordVisibility('officerPassword', 'eyeIconOfficer')" type="button">
+<span class="material-symbols-outlined text-[18px]" id="eyeIconOfficer">visibility</span>
+</button>
+</div>
+</div>
+<!-- Two Factor Authenticator Field -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">token</span>
+                    Two-Factor Gov Token / Authenticator
+                  </span>
+<span class="font-label-sm text-label-sm text-secondary">Sandes App / OTP</span>
+</div>
+<div class="relative flex items-center mt-1">
+<input class="w-full h-11 px-4 bg-surface-container-lowest rounded-lg font-data-mono text-data-mono text-center tracking-[0.25em] text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all shadow-sm" id="officerOtp" maxlength="6" placeholder="Enter 6-digit security token" required="" type="text"/>
+</div>
+</div>
+<!-- Officer Sign In Button -->
+<button class="w-full h-11 bg-primary text-on-primary hover:bg-primary-container rounded-lg font-headline-sm text-headline-sm text-[15px] flex items-center justify-center gap-2 transition-all shadow-md group" type="submit">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+<span>Authenticate Officer Credentials</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">login</span>
+</button>
+</form>
+<div class="pt-space-xs flex items-center justify-center text-center font-label-sm text-label-sm text-on-surface-variant">
+<span>National Transport Infrastructure Commission — Intranet Protocol v4.8</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- PASSWORD RECOVERY MODAL OVERLAY -->
+<div class="fixed inset-0 z-50 hidden bg-primary-container/60 backdrop-blur-sm flex items-center justify-center p-gutter" id="forgotPasswordModal">
+<div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-md w-full p-space-xl flex flex-col gap-space-lg relative animate-in fade-in zoom-in-95">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-secondary">lock_reset</span>
+<span>Password Recovery</span>
+</div>
+<button class="w-8 h-8 rounded-full hover:bg-surface-container-low flex items-center justify-center text-on-surface-variant transition-colors" onclick="closeForgotPasswordModal()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Enter your verified passenger mobile or email address. We will transmit a secure, one-time authentication link and SMS verification token.
+      </p>
+<form class="flex flex-col gap-space-md" onsubmit="handlePasswordRecovery(event)">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Registered Mobile / Email</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant absolute left-3">contact_phone</span>
+<input class="w-full h-11 pl-10 pr-4 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface placeholder:text-outline-variant focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all" id="recoveryIdentifier" placeholder="Enter mobile or email address" required="" type="text"/>
+</div>
+</div>
+<button class="w-full h-11 bg-primary-container text-surface hover:bg-primary rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-2 transition-all shadow-md" type="submit">
+<span>Dispatch Recovery Link</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</form>
+<div class="bg-surface-container-low rounded-lg p-space-sm flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+<span>For unresolved lockout cases, contact the 24/7 Rail Helpline at 139.</span>
+</div>
+</div>
+</div>
+<!-- INTERACTIVE TOAST NOTIFICATION -->
+<div class="fixed bottom-6 right-6 z-50 hidden bg-primary-container text-surface px-space-lg py-space-md rounded-xl shadow-xl flex items-center gap-space-md transition-all" id="actionToast">
+<span class="material-symbols-outlined text-[20px] text-secondary-container" id="toastIcon">check_circle</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[14px] text-surface" id="toastTitle">Action Processed</span>
+<span class="font-body-sm text-body-sm text-inverse-primary text-[12px]" id="toastMessage">Request dispatched successfully.</span>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+    // Role Switching Logic
+    function switchRole(role) {
+      const citizenBtn = document.getElementById('roleCitizenBtn');
+      const officerBtn = document.getElementById('roleOfficerBtn');
+      const citizenTabSegment = document.getElementById('citizenTabSegment');
+      const citizenSignInPane = document.getElementById('citizenSignInPane');
+      const citizenRegisterPane = document.getElementById('citizenRegisterPane');
+      const officerSignInPane = document.getElementById('officerSignInPane');
+      const breadcrumb = document.getElementById('breadcrumbCurrent');
+
+      if (role === 'citizen') {
+        citizenBtn.className = "flex-1 py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-space-xs transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold";
+        officerBtn.className = "flex-1 py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-space-xs transition-all text-on-surface-variant hover:text-primary";
+        
+        citizenTabSegment.classList.remove('hidden');
+        citizenSignInPane.classList.remove('hidden');
+        citizenRegisterPane.classList.add('hidden');
+        officerSignInPane.classList.add('hidden');
+        
+        // Reset subtabs to sign in
+        switchTab('signin');
+        breadcrumb.textContent = 'Citizen Authentication';
+      } else {
+        officerBtn.className = "flex-1 py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-space-xs transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold";
+        citizenBtn.className = "flex-1 py-space-sm px-space-md rounded-lg font-headline-sm text-headline-sm text-[14px] flex items-center justify-center gap-space-xs transition-all text-on-surface-variant hover:text-primary";
+        
+        citizenTabSegment.classList.add('hidden');
+        citizenSignInPane.classList.add('hidden');
+        citizenRegisterPane.classList.add('hidden');
+        officerSignInPane.classList.remove('hidden');
+        breadcrumb.textContent = 'Official Staff Authentication';
+      }
+    }
+
+    // Subtab Switching (Sign In vs Register)
+    function switchTab(tab) {
+      const tabSignInBtn = document.getElementById('tabSignInBtn');
+      const tabRegisterBtn = document.getElementById('tabRegisterBtn');
+      const citizenSignInPane = document.getElementById('citizenSignInPane');
+      const citizenRegisterPane = document.getElementById('citizenRegisterPane');
+
+      if (tab === 'signin') {
+        tabSignInBtn.className = "flex-1 py-2 rounded-lg font-headline-sm text-headline-sm text-[14px] transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold text-center";
+        tabRegisterBtn.className = "flex-1 py-2 rounded-lg font-headline-sm text-headline-sm text-[14px] transition-all text-on-surface-variant hover:text-primary text-center";
+        citizenSignInPane.classList.remove('hidden');
+        citizenRegisterPane.classList.add('hidden');
+      } else {
+        tabRegisterBtn.className = "flex-1 py-2 rounded-lg font-headline-sm text-headline-sm text-[14px] transition-all bg-surface-container-lowest text-primary shadow-sm font-semibold text-center";
+        tabSignInBtn.className = "flex-1 py-2 rounded-lg font-headline-sm text-headline-sm text-[14px] transition-all text-on-surface-variant hover:text-primary text-center";
+        citizenSignInPane.classList.add('hidden');
+        citizenRegisterPane.classList.remove('hidden');
+      }
+    }
+
+    // Password Toggle Visibility
+    function togglePasswordVisibility(fieldId, iconId) {
+      const field = document.getElementById(fieldId);
+      const icon = document.getElementById(iconId);
+      if (field.type === 'password') {
+        field.type = 'text';
+        icon.textContent = 'visibility_off';
+      } else {
+        field.type = 'password';
+        icon.textContent = 'visibility';
+      }
+    }
+
+    // Dynamic Password Strength Meter
+    function calculatePasswordStrength(pass) {
+      let score = 0;
+      const ruleLength = document.getElementById('ruleLength');
+      const ruleNumber = document.getElementById('ruleNumber');
+      const ruleSpecial = document.getElementById('ruleSpecial');
+      const ruleCase = document.getElementById('ruleCase');
+
+      const bar1 = document.getElementById('strengthBar1');
+      const bar2 = document.getElementById('strengthBar2');
+      const bar3 = document.getElementById('strengthBar3');
+      const text = document.getElementById('strengthText');
+
+      if (pass.length >= 8) {
+        score++;
+        ruleLength.classList.add('text-secondary');
+      } else {
+        ruleLength.classList.remove('text-secondary');
+      }
+
+      if (/\d/.test(pass)) {
+        score++;
+        ruleNumber.classList.add('text-secondary');
+      } else {
+        ruleNumber.classList.remove('text-secondary');
+      }
+
+      if (/[!@#$%^&*(),.?":{}|<>]/.test(pass)) {
+        score++;
+        ruleSpecial.classList.add('text-secondary');
+      } else {
+        ruleSpecial.classList.remove('text-secondary');
+      }
+
+      if (/[a-z]/.test(pass) && /[A-Z]/.test(pass)) {
+        score++;
+        ruleCase.classList.add('text-secondary');
+      } else {
+        ruleCase.classList.remove('text-secondary');
+      }
+
+      if (score <= 1) {
+        text.textContent = 'Weak';
+        text.className = 'font-semibold text-error';
+        bar1.className = 'h-full w-1/3 bg-error transition-all';
+        bar2.className = 'h-full w-1/3 bg-surface-container-high transition-all';
+        bar3.className = 'h-full w-1/3 bg-surface-container-high transition-all';
+      } else if (score === 2 || score === 3) {
+        text.textContent = 'Medium';
+        text.className = 'font-semibold text-secondary';
+        bar1.className = 'h-full w-1/3 bg-secondary transition-all';
+        bar2.className = 'h-full w-1/3 bg-secondary transition-all';
+        bar3.className = 'h-full w-1/3 bg-surface-container-high transition-all';
+      } else {
+        text.textContent = 'Strong (Secure)';
+        text.className = 'font-semibold text-on-tertiary-container';
+        bar1.className = 'h-full w-1/3 bg-on-tertiary-container transition-all';
+        bar2.className = 'h-full w-1/3 bg-on-tertiary-container transition-all';
+        bar3.className = 'h-full w-1/3 bg-on-tertiary-container transition-all';
+      }
+    }
+
+    // Modal Control
+    function openForgotPasswordModal() {
+      document.getElementById('forgotPasswordModal').classList.remove('hidden');
+    }
+    function closeForgotPasswordModal() {
+      document.getElementById('forgotPasswordModal').classList.add('hidden');
+    }
+
+    // Toast Trigger Helper
+    function showToast(title, msg, icon = 'check_circle') {
+      const toast = document.getElementById('actionToast');
+      document.getElementById('toastTitle').textContent = title;
+      document.getElementById('toastMessage').textContent = msg;
+      document.getElementById('toastIcon').textContent = icon;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4200);
+    }
+
+    // Handlers
+    function handleCitizenLogin(e) {
+      e.preventDefault();
+      showToast('Citizen Authenticated', 'Connecting live travel history and active complaints...');
+    }
+
+    function handleRegistrationSubmit(e) {
+      e.preventDefault();
+      const p1 = document.getElementById('regPassword').value;
+      const p2 = document.getElementById('regConfirmPassword').value;
+      if (p1 !== p2) {
+        alert('Passwords do not match. Please re-enter.');
+        return;
+      }
+      showToast('Registration Initiated', 'Verification OTP dispatched to registered mobile.');
+    }
+
+    function handleOfficerLogin(e) {
+      e.preventDefault();
+      showToast('Nodal Clearance Verified', 'Dispatch console loading with Tier-1 triage permissions.', 'verified');
+    }
+
+    function handleOtpFlowTrigger() {
+      showToast('Instant OTP Dispatched', 'Check your phone SMS and official WhatsApp notifications.', 'sms');
+    }
+
+    function handleDigiLockerSSO() {
+      showToast('SSO Handshake', 'Connecting to MeriPehchaan National Identity Gateway...', 'fingerprint');
+    }
+
+    function handlePasswordRecovery(e) {
+      e.preventDefault();
+      closeForgotPasswordModal();
+      showToast('Reset Instructions Transmitted', 'Check your registered mobile SMS and verified inbox.', 'mark_email_read');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface-variant shadow-[0_-1px_8px_rgba(15,30,54,0.03)]"><div class="w-full px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><img alt="GrievanceAI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UyEwPkpea1GzCEA0nVdRs07Bnuh2GAMcpjx4SaLBTYN6saG46ui4mVPDjRuayhP74vx5eBvlbggubduq3Ci6QKwtbBl5oa8Wvfo_gjdjxjWpcpZn4CPA89RfqLAvYaZO05DE-fOFbfIhEAN1wl54h4SclI4AkqyVDx9SiBREMG8wRmjKchFT8jA4MY2wHuWejtTXEeq_z0oTbfI9Y2AsYt_AHtqRbKhu0ZtzL24vL2"/><span class="font-headline-sm text-headline-sm text-primary">GrievanceAI</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Integrated Passenger Grievance Redressal and AI-Powered Dispatch System under the National Transport Infrastructure Commission. Real-time telemetry, rapid escalation, and citizen transparency.</p><div class="flex flex-wrap items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">verified</span>ISO 10002 Certified Redressal</span><span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">shield</span>Government Encrypted</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Emergency &amp; Hotlines</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-xs text-error font-semibold"><span class="material-symbols-outlined text-[16px]">phone_in_talk</span>National Transport: 139</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">medical_services</span>Medical Response: 108</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">local_police</span>Transit Police: 112</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">support_agent</span>Women Safety Helpline: 1091</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Portal &amp; Authentication</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" data-path="citizen-login" href="#">Citizen Portal Login</a></li><li><a class="hover:text-primary transition-colors" data-path="registration" href="#">Citizen Registration</a></li><li><a class="hover:text-primary transition-colors" data-path="forgot-password" href="#">Password Recovery</a></li><li><a class="hover:text-primary transition-colors" data-path="officer-login" href="#">Nodal Officer Sign In</a></li><li><a class="hover:text-primary transition-colors" data-path="track-grievance" href="#">Public Complaint Tracker</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Citizen Governance</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" href="#">Citizen Charter &amp; SLA Times</a></li><li><a class="hover:text-primary transition-colors" href="#">Whistleblower Protection Policy</a></li><li><a class="hover:text-primary transition-colors" href="#">Right to Information (RTI)</a></li><li><a class="hover:text-primary transition-colors" href="#">Privacy Policy &amp; Data Security</a></li><li><a class="hover:text-primary transition-colors" href="#">Terms of Service &amp; Redressal Rules</a></li></ul></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container/50 px-space-lg py-space-md rounded-xl"><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 National Transport Authority. All Rights Reserved.</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm text-on-surface-variant"><span class="inline-flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span>System Operational Status: 99.98%</span><span class="text-outline-variant">|</span><span>Powered by GrievanceAI Governance Engine</span></div></div></div></footer></body></html>

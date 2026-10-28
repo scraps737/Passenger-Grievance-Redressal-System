@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GrievanceAI Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#b8c7e6","on-secondary-fixed":"#001e2f","secondary":"#006591","on-tertiary-container":"#009687","on-background":"#0b1c30","tertiary-fixed":"#71f8e4","primary-fixed":"#d7e3ff","surface-bright":"#f8f9ff","on-primary":"#ffffff","on-primary-container":"#7886a3","outline":"#75777e","surface-tint":"#515f7a","surface-container-high":"#dce9ff","background":"#f8f9ff","tertiary":"#000605","surface-container-highest":"#d3e4fe","secondary-fixed":"#c9e6ff","on-secondary-fixed-variant":"#004c6e","tertiary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","on-surface":"#0b1c30","secondary-container":"#39b8fd","on-tertiary-fixed":"#00201c","inverse-on-surface":"#eaf1ff","on-primary-fixed-variant":"#394761","on-secondary":"#ffffff","on-error":"#ffffff","inverse-surface":"#213145","surface-container":"#e5eeff","surface-dim":"#cbdbf5","inverse-primary":"#b8c7e6","on-error-container":"#93000a","surface-variant":"#d3e4fe","primary":"#000412","secondary-fixed-dim":"#89ceff","on-surface-variant":"#44474d","on-secondary-container":"#004666","surface-container-low":"#eff4ff","on-primary-fixed":"#0c1b33","surface-container-lowest":"#ffffff","primary-container":"#0f1e36","error":"#ba1a1a","outline-variant":"#c5c6ce","on-tertiary-fixed-variant":"#005048","tertiary-container":"#00231e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1.25rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"data-mono":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">commute</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">Grievance<span class="text-secondary">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rail &amp; Transit Ops</span></div></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm">PNR 4829103810: Sync Active</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="overview-dashboard" href="#">Overview</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="my-grievance-tickets" href="#">My Tickets</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="active-journeys" href="#">Active Journeys</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="resolution-proofs" href="#">Resolution Proofs</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="account" href="#">Account</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>SOS Quick</span></button><div class="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center leading-none text-[9px]">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden xl:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">PNR: 4829103810</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-primary text-on-primary shadow-xl" id="saveToast">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-primary" id="toastMessage">Profile updates saved successfully</span>
+</div>
+<div class="w-full px-gutter py-space-lg flex flex-col gap-space-xl max-w-[1440px] mx-auto">
+<!-- Breadcrumb & Page Header -->
+<div class="flex flex-col gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<a class="hover:text-secondary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<a class="hover:text-secondary transition-colors" href="#">Passenger Dashboard</a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Passenger Profile &amp; Settings</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Passenger Profile &amp; Account Settings</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Manage your verified citizen credentials, biometric &amp; OTP authentication, default transit preferences, automated notification channels, and lifetime redressal record.
+          </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors shadow-sm" onclick="triggerDossierDownload()" type="button">
+<span class="material-symbols-outlined text-[18px]">download_for_offline</span>
+<span>Download Dossier (PDF)</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-sm active:scale-95" id="saveProfileBtn" onclick="handleProfileSave()" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">save</span>
+<span>Save Profile Changes</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Top Summary Profile Banner -->
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="h-2 w-full bg-gradient-to-r from-secondary via-secondary-container to-tertiary-fixed"></div>
+<div class="p-space-lg flex flex-col xl:flex-row gap-space-lg justify-between items-start xl:items-center">
+<!-- Identity Summary -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="relative">
+<div class="w-20 h-20 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center font-headline-lg text-headline-lg shadow-sm">
+              PS
+            </div>
+<div class="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm" title="DigiLocker Synced">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center flex-wrap gap-2">
+<span class="font-headline-md text-headline-md text-on-surface">Priya Sharma</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-data-mono text-data-mono font-semibold">WR-84920</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">shield_person</span>
+                DigiLocker Verified Citizen (Aadhaar Linked)
+              </span>
+</div>
+<div class="flex items-center flex-wrap gap-x-3 gap-y-1 text-on-surface-variant font-body-sm text-body-sm">
+<span>Member since Oct 2022</span>
+<span>•</span>
+<span class="text-secondary font-semibold">Priority Escalation Standing</span>
+<span>•</span>
+<span class="font-data-mono text-data-mono text-on-surface font-medium">PNR 4829103810</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Badges Strip -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm w-full xl:w-auto">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Active Journey</span>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-0.5 truncate">12952 Rajdhani</span>
+<span class="font-data-mono text-data-mono text-secondary mt-0.5">B-4 / 28 (Lower)</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Lifetime Grievances</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Logged</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim">0 Rejections</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Resolution Rate</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">100%</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">done_all</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Verified OTP Closures</span>
+</div>
+<div class="p-3 rounded-lg bg-secondary-fixed/50 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant uppercase tracking-wider">Trust Score</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-headline-sm text-headline-sm text-secondary font-bold">99.2%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed">Zero False Claims</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Segmented Navigation Tabs / In-Page Anchor Rail -->
+<div class="sticky top-16 z-40 bg-surface/95 backdrop-blur-md -my-2 py-2">
+<div class="flex items-center gap-1.5 p-1 rounded-xl bg-surface-container-low overflow-x-auto shadow-sm no-scrollbar">
+<a class="tab-pill px-space-md py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold whitespace-nowrap shadow-sm transition-all" href="#personal-info" onclick="setActiveTab(this)">
+          Personal &amp; Contact Info
+        </a>
+<a class="tab-pill px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all" href="#transit-preferences" onclick="setActiveTab(this)">
+          Transit &amp; Journey Preferences
+        </a>
+<a class="tab-pill px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all" href="#notification-channels" onclick="setActiveTab(this)">
+          Notification &amp; Dispatch Rules
+        </a>
+<a class="tab-pill px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all" href="#security-authentication" onclick="setActiveTab(this)">
+          Security &amp; Authentication
+        </a>
+<a class="tab-pill px-space-md py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-all" href="#redressal-ledger" onclick="setActiveTab(this)">
+          Redressal History &amp; Data
+        </a>
+</div>
+</div>
+<!-- SECTION 1: Personal & Contact Information -->
+<section class="flex flex-col gap-space-md scroll-mt-28" id="personal-info">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Personal &amp; Verified Contact Information</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Validated via Ministry of Electronics &amp; IT</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Full Name Card -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Full Legal Name</span>
+<div class="relative mt-2">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/50 font-semibold" type="text" value="Priya Sharma"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-secondary text-[18px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Must match Government Photo ID on record</span>
+</div>
+<!-- Registered Mobile -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Registered Mobile (PNR Linked)</span>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" onclick="promptNumberChange()" type="button">Change Number</button>
+</div>
+<div class="relative mt-2">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-data-mono text-data-mono text-on-surface font-semibold focus:outline-none" readonly="" type="text" value="+91 98291 03810"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-secondary text-[18px]">phonelink_ring</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Primary SMS gateway for Rapid OTP sign-offs</span>
+</div>
+<!-- Primary Email -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Primary Transit Email</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">Verified</span>
+</div>
+<div class="relative mt-2">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/50" type="email" value="priya.sharma@transitmail.gov.in"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[18px]">mail</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Executive redressal dossiers automatically dispatched here</span>
+</div>
+<!-- Emergency Contact -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Emergency Kin / Guardian Contact</span>
+<div class="relative mt-2">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/50 font-medium" type="text" value="+91 94140 88219 (Spouse - Rajiv Sharma)"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-error text-[18px]">contact_emergency</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Dialed automatically if SOS triggered via quick emergency action</span>
+</div>
+<!-- Residential Jurisdiction -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Permanent Base &amp; Railway Zone</span>
+<div class="relative mt-2">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/50" type="text" value="Jaipur, Rajasthan (NWR - North Western)"/>
+<span class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[18px]">location_city</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Default administrative division for compensation routing</span>
+</div>
+<!-- MeriPehchaan & DigiLocker Identity -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">MeriPehchaan / Aadhaar</span>
+<button class="text-secondary font-label-sm text-label-sm font-semibold hover:underline flex items-center gap-1" onclick="simulateSync(this)" type="button">
+<span class="material-symbols-outlined text-[13px]">sync</span>
+<span>Re-Sync</span>
+</button>
+</div>
+<div class="flex items-center justify-between p-2.5 mt-2 rounded-lg bg-surface-container-low">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">badge</span>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">XXXX-XXXX-8921</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Active e-KYC</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Sovereign identity ensures unforgeable grievance escalation weights</span>
+</div>
+</div>
+</section>
+<!-- SECTION 2: Preferred Transport Modes & Commute Baseline -->
+<section class="flex flex-col gap-space-md scroll-mt-28" id="transit-preferences">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Transit Modes &amp; Journey Baseline</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Customizes AI inspection thresholds for your travel</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Interactive Multi-Select Badges -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Primary Travel Modes</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap to configure automatic grievance routing parameters:</span>
+</div>
+<div class="grid grid-cols-2 gap-2" id="travelModesGrid">
+<button class="mode-chip active p-3 rounded-lg bg-primary-container text-on-primary flex flex-col items-start gap-1 transition-all text-left" onclick="toggleMode(this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">train</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+</div>
+<span class="font-label-md text-label-md font-semibold">High-Speed Rail</span>
+<span class="font-label-sm text-label-sm opacity-80">Rajdhani / Vande Bharat</span>
+</button>
+<button class="mode-chip active p-3 rounded-lg bg-primary-container text-on-primary flex flex-col items-start gap-1 transition-all text-left" onclick="toggleMode(this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">subway</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+</div>
+<span class="font-label-md text-label-md font-semibold">Metro Rapid</span>
+<span class="font-label-sm text-label-sm opacity-80">Urban Mass Transit</span>
+</button>
+<button class="mode-chip active p-3 rounded-lg bg-primary-container text-on-primary flex flex-col items-start gap-1 transition-all text-left" onclick="toggleMode(this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">tram</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">check_circle</span>
+</div>
+<span class="font-label-md text-label-md font-semibold">Intercity Express</span>
+<span class="font-label-sm text-label-sm opacity-80">Superfast &amp; Mail</span>
+</button>
+<button class="mode-chip inactive p-3 rounded-lg bg-surface-container-low text-on-surface-variant flex flex-col items-start gap-1 transition-all text-left hover:bg-surface-container" onclick="toggleMode(this)" type="button">
+<div class="flex items-center justify-between w-full">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">directions_bus</span>
+<span class="material-symbols-outlined text-[16px] opacity-30">radio_button_unchecked</span>
+</div>
+<span class="font-label-md text-label-md font-semibold">Regional Bus</span>
+<span class="font-label-sm text-label-sm opacity-70">Inter-State Transit</span>
+</button>
+</div>
+</div>
+<!-- Frequent Rail Corridors -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Frequent Rail Corridors</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-semibold">Gold Tier</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">New Delhi (NDLS) ↔ Mumbai Central (MMCT)</span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">1,384 km</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">airline_stops</span>
+<span>Western Railway Corridor • 8 Journeys in 2024</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold">Jaipur Jn (JP) ↔ Delhi Sarai Rohilla (DEE)</span>
+<span class="font-data-mono text-data-mono text-secondary font-semibold">303 km</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">airline_stops</span>
+<span>North Western Railway • 14 Journeys in 2024</span>
+</div>
+</div>
+</div>
+<button class="text-left font-label-sm text-label-sm text-secondary font-semibold hover:underline flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">add_circle</span>
+<span>Link New Frequent Corridor / Smart Card</span>
+</button>
+</div>
+<!-- Coach & Accessibility Options -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">Default Journey Amenities</span>
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Default Travel Class</span>
+<select class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md focus:outline-none focus:ring-2 focus:ring-secondary/50 font-medium">
+<option selected="">AC 3-Tier / Exec Chair Car</option>
+<option>AC 2-Tier First Class</option>
+<option>AC Chair Car (Shatabdi/VB)</option>
+<option>First AC Coupe</option>
+</select>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Default Berth Choice</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold">Lower Berth</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface">Dietary Classification</span>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold">Vegetarian / Jain Compatible</span>
+</div>
+<div class="pt-2 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Halting Station Assistance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Notify porter squad during intermediate stops</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-body-sm text-body-sm text-on-surface font-semibold">Wheelchair on Arrival</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Pre-reserve Sahayak at platform destination</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: Notification & Real-Time Dispatch Channels -->
+<section class="flex flex-col gap-space-md scroll-mt-28" id="notification-channels">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Automated Escalation &amp; Dispatch Rules</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Real-time alerts via Railway Telemetry System</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Channels Toggle List -->
+<div class="lg:col-span-2 p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Active Transmission Channels</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">GrievanceAI coordinates multi-channel responses during moving coach inspections:</span>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Channel 1 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">sms</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">SMS Urgent OTP &amp; Escalation Alerts</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">Mandatory</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Generates verified closing OTPs directly into conductor &amp; passenger hand devices.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-not-allowed ml-2">
+<input checked="" class="sr-only peer" disabled="" type="checkbox"/>
+<div class="w-11 h-6 bg-secondary rounded-full after:content-[''] after:absolute after:top-[2px] after:left-[22px] after:bg-white after:rounded-full after:h-5 after:w-5"></div>
+</label>
+</div>
+<!-- Channel 2 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md text-on-surface font-bold">WhatsApp AI Dispatch Bot</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Live Squad GPS</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live streaming technician coach proximity &amp; photo resolution preview cards.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-2">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Channel 3 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">notifications_active</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Browser Audio Chime &amp; Push Prompts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant audio chime when coach supervisor requires ticket clarification.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-2">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Channel 4 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Email Audit Dossiers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Official redressal summary PDF generated with DRM stamp after each journey.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-2">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Channel 5 -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container text-on-surface flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">DigiLocker Redressal Certificate Auto-Push</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Issues digitally signed Railway Ombudsman Redressal certificates into citizen vault.</span>
+</div>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-2">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-surface-container-highest peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+</div>
+<!-- Alert Timing Radios -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Escalation Timing Protocol</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Select how technician arrival notices are communicated during sleeping hours:</span>
+<div class="flex flex-col gap-3 mt-2">
+<label class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-start gap-3 transition-colors">
+<input checked="" class="mt-1 text-secondary focus:ring-secondary" name="timingProtocol" type="radio" value="24x7"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">24x7 In-Transit Real-Time</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended for active journeys. Immediate wake-up call/SMS if high priority fix arrives.</span>
+</div>
+</label>
+<label class="p-3 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer flex items-start gap-3 transition-colors">
+<input class="mt-1 text-secondary focus:ring-secondary" name="timingProtocol" type="radio" value="quiet"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Quiet Rest Mode (22:00 - 06:00)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Mute non-safety alerts during night hours. Escalation timers hold until 06:00 IST.</span>
+</div>
+</label>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-secondary-fixed/40 mt-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">info</span>
+<span class="font-label-sm text-label-sm text-on-secondary-fixed-variant">Safety-critical warnings (SOS, Fire, Brake checks) bypass all mute protocols.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: Password, Security & Sovereign Data Management -->
+<section class="flex flex-col gap-space-md scroll-mt-28" id="security-authentication">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Password, Security &amp; Sovereign Data Management</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Conforms with DPDP Act 2023 Guidelines</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Change Password Card -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Change Password</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">lock_reset</span>
+</div>
+<form class="flex flex-col gap-3" onsubmit="event.preventDefault(); updatePassword();">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Current Password</label>
+<div class="relative">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/50 font-medium" id="currPass" type="password" value="SuperSecret123!"/>
+<button class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[18px]" onclick="togglePasswordVisibility('currPass')" type="button">visibility</button>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">New Password</label>
+<div class="relative">
+<input class="w-full px-3 py-2 pr-9 rounded-lg bg-surface-container-low font-body-md text-body-md text-on-surface focus:outline-none focus:ring-2 focus:ring-secondary/50 font-medium" id="newPass" oninput="checkPassStrength(this.value)" placeholder="At least 12 characters" type="password"/>
+<button class="material-symbols-outlined absolute right-2.5 top-2.5 text-on-surface-variant text-[18px]" onclick="togglePasswordVisibility('newPass')" type="button">visibility</button>
+</div>
+</div>
+<!-- Password Strength Bar -->
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between text-[11px] font-semibold text-on-surface-variant">
+<span>Security Complexity</span>
+<span class="text-secondary" id="strengthLabel">Strong (4/4)</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden flex gap-1">
+<div class="w-1/4 h-full bg-secondary rounded-full"></div>
+<div class="w-1/4 h-full bg-secondary rounded-full"></div>
+<div class="w-1/4 h-full bg-secondary rounded-full"></div>
+<div class="w-1/4 h-full bg-secondary rounded-full"></div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Include uppercase, number, symbol &amp; 12+ chars</span>
+</div>
+<button class="mt-2 w-full py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-colors shadow-sm" type="submit">
+              Update Transit Credentials
+            </button>
+</form>
+</div>
+<!-- 2FA & Active Sessions -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Two-Factor Authentication</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">TOTP Authenticator &amp; SMS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hardware &amp; App verification synced</span>
+</div>
+</div>
+<button class="font-label-sm text-label-sm text-secondary hover:underline font-semibold" onclick="alert('Configuration key copied to clipboard.')" type="button">Re-pair</button>
+</div>
+<div class="flex flex-col gap-2 mt-2">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase tracking-wider">Active Device Sessions</span>
+<button class="font-label-sm text-label-sm text-error hover:underline font-semibold" onclick="logoutAllOthers()" type="button">Terminate Other Sessions</button>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">laptop_mac</span>
+<div class="flex flex-col w-full">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Chrome on macOS (Current)</span>
+<span class="px-1.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm">Active Now</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant mt-0.5">IP: 103.21.244.12 • New Delhi Rail WiFi</span>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low flex items-start gap-3">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] shrink-0 mt-0.5">smartphone</span>
+<div class="flex flex-col w-full">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold">GrievanceAI Android App</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">3h ago</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface-variant mt-0.5">IRCTC SSO • Vadodara Cell Tower</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Privacy & DPDP Act 2023 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Data Sovereignty &amp; Privacy</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">policy</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Under the Digital Personal Data Protection Act 2023, you hold the right to export full grievance telemetry or petition for data anonymization.
+            </p>
+<div class="flex flex-col gap-2 mt-2">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center justify-between transition-colors shadow-sm" onclick="exportData('csv')" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">table_chart</span>
+<span>Export Grievance Archive (CSV / JSON)</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+<button class="w-full py-2.5 px-3 rounded-lg bg-error-container/40 hover:bg-error-container text-on-error-container font-label-md text-label-md flex items-center justify-between transition-colors shadow-sm" onclick="confirmAnonymize()" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-error text-[18px]">person_remove</span>
+<span>Request Account Anonymization</span>
+</div>
+<span class="material-symbols-outlined text-[18px]">warning</span>
+</button>
+</div>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low mt-4 flex items-start gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px] shrink-0 mt-0.5">lock</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Statutory records associated with safety audits are retained in encrypted cold vaults for 36 months as required by Railway Board.</span>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: Synchronized Redressal History Snapshot -->
+<section class="flex flex-col gap-space-md scroll-mt-28" id="redressal-ledger">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-5 rounded-full bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Synchronized Redressal History Snapshot</h2>
+</div>
+<a class="font-label-md text-label-md text-secondary hover:text-primary font-bold flex items-center gap-1" href="#">
+<span>View All 12 Tickets in Complaint Ledger</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<div class="overflow-hidden rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Ticket Ref</th>
+<th class="py-3 px-4">Grievance Category</th>
+<th class="py-3 px-4">Train &amp; Coach</th>
+<th class="py-3 px-4">Filing Stamp</th>
+<th class="py-3 px-4">Escalation Status</th>
+<th class="py-3 px-4 text-right">Redressal Metric</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low font-body-sm text-body-sm text-on-surface">
+<!-- Item 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-secondary">
+                  GAI-2025-8831
+                </td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-semibold">AC Thermostat Failure (B4-28)</span>
+</div>
+</td>
+<td class="py-3.5 px-4">12952 Tejas Rajdhani (B-4)</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Today, 14:22 IST</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px] animate-spin">sync</span>
+                    In Progress
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-mono text-data-mono font-semibold text-secondary">
+                  12m Active SLA
+                </td>
+</tr>
+<!-- Item 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-secondary">
+                  GAI-2025-8819
+                </td>
+<td class="py-3.5 px-4">
+<span class="font-semibold">Bio-Toilet Flush Malfunction</span>
+</td>
+<td class="py-3.5 px-4">12952 Tejas Rajdhani (B-4)</td>
+<td class="py-3.5 px-4 text-on-surface-variant">Today, 11:05 IST</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]">build</span>
+                    Under Inspection
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-mono text-data-mono text-on-surface-variant">
+                  Squad Dispatched
+                </td>
+</tr>
+<!-- Item 3 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">
+                  GAI-2025-8742
+                </td>
+<td class="py-3.5 px-4">
+<span class="font-semibold">Non-provision of Clean Linen</span>
+</td>
+<td class="py-3.5 px-4">12958 Swarna Jayanti Rajdhani</td>
+<td class="py-3.5 px-4 text-on-surface-variant">12 Jan 2025</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Resolved
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-mono text-data-mono font-semibold text-tertiary-fixed-dim">
+                  11m Verified TAT
+                </td>
+</tr>
+<!-- Item 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3.5 px-4 font-data-mono text-data-mono font-bold text-on-surface">
+                  GAI-2025-8604
+                </td>
+<td class="py-3.5 px-4">
+<span class="font-semibold">Pantry Overcharging (Rail Neer)</span>
+</td>
+<td class="py-3.5 px-4">12015 Ajmer Shatabdi (C-2)</td>
+<td class="py-3.5 px-4 text-on-surface-variant">04 Dec 2024</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                    Resolved
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right font-data-mono text-data-mono font-semibold text-tertiary-fixed-dim">
+                  ₹5 Instant Refund
+                </td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Bottom Actions & Compliance Seal -->
+<div class="p-space-lg rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary-container text-tertiary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Encrypted Sovereign Railway Redressal System</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All passenger preferences, contact coordinates, and biometric tokens are stored strictly within CERT-In accredited infrastructure.</span>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="resetDefaults()" type="button">
+          Restore Defaults
+        </button>
+<button class="px-space-lg py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold hover:bg-primary transition-all shadow-sm" onclick="handleProfileSave()" type="button">
+          Save &amp; Commit
+        </button>
+</div>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+    function showNotification(text) {
+      const toast = document.getElementById('saveToast');
+      const toastMessage = document.getElementById('toastMessage');
+      if (toast && toastMessage) {
+        toastMessage.textContent = text;
+        toast.classList.remove('opacity-0', 'translate-y-24', 'pointer-events-none');
+        toast.classList.add('opacity-100', 'translate-y-0');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'translate-y-24', 'pointer-events-none');
+          toast.classList.remove('opacity-100', 'translate-y-0');
+        }, 3200);
+      }
+    }
+
+    function handleProfileSave() {
+      const btn = document.getElementById('saveProfileBtn');
+      if (btn) {
+        btn.classList.add('opacity-75');
+        setTimeout(() => {
+          btn.classList.remove('opacity-75');
+          showNotification('Profile & dispatch rules synchronized across Rail AI Network');
+        }, 400);
+      }
+    }
+
+    function triggerDossierDownload() {
+      showNotification('Generating certified Redressal Dossier PDF...');
+      setTimeout(() => {
+        showNotification('Dossier generated with Digital Key signature: SHA-256 Verified');
+      }, 1500);
+    }
+
+    function setActiveTab(el) {
+      document.querySelectorAll('.tab-pill').forEach(pill => {
+        pill.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+        pill.classList.add('text-on-surface-variant');
+      });
+      el.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+      el.classList.remove('text-on-surface-variant');
+    }
+
+    function toggleMode(btn) {
+      const isCurrentlyActive = btn.classList.contains('active');
+      if (isCurrentlyActive) {
+        btn.classList.remove('active', 'bg-primary-container', 'text-on-primary');
+        btn.classList.add('inactive', 'bg-surface-container-low', 'text-on-surface-variant');
+        const icon = btn.querySelector('.material-symbols-outlined:last-child');
+        if (icon) {
+          icon.textContent = 'radio_button_unchecked';
+          icon.classList.remove('text-tertiary-fixed');
+          icon.classList.add('opacity-30');
+        }
+      } else {
+        btn.classList.add('active', 'bg-primary-container', 'text-on-primary');
+        btn.classList.remove('inactive', 'bg-surface-container-low', 'text-on-surface-variant');
+        const icon = btn.querySelector('.material-symbols-outlined:last-child');
+        if (icon) {
+          icon.textContent = 'check_circle';
+          icon.classList.add('text-tertiary-fixed');
+          icon.classList.remove('opacity-30');
+        }
+      }
+    }
+
+    function simulateSync(button) {
+      const originalText = button.innerHTML;
+      button.innerHTML = '<span class="material-symbols-outlined text-[13px] animate-spin">sync</span><span>Syncing...</span>';
+      setTimeout(() => {
+        button.innerHTML = originalText;
+        showNotification('DigiLocker Aadhaar e-KYC status refreshed: Valid through 2026');
+      }, 1200);
+    }
+
+    function promptNumberChange() {
+      const newNum = prompt("Enter new mobile number for Railway PNR OTP verification (+91):", "+91 ");
+      if (newNum && newNum.trim().length > 5) {
+        showNotification('Validation OTP dispatched to ' + newNum);
+      }
+    }
+
+    function togglePasswordVisibility(fieldId) {
+      const field = document.getElementById(fieldId);
+      if (field) {
+        field.type = field.type === 'password' ? 'text' : 'password';
+      }
+    }
+
+    function checkPassStrength(val) {
+      const label = document.getElementById('strengthLabel');
+      if (!label) return;
+      if (val.length === 0) {
+        label.textContent = 'Not Entered';
+      } else if (val.length < 8) {
+        label.textContent = 'Weak (1/4)';
+      } else if (val.length < 12) {
+        label.textContent = 'Moderate (2/4)';
+      } else {
+        label.textContent = 'Strong (4/4)';
+      }
+    }
+
+    function updatePassword() {
+      showNotification('Transit password successfully updated across web & mobile SSO');
+      const newPass = document.getElementById('newPass');
+      if (newPass) newPass.value = '';
+    }
+
+    function logoutAllOthers() {
+      if (confirm('Terminate all active sessions except this Mac desktop?')) {
+        showNotification('Terminated 1 active session (Vadodara Android client signed off)');
+      }
+    }
+
+    function exportData(type) {
+      showNotification('Assembling DPDP archive in encrypted .' + type.toUpperCase() + ' format...');
+    }
+
+    function confirmAnonymize() {
+      if (confirm('Initiate formal PII anonymization request under DPDP Act? Redressal tickets will be stripped of citizen identifiers after the mandatory statutory window.')) {
+        showNotification('Formal anonymization petition logged. Reference ID: DPDP-REG-4890');
+      }
+    }
+
+    function resetDefaults() {
+      showNotification('Transit preferences restored to standard passenger defaults');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col md:flex-row items-center gap-space-md text-center md:text-left"><div class="flex items-center gap-space-xs text-error font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">call</span><span>Emergency Railway Helpline: Dial 139 (24x7)</span></div><span class="hidden md:inline text-outline-variant">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Transit Grievance Redressal &amp; AI Escalation Monitoring Cell</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 GrievanceAI National Transit Authority.</span><a class="hover:text-on-surface transition-colors" data-path="account" href="#">Security &amp; SLA Terms</a></div></div></footer></body></html>

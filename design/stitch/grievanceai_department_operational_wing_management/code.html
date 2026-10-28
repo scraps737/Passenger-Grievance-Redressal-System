@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GrievanceAI Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#b8c7e6","on-secondary-fixed":"#001e2f","secondary":"#006591","on-tertiary-container":"#009687","on-background":"#0b1c30","tertiary-fixed":"#71f8e4","primary-fixed":"#d7e3ff","surface-bright":"#f8f9ff","on-primary":"#ffffff","on-primary-container":"#7886a3","outline":"#75777e","surface-tint":"#515f7a","surface-container-high":"#dce9ff","background":"#f8f9ff","tertiary":"#000605","surface-container-highest":"#d3e4fe","secondary-fixed":"#c9e6ff","on-secondary-fixed-variant":"#004c6e","tertiary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","on-surface":"#0b1c30","secondary-container":"#39b8fd","on-tertiary-fixed":"#00201c","inverse-on-surface":"#eaf1ff","on-primary-fixed-variant":"#394761","on-secondary":"#ffffff","on-error":"#ffffff","inverse-surface":"#213145","surface-container":"#e5eeff","surface-dim":"#cbdbf5","inverse-primary":"#b8c7e6","on-error-container":"#93000a","surface-variant":"#d3e4fe","primary":"#000412","secondary-fixed-dim":"#89ceff","on-surface-variant":"#44474d","on-secondary-container":"#004666","surface-container-low":"#eff4ff","on-primary-fixed":"#0c1b33","surface-container-lowest":"#ffffff","primary-container":"#0f1e36","error":"#ba1a1a","outline-variant":"#c5c6ce","on-tertiary-fixed-variant":"#005048","tertiary-container":"#00231e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1.25rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"data-mono":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">commute</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">Grievance<span class="text-secondary">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rail &amp; Transit Ops</span></div></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm">PNR 4829103810: Sync Active</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="overview" href="#">Overview</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="queue-ledger" href="#">Queue Ledger</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="escalation-assignment" href="#">Escalation &amp; Assignment</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="my-tickets" href="#">My Tickets</a><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="departments" href="#">Departments</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="resolution-proofs" href="#">Resolution Proofs</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="user-management" href="#">Users &amp; Roles</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="account" href="#">Account</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>SOS Quick</span></button><div class="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center leading-none text-[9px]">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden xl:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">PNR: 4829103810</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Operational Breadcrumb & Top Bar -->
+<div class="w-full px-gutter py-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md bg-surface-container-lowest shadow-sm">
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Transit Command</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span>Administrative Governance</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-secondary font-semibold">Department &amp; Operational Wings Directory</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm pt-1">
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>SLA Watchdog Engine: Synced (WR-ZONE)</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">schedule</span>
+<span>Live Shift: General &amp; Night Roster (Shift 1 &amp; 2)</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span>Real-time Capacity: 84% Load</span>
+</div>
+</div>
+</div>
+<!-- Top Action CTAs -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">balance</span>
+<span>Rebalance Squad Allocations</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high text-on-surface hover:bg-surface-container-highest transition-colors font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span>Export Departmental Audit</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 transition-opacity font-label-md text-label-md flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Commission New Wing / Cell</span>
+</button>
+</div>
+</div>
+<div class="w-full px-gutter py-space-lg flex flex-col gap-space-xl">
+<!-- High-Level KPI Command Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operational Infrastructure</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Active Technical Wings</h3>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">corporate_fare</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">6</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Operational Sectors</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>24 Zonal Divisions • 100% Geo-fenced Coverage</span>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Human Resources &amp; Field</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Assigned Field Staff</h3>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">groups</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">2,520</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Total Personnel</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">engineering</span>
+<span>412 On-Duty Techs • 86 Supervisors • 94.2% Roster</span>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Real-Time In-Flight</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Live Open Workload</h3>
+</div>
+<div class="w-10 h-10 rounded-lg bg-error-container flex items-center justify-center text-on-error-container">
+<span class="material-symbols-outlined text-[24px]">pending_actions</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-error">318</span>
+<span class="font-label-md text-label-md text-on-surface-variant">Active Grievances</span>
+</div>
+<div class="flex items-center gap-1.5 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-error font-semibold">18 Breached</span>
+<span>42 SLA Watchlist Imminent</span>
+</div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Service Delivery Standard</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Composite SLA Compliance</h3>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">check_circle</span>
+</div>
+</div>
+<div class="mt-4 flex flex-col">
+<div class="flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg text-on-surface">96.4%</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+1.8% vs Statutory Norm</span>
+</div>
+<div class="flex items-center gap-1 mt-2 text-on-surface-variant font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">timelapse</span>
+<span>18.6m MTTR composite across 24 routes</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Filter and Control Bar -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 bg-surface-container-low rounded-lg text-on-surface font-body-md text-body-md focus:outline-none focus:bg-surface-container placeholder:text-on-surface-variant/70" id="deptSearchInput" placeholder="Search department name, nodal officer, depot, or code..." type="text"/>
+</div>
+<!-- Filters & Toggles -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Division Select -->
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">location_on</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer" id="divisionSelect">
+<option value="all">Western Railway (HQ Mumbai)</option>
+<option value="ratlam">Ratlam Division</option>
+<option value="vadodara">Vadodara Division</option>
+<option value="ahmedabad">Ahmedabad Division</option>
+</select>
+</div>
+<!-- Saturation Select -->
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">filter_alt</span>
+<select class="bg-transparent text-on-surface font-label-md text-label-md focus:outline-none cursor-pointer" id="saturationFilter">
+<option value="all">All Saturation Levels</option>
+<option value="critical">Critical Overload (&gt;85%)</option>
+<option value="moderate">Moderate Load (50-85%)</option>
+<option value="optimal">Optimal Capacity (&lt;50%)</option>
+</select>
+</div>
+<!-- View Mode Segmented Switcher -->
+<div class="flex bg-surface-container p-1 rounded-lg">
+<button class="px-3 py-1.5 rounded bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm flex items-center gap-1.5 transition-all" id="toggleGridBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">grid_view</span>
+<span class="hidden sm:inline">Grid Analytics</span>
+</button>
+<button class="px-3 py-1.5 rounded text-on-surface-variant hover:text-on-surface font-label-md text-label-md flex items-center gap-1.5 transition-all" id="toggleTableBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">table_rows</span>
+<span class="hidden sm:inline">Operational Table</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Department Cards Grid (Expanded Analytics) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-lg" id="departmentGridView">
+<!-- Card 1: Electrical & HVAC -->
+<div class="dept-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between" data-dept="electrical" data-saturation="88">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">electric_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">WR-DEPT-ELEC-01</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Electrical &amp; HVAC Systems</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SSE / Power &amp; AC RPU Units</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase tracking-wide font-bold">88% Load</span>
+</div>
+<!-- Nodal Head & Esc Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-label-sm">RM</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Er. R. S. Murthy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SSE Electrical, Ratlam/Vadodara</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-data-mono text-data-mono">HH-4091</span>
+</div>
+</div>
+<!-- Personnel & Live Load Stats -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Personnel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">680</span>
+<span class="font-label-sm text-label-sm text-secondary">84 Active Techs</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Queue</span>
+<span class="font-headline-sm text-headline-sm text-error">88</span>
+<span class="font-label-sm text-label-sm text-error">15 High Priority</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MTTR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">14.8m</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">97.2% On-Time</span>
+</div>
+</div>
+<!-- Primary Incident Focus -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Incident Stream</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Roof Mounted AC RPU</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Contactor 42B Trips</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Berth Sockets</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Vestibule Lighting</span>
+</div>
+</div>
+<!-- Performance & CSAT Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">4.74 CSAT</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(50,634 YTD)</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">2 SLA Breaches Imminent</span>
+</div>
+</div>
+<!-- Quick Actions Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-secondary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Ticket Queue (88)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Reassign Techs</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Adjust SLA</button>
+</div>
+</div>
+</div>
+<!-- Card 2: On-Board Housekeeping Services (OBHS) -->
+<div class="dept-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between" data-dept="obhs" data-saturation="62">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">cleaning_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">WR-DEPT-OBHS-02</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">On-Board Housekeeping</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">OBHS &amp; EnHM Sanitation Cell</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wide font-bold">62% Load</span>
+</div>
+<!-- Nodal Head & Esc Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-label-sm">MF</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mohammed Farooq</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">EnHM Chief Supervisor, WR</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-data-mono text-data-mono">HH-1182</span>
+</div>
+</div>
+<!-- Personnel & Live Load Stats -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Personnel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">740</span>
+<span class="font-label-sm text-label-sm text-secondary">62 Rake Squads</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Queue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">74</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">8 High Priority</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MTTR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">12.4m</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">98.1% On-Time</span>
+</div>
+</div>
+<!-- Primary Incident Focus -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Incident Stream</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Bio-toilet Blockages</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Cabin Spray Sanitation</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Trash Disposal</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Soap Restock</span>
+</div>
+</div>
+<!-- Performance & CSAT Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">4.68 CSAT</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(38,720 YTD)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">4 SLA Warning Watch</span>
+</div>
+</div>
+<!-- Quick Actions Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-secondary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Cleanliness Slips</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">Dispatch Deep Clean</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Manage Rosters</button>
+</div>
+</div>
+</div>
+<!-- Card 3: Mechanical, Carriage & Wagon (C&W) -->
+<div class="dept-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between" data-dept="mechanical" data-saturation="76">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">handyman</span>
+</div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">WR-DEPT-CW-03</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Mechanical, C&amp;W Traction</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Carriage &amp; Wagon Fixtures</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wide font-bold">76% Load</span>
+</div>
+<!-- Nodal Head & Esc Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-label-sm">SD</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Smt. Sunita Deshmukh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sr. DME Operations, Zonal Div</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-data-mono text-data-mono">HH-5219</span>
+</div>
+</div>
+<!-- Personnel & Live Load Stats -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Personnel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">490</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">34 Squads</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Queue</span>
+<span class="font-headline-sm text-headline-sm text-error">64</span>
+<span class="font-label-sm text-label-sm text-error">16 Overdue Breaches</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MTTR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">21.6m</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">94.8% On-Time</span>
+</div>
+</div>
+<!-- Primary Incident Focus -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Incident Stream</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Berth Latch Lock Mechanism</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Window Shutter Jams</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Vestibule Bellows</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Brake Sensor Sync</span>
+</div>
+</div>
+<!-- Performance & CSAT Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">4.48 CSAT</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(23,828 YTD)</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">Depot Escalation Active</span>
+</div>
+</div>
+<!-- Quick Actions Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-error hover:opacity-80 font-label-md text-label-md flex items-center gap-1 transition-opacity" type="button">
+<span>Review Breaches (16)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Depot Handoff</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Inspection Log</button>
+</div>
+</div>
+</div>
+<!-- Card 4: IRCTC Catering & Pantry -->
+<div class="dept-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between" data-dept="catering" data-saturation="30">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">restaurant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">WR-DEPT-CAT-04</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">IRCTC Catering &amp; Pantry</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Hospitality &amp; Vendor Quality</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm uppercase tracking-wide font-bold">30% Optimal</span>
+</div>
+<!-- Nodal Head & Esc Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-label-sm">RV</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Rajesh Verma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Zonal Catering Inspector</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-data-mono text-data-mono">HH-8321</span>
+</div>
+</div>
+<!-- Personnel & Live Load Stats -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Personnel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">320</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">22 Flying Squads</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Queue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">38</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">6 High Priority</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MTTR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">18.2m</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">95.4% On-Time</span>
+</div>
+</div>
+<!-- Primary Incident Focus -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Incident Stream</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Overcharging Bill Audits</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Food Hygiene &amp; Temp</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Rail Neer Seals</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Meal Delay</span>
+</div>
+</div>
+<!-- Performance & CSAT Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">4.52 CSAT</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(20,850 YTD)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">1 SLA Warning Watch</span>
+</div>
+</div>
+<!-- Quick Actions Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-secondary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>Food Safety Log</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-error-container text-on-error-container font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">Impose Fine</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Reassign</button>
+</div>
+</div>
+</div>
+<!-- Card 5: Railway Protection Force (RPF) -->
+<div class="dept-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between" data-dept="rpf" data-saturation="42">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">WR-DEPT-RPF-05</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Railway Protection Force</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">RPF &amp; Rapid Transit Medical Cell</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wide font-bold">42% Optimal</span>
+</div>
+<!-- Nodal Head & Esc Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-label-sm">VS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Vikramaditya Singh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">RPF Security Escort Inspector</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-data-mono text-data-mono">HH-9901</span>
+</div>
+</div>
+<!-- Personnel & Live Load Stats -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Personnel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">410</span>
+<span class="font-label-sm text-label-sm text-secondary">18 Armed Squads</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Queue</span>
+<span class="font-headline-sm text-headline-sm text-secondary">12</span>
+<span class="font-label-sm text-label-sm text-error font-semibold">1 Active Distress SOS</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MTTR</span>
+<span class="font-headline-sm text-headline-sm text-secondary">6.1m</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">99.4% On-Time</span>
+</div>
+</div>
+<!-- Primary Incident Focus -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Incident Stream</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Women Passenger Safety</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Baggage Interdiction</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Medical Triage (AED)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Unauthorized Hawkers</span>
+</div>
+</div>
+<!-- Performance & CSAT Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">4.92 CSAT</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(10,425 YTD)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Exemplary Redressal</span>
+</div>
+</div>
+<!-- Quick Actions Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-error hover:opacity-80 font-label-md text-label-md flex items-center gap-1 transition-opacity" type="button">
+<span class="material-symbols-outlined text-[16px]">e911_emergency</span>
+<span>Broadcast SOS Alert</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Station Doctors</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">RPF Roster</button>
+</div>
+</div>
+</div>
+<!-- Card 6: Commercial & Ticketing -->
+<div class="dept-card bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col justify-between" data-dept="commercial" data-saturation="52">
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[28px]">confirmation_number</span>
+</div>
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface-variant font-semibold">WR-DEPT-COM-06</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Commercial &amp; Ticketing</h4>
+<span class="font-label-sm text-label-sm text-on-surface-variant">TTE Coordination &amp; Concessions</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase tracking-wide font-bold">52% Load</span>
+</div>
+<!-- Nodal Head & Esc Details -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface text-label-sm">IS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Inspector Saxena</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Chief Commercial Controller</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-data-mono text-data-mono">HH-2044</span>
+</div>
+</div>
+<!-- Personnel & Live Load Stats -->
+<div class="grid grid-cols-3 gap-2 py-1">
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Personnel</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">280</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">36 Squads</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Open Queue</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">42</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 High Priority</span>
+</div>
+<div class="flex flex-col bg-surface-container p-2 rounded-lg text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MTTR</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">28.5m</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">94.0% On-Time</span>
+</div>
+</div>
+<!-- Primary Incident Focus -->
+<div class="flex flex-col gap-1.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Primary Incident Stream</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Berth Reallocations</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Handicap Concession</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Refund Dispute Desk</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">Duplicate Seat Claims</span>
+</div>
+</div>
+<!-- Performance & CSAT Bar -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[18px] text-secondary">star</span>
+<span class="font-label-md text-label-md font-bold">4.41 CSAT</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">(4,467 YTD)</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Depot Sync Latency: Low</span>
+</div>
+</div>
+<!-- Quick Actions Footer -->
+<div class="px-space-lg py-space-md bg-surface-container-low flex items-center justify-between">
+<button class="text-secondary hover:text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span>TTE Handheld Sync</span>
+<span class="material-symbols-outlined text-[16px]">sync</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Arbitration Desk</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" type="button">Audit Swaps</button>
+</div>
+</div>
+</div>
+</div>
+<!-- High-Density Operational Table View (Hidden by default or switchable) -->
+<div class="hidden bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden" id="departmentTableView">
+<div class="p-space-lg flex items-center justify-between bg-surface-container-low">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Comparative Departmental Scorecard &amp; SLA Ledger</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live telemetry cross-tabulation across all active railway technical commands</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">view_column</span>
+<span>Configure Columns</span>
+</button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-4">Department / Wing</th>
+<th class="py-3 px-4">Nodal Escalation Lead</th>
+<th class="py-3 px-4">Roster Deployment</th>
+<th class="py-3 px-4">Live Workload &amp; Status</th>
+<th class="py-3 px-4">SLA Compliance</th>
+<th class="py-3 px-4">Avg MTTR</th>
+<th class="py-3 px-4">CSAT Trust</th>
+<th class="py-3 px-4">Risk State</th>
+<th class="py-3 px-4 text-right">Quick Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container font-body-sm text-body-sm">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">electric_bolt</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Electrical &amp; HVAC</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">WR-DEPT-ELEC-01</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Er. R. S. Murthy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SSE / HH-4091</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">680 Total</span>
+<span class="font-label-sm text-label-sm text-secondary">84 On-Duty Techs • 48 Squads</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">88 Open</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">15 Critical</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">97.2%</span>
+<span class="text-error font-medium">2 Breaches</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 97.2%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-bold">14.8 min</span>
+<span class="text-secondary font-label-sm text-label-sm">-3.2m vs SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>4.74</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm uppercase font-bold">Critical (88%)</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">cleaning_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Housekeeping (OBHS)</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">WR-DEPT-OBHS-02</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Mohammed Farooq</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">EnHM Sup / HH-1182</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">740 Total</span>
+<span class="font-label-sm text-label-sm text-secondary">120 Leads • 62 Squads</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">74 Open</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">8 High</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">98.1%</span>
+<span class="text-secondary font-medium">0 Breaches</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 98.1%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-bold">12.4 min</span>
+<span class="text-secondary font-label-sm text-label-sm">-4.6m vs SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>4.68</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase font-bold">Moderate (62%)</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">handyman</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Mechanical, C&amp;W</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">WR-DEPT-CW-03</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Smt. Sunita Deshmukh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Sr. DME / HH-5219</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">490 Total</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">56 Bogie Techs • 34 Squads</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">64 Open</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">16 Overdue</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">94.8%</span>
+<span class="text-error font-medium">16 Breaches</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 94.8%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-bold">21.6 min</span>
+<span class="text-error font-label-sm text-label-sm">+3.6m vs SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>4.48</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase font-bold">High (76%)</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">restaurant</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">IRCTC Catering</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">WR-DEPT-CAT-04</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Rajesh Verma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Insp / HH-8321</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">320 Total</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Quality Off. • 22 Squads</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">38 Open</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">6 High</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">95.4%</span>
+<span class="text-secondary font-medium">1 Breach</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 95.4%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-bold">18.2 min</span>
+<span class="text-secondary font-label-sm text-label-sm">-1.8m vs SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>4.52</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm uppercase font-bold">Optimal (30%)</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">RPF Security &amp; Medical</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">WR-DEPT-RPF-05</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Vikramaditya Singh</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Escort Insp / HH-9901</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">410 Total</span>
+<span class="font-label-sm text-label-sm text-secondary">6 Doctors • 18 Squads</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">12 Open</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm">1 SOS Active</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">99.4%</span>
+<span class="text-secondary font-medium">0 Breaches</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 99.4%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-secondary font-bold">6.1 min</span>
+<span class="text-secondary font-label-sm text-label-sm">-8.9m vs SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>4.92</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase font-bold">Optimal (42%)</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+<!-- Row 6 -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">confirmation_number</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Commercial &amp; Ticketing</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant text-[11px]">WR-DEPT-COM-06</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-medium">Inspector Saxena</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CCC / HH-2044</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">280 Total</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 TTE Liaisons • 36 Squads</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-on-surface font-bold">42 Open</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm">5 High</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1 w-32">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">94.0%</span>
+<span class="text-error font-medium">0 Breaches</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 94.0%"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-bold">28.5 min</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">+1.5m vs SLA</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-1 font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span>4.41</span>
+</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm uppercase font-bold">Moderate (52%)</span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant" type="button">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Strategic Intelligence Panels (Bottom Section) -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg">
+<!-- Panel 1: Workload Saturation Heatmap -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Squad Capacity &amp; Peak Heatmap</h4>
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-secondary font-semibold">Live 24h</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hourly grievance velocity across major technical sections</span>
+</div>
+<div class="flex flex-col gap-3 my-4">
+<!-- ELEC -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">Electrical HVAC (Ratlam/BCT)</span>
+<span class="text-error font-bold">88% Load</span>
+</div>
+<div class="grid grid-cols-6 gap-1 h-3 rounded overflow-hidden">
+<div class="bg-surface-container rounded-sm" title="00:00 - 04:00: Low"></div>
+<div class="bg-surface-container rounded-sm" title="04:00 - 08:00: Low"></div>
+<div class="bg-secondary rounded-sm" title="08:00 - 12:00: Med"></div>
+<div class="bg-error rounded-sm" title="12:00 - 16:00: High Surge"></div>
+<div class="bg-error rounded-sm" title="16:00 - 20:00: Peak Rush"></div>
+<div class="bg-secondary rounded-sm" title="20:00 - 00:00: Med"></div>
+</div>
+</div>
+<!-- OBHS -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">OBHS Sanitation (Long Route)</span>
+<span class="text-secondary font-bold">62% Load</span>
+</div>
+<div class="grid grid-cols-6 gap-1 h-3 rounded overflow-hidden">
+<div class="bg-surface-container rounded-sm"></div>
+<div class="bg-error rounded-sm" title="Morning wash rush"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-surface-container rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+</div>
+</div>
+<!-- C&W -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">C&amp;W Mechanical Bogie Rake</span>
+<span class="text-secondary font-bold">76% Load</span>
+</div>
+<div class="grid grid-cols-6 gap-1 h-3 rounded overflow-hidden">
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-surface-container rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+<div class="bg-error rounded-sm"></div>
+<div class="bg-secondary rounded-sm"></div>
+</div>
+</div>
+<!-- Catering -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">IRCTC Catering &amp; Meal Services</span>
+<span class="text-on-surface-variant font-bold">30% Optimal</span>
+</div>
+<div class="grid grid-cols-6 gap-1 h-3 rounded overflow-hidden">
+<div class="bg-surface-container rounded-sm"></div>
+<div class="bg-secondary rounded-sm" title="Breakfast slot"></div>
+<div class="bg-surface-container rounded-sm"></div>
+<div class="bg-secondary rounded-sm" title="Lunch slot"></div>
+<div class="bg-surface-container rounded-sm"></div>
+<div class="bg-secondary rounded-sm" title="Dinner slot"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-sm text-label-sm">
+<span>00:00 Morning</span>
+<span>12:00 Midday</span>
+<span>23:59 Night</span>
+</div>
+</div>
+<!-- Panel 2: AI Dynamic Workload Rebalancer -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">smart_toy</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">AI Dynamic Rebalancer</h4>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Autonomous optimization suggestions calculated from live telemetry</span>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container my-3 flex flex-col gap-space-sm">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">auto_awesome</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Actionable Squad Redistribution</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                Auto-divert <strong class="text-on-surface">4 standby OBHS squads</strong> to Electrical HVAC in Ratlam sector to offset 88% peak thermal load. Estimated SLA recovery: <strong class="text-secondary">+12.4%</strong>.
+              </p>
+</div>
+</div>
+<div class="flex items-center gap-2 pt-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm hover:opacity-90 transition-opacity" type="button">
+              Authorize AI Roster Shift
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-colors" type="button">
+              Simulate Impact
+            </button>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Confidence Index: 98.4%</span>
+</span>
+<span>Next cycle: 4m 12s</span>
+</div>
+</div>
+<!-- Panel 3: Statutory SLA Escalation & Penalties Ledger -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Contractor SLA Penalties</h4>
+<span class="px-2 py-0.5 rounded bg-error-container font-label-sm text-label-sm text-on-error-container font-bold">Statutory Audit</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Automated contract deductions across non-compliant catering &amp; mechanical outfits</span>
+</div>
+<div class="flex flex-col gap-2.5 my-3">
+<div class="flex items-center justify-between p-2.5 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Total Deductions YTD</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Automated Zonal Fine Engine</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-error font-bold">₹18.4 Lakhs</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">IRCTC Vendor #WR-9812</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Overcharging • 6 Breaches</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">₹1,25,000</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Depot Coach Latch Techs</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Unresolved C&amp;W • 16 Breaches</span>
+</div>
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">₹3,40,000</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<a class="text-secondary hover:text-on-surface font-label-sm text-label-sm flex items-center gap-1 font-semibold transition-colors" href="#">
+<span>Download Full Statutory Audit Report (PDF)</span>
+<span class="material-symbols-outlined text-[16px]">download</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive View Switcher: Grid vs Table
+  const toggleGridBtn = document.getElementById('toggleGridBtn');
+  const toggleTableBtn = document.getElementById('toggleTableBtn');
+  const gridView = document.getElementById('departmentGridView');
+  const tableView = document.getElementById('departmentTableView');
+
+  toggleGridBtn.addEventListener('click', () => {
+    gridView.classList.remove('hidden');
+    tableView.classList.add('hidden');
+    toggleGridBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+    toggleGridBtn.classList.remove('text-on-surface-variant');
+    toggleTableBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+    toggleTableBtn.classList.add('text-on-surface-variant');
+  });
+
+  toggleTableBtn.addEventListener('click', () => {
+    tableView.classList.remove('hidden');
+    gridView.classList.add('hidden');
+    toggleTableBtn.classList.add('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+    toggleTableBtn.classList.remove('text-on-surface-variant');
+    toggleGridBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface', 'shadow-sm');
+    toggleGridBtn.classList.add('text-on-surface-variant');
+  });
+
+  // Client-side quick filter logic for Saturation
+  const saturationFilter = document.getElementById('saturationFilter');
+  const deptCards = document.querySelectorAll('.dept-card');
+
+  saturationFilter.addEventListener('change', (e) => {
+    const val = e.target.value;
+    deptCards.forEach(card => {
+      const sat = parseInt(card.getAttribute('data-saturation'), 10);
+      if (val === 'all') {
+        card.style.display = 'flex';
+      } else if (val === 'critical' && sat > 85) {
+        card.style.display = 'flex';
+      } else if (val === 'moderate' && sat >= 50 && sat <= 85) {
+        card.style.display = 'flex';
+      } else if (val === 'optimal' && sat < 50) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+
+  // Client-side search logic
+  const searchInput = document.getElementById('deptSearchInput');
+  searchInput.addEventListener('input', (e) => {
+    const query = e.target.value.toLowerCase().trim();
+    deptCards.forEach(card => {
+      const text = card.textContent.toLowerCase();
+      if (text.includes(query)) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+</script></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col md:flex-row items-center gap-space-md text-center md:text-left"><div class="flex items-center gap-space-xs text-error font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">call</span><span>Emergency Railway Helpline: Dial 139 (24x7)</span></div><span class="hidden md:inline text-outline-variant">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Transit Grievance Redressal &amp; AI Escalation Monitoring Cell</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 GrievanceAI National Transit Authority.</span><a class="hover:text-on-surface transition-colors" data-path="account" href="#">Security &amp; SLA Terms</a></div></div></footer></body></html>

@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-container": "#009687", "error-container": "#ffdad6", "surface-container-low": "#eff4ff", "surface-dim": "#cbdbf5", "tertiary": "#000605", "surface-container": "#e5eeff", "secondary-container": "#39b8fd", "inverse-surface": "#213145", "primary-container": "#0f1e36", "on-primary-fixed": "#0c1b33", "surface-tint": "#515f7a", "on-surface-variant": "#44474d", "surface": "#f8f9ff", "error": "#ba1a1a", "secondary-fixed-dim": "#89ceff", "inverse-on-surface": "#eaf1ff", "outline": "#75777e", "on-primary-container": "#7886a3", "inverse-primary": "#b8c7e6", "background": "#f8f9ff", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#001e2f", "surface-container-high": "#dce9ff", "on-secondary": "#ffffff", "outline-variant": "#c5c6ce", "on-tertiary-fixed": "#00201c", "surface-container-highest": "#d3e4fe", "primary": "#000412", "tertiary-fixed": "#71f8e4", "on-background": "#0b1c30", "secondary": "#006591", "surface-variant": "#d3e4fe", "on-secondary-fixed-variant": "#004c6e", "on-secondary-container": "#004666", "tertiary-container": "#00231e", "primary-fixed": "#d7e3ff", "on-error-container": "#93000a", "on-error": "#ffffff", "on-tertiary-fixed-variant": "#005048", "on-primary-fixed-variant": "#394761", "on-primary": "#ffffff", "on-surface": "#0b1c30", "tertiary-fixed-dim": "#4fdbc8", "secondary-fixed": "#c9e6ff", "surface-bright": "#f8f9ff", "on-tertiary": "#ffffff", "primary-fixed-dim": "#b8c7e6" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-xl": "2rem", "margin": "1.5rem", "gutter": "1.25rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "0.75rem", "space-lg": "1.25rem" }, "fontFamily": { "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "data-mono": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-sm": ["18px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "data-mono": ["13px", { "lineHeight": "18px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "headline-md": ["22px", { "lineHeight": "30px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/95 backdrop-blur-md shadow-[0_1px_8px_rgba(15,30,54,0.06)]"><div class="bg-primary-container text-on-surface-variant font-label-sm text-label-sm"><div class="w-full px-gutter flex items-center justify-between h-7"><div class="flex items-center gap-space-sm"><span class="w-2 h-2 rounded-full bg-secondary-container"></span><span class="text-surface font-label-sm text-label-sm uppercase tracking-wider">National Transport Authority Grievance Portal</span><span class="text-on-primary-container">|</span><span class="text-inverse-primary font-label-sm text-label-sm">Official Passenger Redressal System</span></div><div class="flex items-center gap-space-md"><span class="text-inverse-primary font-label-sm text-label-sm hidden sm:inline">Citizen Assistance &amp; Escalation Protocol Active</span><div class="flex items-center gap-space-xs text-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">language</span><span>English (EN)</span></div></div></div></div><div class="h-20 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><img alt="GrievanceAI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UyEwPkpea1GzCEA0nVdRs07Bnuh2GAMcpjx4SaLBTYN6saG46ui4mVPDjRuayhP74vx5eBvlbggubduq3Ci6QKwtbBl5oa8Wvfo_gjdjxjWpcpZn4CPA89RfqLAvYaZO05DE-fOFbfIhEAN1wl54h4SclI4AkqyVDx9SiBREMG8wRmjKchFT8jA4MY2wHuWejtTXEeq_z0oTbfI9Y2AsYt_AHtqRbKhu0ZtzL24vL2"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">GrievanceAI</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Transit Redressal System</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-surface-container-high text-primary font-semibold rounded-lg"><a aria-current="page" class="px-space-md py-space-sm transition-colors bg-surface-container-high text-primary font-semibold rounded-lg" data-path="home" href="#">Home</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="track-grievance" href="#">Track Grievance</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="file-complaint" href="#">File Complaint</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="categories" href="#">Categories</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="resolution-insights" href="#">Resolution Insights</a><a class="px-space-md py-space-sm rounded-lg font-body-md text-body-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" data-path="helpline-support" href="#">Helpline &amp; Support</a></nav><div class="flex items-center gap-space-md"><a class="hidden md:flex items-center gap-space-xs px-space-md py-space-sm bg-error text-on-error rounded-full font-label-md text-label-md shadow-sm hover:bg-on-error-container hover:text-on-error transition-all" href="tel:139"><span class="material-symbols-outlined text-[16px]">call</span><span>139 Helpline</span></a><button aria-label="Notifications" class="p-space-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container rounded-full transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-secondary"></span></button><a class="hidden sm:flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md hover:bg-primary-container hover:text-surface transition-colors" data-path="officer-login" href="#"><span class="material-symbols-outlined text-[16px]">lock_open</span><span>Officer Sign In</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-27rem)]"><div class="flex flex-col w-full">
+<!-- ========================================== -->
+<!-- HERO SECTION WITH INTEGRATED TRACKER       -->
+<!-- ========================================== -->
+<section class="relative w-full overflow-hidden bg-primary text-on-primary">
+<!-- Atmospheric Layered Gradients -->
+<div class="absolute inset-0 pointer-events-none opacity-30">
+<div class="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-secondary-container blur-3xl"></div>
+<div class="absolute top-1/2 -right-32 w-[32rem] h-[32rem] rounded-full bg-secondary blur-3xl opacity-40"></div>
+</div>
+<!-- Fine Grid Lines Backdrop -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+<div class="relative w-full max-w-7xl mx-auto px-gutter py-space-xl lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left Column: Primary Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- System Status Pill -->
+<div class="inline-flex items-center gap-space-sm bg-primary-container px-space-md py-space-xs rounded-full w-fit">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-secondary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-surface">Autonomous Dispatch Node v4.2 Active</span>
+<span class="text-on-primary-container font-label-sm text-label-sm">•</span>
+<span class="text-inverse-primary font-label-sm text-label-sm font-data-mono">Latency &lt; 340ms</span>
+</div>
+<!-- Hero Headline -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md uppercase tracking-widest text-secondary-container">AI-Powered Civic Redressal</span>
+<h1 class="font-display-lg text-display-lg text-surface tracking-tight leading-tight">
+              Your Voice.<br/>
+<span class="text-secondary-container">Better Journeys.</span>
+</h1>
+</div>
+<!-- Subheadline -->
+<p class="font-body-lg text-body-lg text-surface-container max-w-xl">
+            Next-generation AI-powered public grievance redressal for railway, transit, and multimodal passengers. Instant AI categorization, automated priority dispatch, real-time live tracking, and guaranteed SLA resolution.
+          </p>
+<!-- Primary CTA Strip -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-secondary-container text-primary font-headline-sm text-headline-sm rounded-lg hover:bg-secondary-fixed transition-all shadow-md group" data-path="file-complaint" href="#">
+<span>Register a Complaint</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md bg-surface-container/10 hover:bg-surface-container/20 text-surface font-label-md text-label-md rounded-full transition-colors backdrop-blur-sm" href="#quick-tracker">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+<span>Track Existing Grievance</span>
+</a>
+</div>
+<!-- Key Guarantees Row -->
+<div class="flex flex-wrap items-center gap-space-lg pt-space-sm text-surface-dim font-label-sm text-label-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">check_circle</span>
+<span>ISO 10002 Certified</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">verified_user</span>
+<span>Govt. Encrypted Telemetry</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">timer</span>
+<span>Binding Legal SLA Guarantee</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Live Tracking Engine Card -->
+<div class="lg:col-span-5 w-full" id="quick-tracker">
+<div class="bg-surface-container-lowest text-on-surface rounded-xl p-space-lg shadow-xl relative">
+<!-- Card Header Indicator -->
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">radar</span>
+<span class="font-headline-sm text-headline-sm text-primary">Live Grievance Radar</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-secondary font-medium">Real-time Telemetry</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pb-space-md">
+              Instant verification across Indian Railways, Metro Transit, and Highway Interchanges.
+            </p>
+<!-- Interactive Form Simulation -->
+<div class="flex flex-col gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface mb-space-xs" for="tracking-input">
+                  Identifier Key (PNR, Ticket, or Ticket Ref ID)
+                </label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-space-md flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span>
+</div>
+<input class="w-full pl-10 pr-space-md py-space-sm bg-surface-container-low text-on-surface font-data-mono text-data-mono rounded-lg outline-none focus:bg-surface-container-lowest transition-colors" id="tracking-input" placeholder="e.g. GAI-2025-8831 or PNR 4829103810" type="text" value="GAI-2025-8831"/>
+</div>
+</div>
+<!-- Dynamic Interactive Pill Suggestions -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Try:</span>
+<button class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high rounded text-secondary hover:bg-surface-container transition-colors" onclick="document.getElementById('tracking-input').value='GAI-9021'; updateTrackDemo('GAI-9021');" type="button">
+                  GAI-9021
+                </button>
+<button class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high rounded text-secondary hover:bg-surface-container transition-colors" onclick="document.getElementById('tracking-input').value='PNR 4829103810'; updateTrackDemo('PNR 4829103810');" type="button">
+                  PNR 4829103810
+                </button>
+<button class="font-label-sm text-label-sm px-space-xs py-0.5 bg-surface-container-high rounded text-secondary hover:bg-surface-container transition-colors" onclick="document.getElementById('tracking-input').value='GAI-8820-MED'; updateTrackDemo('GAI-8820-MED');" type="button">
+                  GAI-8820-MED
+                </button>
+</div>
+<!-- Action Button -->
+<button class="w-full py-space-sm bg-primary text-on-primary font-label-md text-label-md rounded-lg hover:bg-primary-container transition-all flex items-center justify-center gap-space-xs" id="track-btn" onclick="simulateTracking()" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_forward</span>
+<span>Track Status in Real-Time</span>
+</button>
+<!-- Live Dynamic Status Feed Widget (Collapsible Demo Box) -->
+<div class="mt-space-xs p-space-md bg-surface-container-low rounded-lg flex flex-col gap-space-sm transition-all duration-300" id="tracking-result-box">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm font-data-mono font-semibold text-primary" id="track-case-id">GAI-2025-8831</span>
+<span class="font-label-sm text-label-sm px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">AI Triaged</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-data-mono">Est: 14m remain</span>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">directions_railway</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-medium" id="track-summary">Train 12952 Coach B-4: AC Thermostat Sensor Failure</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="track-subtext">Dispatched to Onboard Sr. Electrical Tech at Kota Jn. Escort en route.</span>
+</div>
+</div>
+<!-- Visual Linear Progress Track -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-space-xs overflow-hidden">
+<div class="bg-secondary-container h-1.5 rounded-full transition-all duration-700" id="progress-bar-inner" style="width: 72%;"></div>
+</div>
+<div class="flex justify-between items-center text-[10px] font-label-sm text-on-surface-variant">
+<span>Logged 14:22</span>
+<span class="text-secondary font-semibold">Attendant Assigned</span>
+<span>Target SLA: 14:52</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- TRUST & LIVE TELEMETRY METRIC BAR          -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container-low py-space-xl">
+<div class="w-full max-w-7xl mx-auto px-gutter">
+<!-- Metrics Card Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Citizen SLA Adherence</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary font-bold tracking-tight">98.4%</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">&lt;24 hrs guaranteed grievance resolution rate nationally</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-on-tertiary-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span>+1.2% over Q3 benchmark</span>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Automated Dispatch</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary-container">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary font-bold tracking-tight">4.2<span class="text-headline-md font-medium text-secondary">m</span></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">Avg. AI natural language triage &amp; officer mobilization</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Zero manual phone queues</span>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Resolved Cases YTD</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">task_alt</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary font-bold tracking-tight">1.8M+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">Passenger inquiries and issues closed with audit trails</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">hub</span>
+<span>Across 8,200+ transit stations</span>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between pb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">System Availability</span>
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[20px]">emergency</span>
+</div>
+</div>
+<div>
+<div class="font-display-lg text-display-lg text-primary font-bold tracking-tight">24/7/365</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-space-xs">Autonomous failover &amp; immediate emergency escalation</p>
+</div>
+<div class="mt-space-md pt-space-xs flex items-center gap-space-xs text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">notification_important</span>
+<span>SOS routing priority zero</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- 4-STEP AI RESOLUTION PROCESS               -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-20">
+<div class="w-full max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">End-to-End Governance Protocol</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">How AI-Assisted Grievance Redressal Operates</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          Eliminating manual administrative bureaucracy with deterministic algorithmic ticket lifecycle tracking.
+        </p>
+</div>
+<!-- 4 Connected Process Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-lg">
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container rounded font-data-mono font-semibold text-primary">STEP 01</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">mic</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Smart Omnichannel Intake</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Submit complaints via Voice recording, PNR camera scan, photo evidence, WhatsApp bot, or quick web portal.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">translate</span>
+<span>12+ Indian Regional Languages</span>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-lg">
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container rounded font-data-mono font-semibold text-primary">STEP 02</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">psychology</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">NLP &amp; Urgency Triage</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Semantic models parse emotional distress, life-safety flags, onboard telemetry, and historical maintenance logs automatically.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">model_training</span>
+<span>99.2% Accuracy Classification</span>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-lg">
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container rounded font-data-mono font-semibold text-primary">STEP 03</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">near_me</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Direct Officer Dispatch</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Automated routing sends tasks to the active coach attendant, station master, or transit security guard nearest to the passenger.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">pin_drop</span>
+<span>Geofenced Handheld Alerts</span>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between group hover:-translate-y-1 transition-transform">
+<div>
+<div class="flex items-center justify-between pb-space-lg">
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container rounded font-data-mono font-semibold text-primary">STEP 04</span>
+<span class="material-symbols-outlined text-secondary text-[26px]">verified</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Transparent Resolution</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Staff uploads GPS &amp; timestamped photo evidence upon resolution. Passenger verifies and signs off via SMS / OTP link.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">sms</span>
+<span>Instant Passenger Sign-off</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- COMPLAINT CATEGORIES SELECTOR GRID        -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="w-full max-w-7xl mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Rapid Citizen Redressal</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Passenger Grievance Categories &amp; SLAs</h2>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:underline" data-path="file-complaint" href="#">
+<span>View All Operational Categories</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Category 1: Medical & Safety (Emergency) -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-error-container text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">medical_services</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-error-container text-on-error-container font-semibold">Priority 1 • SOS</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Medical &amp; Passenger Safety</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Immediate onboard medical attention, first aid deployment, women safety assistance, or security escort dispatch.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between text-error font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Max Response SLA:</span>
+<span class="font-semibold">&lt; 15 Minutes</span>
+</div>
+<button class="w-full py-space-xs bg-error text-on-error rounded font-label-md text-label-md hover:bg-on-error-container transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">emergency</span>
+<span>Trigger Medical Alert</span>
+</button>
+</div>
+</div>
+<!-- Category 2: Cleanliness & Sanitation -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">cleaning_services</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-medium">OBHS System</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Cleanliness &amp; Sanitation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Uncleaned toilets, coach pest presence, waste bins overflowing, linen hygiene, and station platform upkeep.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">&lt; 45 Minutes</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>File Sanitation Issue</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category 3: Electrical & AC -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">mode_fan</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-medium">Technical Unit</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Electrical &amp; AC Systems</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              AC failure, cooling temperature regulation, faulty phone charging sockets, malfunctioning lights, and fans.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">&lt; 30 Minutes</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>File Electrical Issue</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category 4: Catering & Food Quality -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">restaurant</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-medium">Pantry Audit</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Catering &amp; Food Hygiene</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Expired meals, overcharging above MRP rates, unhygienic pantry cars, contaminated drinking water, or delayed delivery.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">&lt; 60 Minutes</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>File Pantry Complaint</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category 5: Delays & Rescheduling -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">schedule</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-medium">Operations</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Delays &amp; Schedule Tracking</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Unannounced train regulation, station halt extensions, signal halts, and connecting train connection miss claims.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">Real-time Telemetry</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>View Route Delay Status</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category 6: Ticketing & Refunds -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-medium">Commercial</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Ticketing &amp; Fare Refunds</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              TDR filing issues, uncredited automatic cancellation refunds, dual payment debits, and concession certificate queries.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">&lt; 4 Hours</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>Dispute Refund Claim</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category 7: Luggage & Theft -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">luggage</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-medium">RPF Escalation</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Luggage &amp; Stolen Articles</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Left luggage at terminal, suspicious unclaimed packages, snatching reports, or lost passenger belongings.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">Immediate Police Alert</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>Report Lost Article</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Category 8: Staff Behavior -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between hover:shadow-md transition-all group">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">badge</span>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-secondary-container font-medium">Vigilance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Staff Conduct &amp; Vigilance</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Misbehavior by onboard TTE, unauthorized vendors, harassment, corruption complaints, or refusal of legitimate service.
+            </p>
+</div>
+<div>
+<div class="flex items-center justify-between font-data-mono text-body-sm mb-space-md">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Guaranteed SLA:</span>
+<span class="text-primary font-semibold">&lt; 12 Hours</span>
+</div>
+<button class="w-full py-space-xs bg-surface-container-high text-primary hover:bg-surface-container rounded font-label-md text-label-md transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span>File Conduct Report</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- LIVE GRIEVANCE FEED & PHOTO RESOLUTION HUB -->
+<!-- ========================================== -->
+<section class="w-full bg-surface py-20">
+<div class="w-full max-w-7xl mx-auto px-gutter">
+<!-- Section Title & Live Broadcast Badge -->
+<div class="flex flex-col md:flex-row md:items-center justify-between mb-space-xl gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-semibold">Live Public Accountability Stream</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">Recent Transparent Resolutions</h2>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-refreshing live audit feed (10s sync)</span>
+<span class="material-symbols-outlined text-secondary animate-spin text-[18px]">sync</span>
+</div>
+</div>
+<!-- Feed Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Live Card 1 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-data-mono text-label-sm text-on-surface-variant">#GAI-40912 • Vande Bharat 20607</span>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-tertiary-container font-semibold">Resolved in 18 mins</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Executive Coach C1 AC Temperature Regulated</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Passenger reported AC thermostat jammed at 16°C causing distress to elderly passenger. Technician deployed at Katpadi Jn.
+            </p>
+<!-- Evidence Photo with generated visual prompt -->
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Digital thermometer readout and technical maintenance log clipboard held by an Indian Railways electrical engineer inside a modern modern high-speed passenger train coach with clean seats and ambient blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDosqFhtTEf0DVKbiK_Pmy9TEOqnc1w1S-JLB4ARzHb3P0r0TM7l2phRqkpRFH-dwinxR7Tr3LAGMSxi0U7smbV6bfIZcoxK_QL358VWg7BvjxGT4FBWAhl0sGPFZ-GgdW-CAtjqs8_jXtSLzmB60y8tRhJs5JimCd-h7ccNNVXJ3XwN1rWBEn_Nr1u1kErIBLrHfAgUzpTfcF6lHoHFtAeJgni6nUNFWzHFdgDDno"/>
+<div class="absolute bottom-2 left-2 bg-primary/80 backdrop-blur-sm text-on-primary font-data-mono text-label-sm px-space-xs py-0.5 rounded">
+                Verified: 23.5°C Normalised
+              </div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              Attendant: R. S. Murthy (ID: EM-902)
+            </span>
+<span class="font-data-mono">4 mins ago</span>
+</div>
+</div>
+<!-- Live Card 2 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-data-mono text-label-sm text-on-surface-variant">#GAI-40899 • Rajdhani Express 12431</span>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-tertiary-container font-semibold">Resolved in 12 mins</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Emergency First-Aid Inhaler Supplied</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Asthma inhaler depleted for passenger in Coach B7. Station Medical Officer dispatched with sealed emergency nebulizer pack at Ratlam Jn.
+            </p>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Transit medical officer in high visibility jacket handing over a sealed first-aid emergency medical kit to train conductor beside the platform edge of an active railway station" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2XYTY98pK53EP9URGr-6Dzrz6NPfanbrxoLt1oBWoBli2riiUa7E9YQbIVDgsNXEWGM-AwkQib6345PKJCY8THtfVQXZ-jDBAJJLfwnKMOCDY3WDpfB1u6u7icwsVL2hI_MA1V42ugSqkXz3A6KZWTweQjeVADgM5An5aPYDaxQRNkjAHY5GG_88wI4FUCt_2Jptm3CXsBbi25TJojC30X3tI6Z59lOAiKhJ-GKk"/>
+<div class="absolute bottom-2 left-2 bg-error/90 backdrop-blur-sm text-on-error font-data-mono text-label-sm px-space-xs py-0.5 rounded">
+                Medical Sign-off: Dr. Verma (SMO)
+              </div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              Emergency Unit: Ratlam Division
+            </span>
+<span class="font-data-mono">11 mins ago</span>
+</div>
+</div>
+<!-- Live Card 3 -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-data-mono text-label-sm text-on-surface-variant">#GAI-40871 • Platform 4, New Delhi</span>
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-tertiary-container font-semibold">Resolved in 24 mins</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary mb-space-xs">Platform Deep Clean &amp; Spill Sanitization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+              Reported heavy beverage spillage causing slip hazard near escalator waiting zone. Mechanized cleaning cart deployed immediately.
+            </p>
+<div class="relative w-full h-44 rounded-lg overflow-hidden mb-space-md bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Immaculately clean, glistening polished granite floor of a modern transit station hall with stainless steel railings and high ceiling illumination reflecting brightly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm7wqMCJQAJQZwifbT1t7WSOhuDJ7C-1xk1-WTtuZ5A2KFW7CqrKd-RTNyF2dkX-iF3E-1uPTuvWVGUXPP8AoDG4WIrko3QKLYUKj7-9zKcfDiG5lD_u-YDKACDQ0zfcShSwanrf2bfZi4hB4YX7TIraTSev3eLtPU_N7O8AqkbIkX7-w-fU5akF3c0iFwQkw73no620LK4SkRWyVH0yNyivXblsWrRLroPWbwv3o"/>
+<div class="absolute bottom-2 left-2 bg-primary/80 backdrop-blur-sm text-on-primary font-data-mono text-label-sm px-space-xs py-0.5 rounded">
+                Sanitation Score: 100% PASS
+              </div>
+</div>
+</div>
+<div class="pt-space-sm flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              Station Clean Squad A-3
+            </span>
+<span class="font-data-mono">23 mins ago</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- EMERGENCY CALLOUT BANNER (139 HOTLINE)     -->
+<!-- ========================================== -->
+<section class="w-full bg-primary text-on-primary py-space-xl">
+<div class="w-full max-w-7xl mx-auto px-gutter">
+<div class="bg-gradient-to-r from-primary-container via-surface-tint/20 to-primary-container p-space-xl rounded-xl flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-lg">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-full bg-error text-on-error flex items-center justify-center shrink-0 shadow-md">
+<span class="material-symbols-outlined text-[32px]">support_agent</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm bg-error px-space-sm py-0.5 rounded text-on-error uppercase font-semibold">National Transit Emergency</span>
+<span class="text-surface-dim font-label-sm text-label-sm">• Real-time Voice Link</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-surface">Need Immediate Onboard Police or Medical Help?</h2>
+<p class="font-body-md text-body-md text-surface-container max-w-2xl">
+              Dial <strong>139</strong> toll-free from any landline or mobile network. GrievanceAI voice agents automatically match your caller ID with your active PNR to route your SOS in under 5 seconds.
+            </p>
+</div>
+</div>
+<!-- Phone Action -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md shrink-0 w-full lg:w-auto">
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-xl py-space-md bg-error text-on-error font-headline-sm text-headline-sm rounded-lg hover:bg-on-error-container hover:text-on-error transition-all shadow-md" href="tel:139">
+<span class="material-symbols-outlined text-[24px]">call</span>
+<span>Dial 139 Hotline</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-xs px-space-lg py-space-md bg-surface-container-lowest/10 text-surface hover:bg-surface-container-lowest/20 rounded-lg font-label-md text-label-md transition-colors backdrop-blur-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp Bot: +91 9821391390</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- CITIZEN FAQ ACCORDION                      -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container-low py-20">
+<div class="w-full max-w-4xl mx-auto px-gutter">
+<div class="text-center mb-space-xl">
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest">Transparency &amp; Procedures</span>
+<h2 class="font-headline-lg text-headline-lg text-primary mt-space-xs">Frequently Asked Questions</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Everything you need to know regarding GrievanceAI, escalation tiers, and passenger rights.</p>
+</div>
+<!-- Accordion Stack -->
+<div class="flex flex-col gap-space-md">
+<!-- FAQ 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<button class="w-full flex items-center justify-between text-left gap-space-md focus:outline-none" onclick="toggleFaq('faq-1')" type="button">
+<span class="font-headline-sm text-headline-sm text-primary">How does GrievanceAI distinguish urgent emergencies from standard complaints?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-1-icon">expand_more</span>
+</button>
+<div class="hidden pt-space-md font-body-md text-body-md text-on-surface-variant" id="faq-1">
+            GrievanceAI utilizes dual transformer models calibrated against Indian Penal Code and National Disaster Response frameworks. Keywords indicating physical threat, cardiac/respiratory distress, fire, smoke, child endangerment, or harassment immediately trigger Priority-0 status. This bypasses queue ingestion and instantly pings the nearest Railway Protection Force (RPF) post and Station Superintendent within 15 seconds.
+          </div>
+</div>
+<!-- FAQ 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<button class="w-full flex items-center justify-between text-left gap-space-md focus:outline-none" onclick="toggleFaq('faq-2')" type="button">
+<span class="font-headline-sm text-headline-sm text-primary">Can I register a grievance without a PNR or Ticket number?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-2-icon">expand_more</span>
+</button>
+<div class="hidden pt-space-md font-body-md text-body-md text-on-surface-variant" id="faq-2">
+            Yes. While a PNR allows automated coach, seat, and attendant identification, you can report issues at metro stations, bus terminals, ticket booking counters, or general platforms using GPS location sharing or selecting the station name manually from the GrievanceAI registration portal.
+          </div>
+</div>
+<!-- FAQ 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<button class="w-full flex items-center justify-between text-left gap-space-md focus:outline-none" onclick="toggleFaq('faq-3')" type="button">
+<span class="font-headline-sm text-headline-sm text-primary">What happens if an assigned officer breaches the resolution SLA?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-3-icon">expand_more</span>
+</button>
+<div class="hidden pt-space-md font-body-md text-body-md text-on-surface-variant" id="faq-3">
+            The platform enforces strict algorithmic escalation. If a Level-1 officer does not acknowledge or resolve the grievance within the statutory SLA (e.g., 30 mins for coach electrical), the ticket automatically elevates to Level-2 (Divisional Operations Manager) with visual alerts on the central transit control dashboard and a direct compliance SMS notice.
+          </div>
+</div>
+<!-- FAQ 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm">
+<button class="w-full flex items-center justify-between text-left gap-space-md focus:outline-none" onclick="toggleFaq('faq-4')" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">chat</span>
+<span class="font-headline-sm text-headline-sm text-primary">Is GrievanceAI accessible via WhatsApp or voice-assisted phone bots?</span>
+<span class="material-symbols-outlined text-secondary transition-transform" id="faq-4-icon">expand_more</span>
+</button>
+<div class="hidden pt-space-md font-body-md text-body-md text-on-surface-variant" id="faq-4">
+            Yes. You can send a photo, text, or voice message to the official WhatsApp hotline (+91 9821391390). The AI transcribes voice notes in Hindi, English, Tamil, Telugu, Bengali, Marathi, and 6 other regional languages, automatically extracting the PNR and generating an auditable ticket ID.
+          </div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========================================== -->
+<!-- FINAL CITIZEN EMPOWERMENT BANNER           -->
+<!-- ========================================== -->
+<section class="w-full bg-surface-container py-16">
+<div class="w-full max-w-7xl mx-auto px-gutter text-center flex flex-col items-center gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+<span>Empowering 24 Million Daily Transit Passengers</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary max-w-2xl">
+        Every Report Contributes to Safer, Cleaner, and Smarter Public Transit Infrastructure.
+      </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+        Join over 1.8 million passengers holding national transit services accountable with transparent, AI-audited governance.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md pt-space-sm">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-primary text-on-primary font-headline-sm text-headline-sm rounded-lg hover:bg-primary-container transition-all shadow-md" data-path="file-complaint" href="#">
+<span>File a Redressal Ticket</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-md bg-surface-container-lowest text-primary hover:bg-surface-container-high rounded-lg font-label-md text-label-md transition-colors shadow-sm" data-path="resolution-insights" href="#">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span>Explore Public SLA Analytics</span>
+</a>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple interactive tracking simulation for the Hero Card
+  function updateTrackDemo(id) {
+    const caseIdEl = document.getElementById('track-case-id');
+    const summaryEl = document.getElementById('track-summary');
+    const subtextEl = document.getElementById('track-subtext');
+    const progressEl = document.getElementById('progress-bar-inner');
+
+    if (id === 'GAI-9021') {
+      caseIdEl.innerText = 'GAI-9021';
+      summaryEl.innerText = 'Train 12004 Coach C-2: Catering Food Quality Complaint';
+      subtextEl.innerText = 'Pantry Supervisor notified at Ghaziabad Jn. Meal replaced and logged.';
+      progressEl.style.width = '95%';
+    } else if (id === 'PNR 4829103810') {
+      caseIdEl.innerText = 'PNR 4829103810';
+      summaryEl.innerText = 'Train 22691 Coach H-1: Sanitation & Bio-Toilet Flushing Blockage';
+      subtextEl.innerText = 'Onboard Housekeeping Staff (OBHS) deployed. Cleaning underway.';
+      progressEl.style.width = '60%';
+    } else if (id === 'GAI-8820-MED') {
+      caseIdEl.innerText = 'GAI-8820-MED';
+      summaryEl.innerText = 'Emergency SOS: Wheelchair Assistance Requested at Platform 1';
+      subtextEl.innerText = 'Station porter and battery car dispatched to Coach S-3 at arrival.';
+      progressEl.style.width = '85%';
+    }
+  }
+
+  function simulateTracking() {
+    const input = document.getElementById('tracking-input').value.trim();
+    const caseIdEl = document.getElementById('track-case-id');
+    const summaryEl = document.getElementById('track-summary');
+    const subtextEl = document.getElementById('track-subtext');
+    const progressEl = document.getElementById('progress-bar-inner');
+    const btn = document.getElementById('track-btn');
+
+    btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Verifying Telemetry...</span>';
+    
+    setTimeout(() => {
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">sync_saved_loc</span><span>Track Status in Real-Time</span>';
+      if (input) {
+        caseIdEl.innerText = input.toUpperCase();
+        summaryEl.innerText = 'Active Passenger Redressal in Transit Network';
+        subtextEl.innerText = 'Telemetry verified via central National Transit Redressal grid. SLA timer active.';
+        progressEl.style.width = '78%';
+      }
+    }, 600);
+  }
+
+  // FAQ Accordion Toggle Interaction
+  function toggleFaq(id) {
+    const el = document.getElementById(id);
+    const icon = document.getElementById(id + '-icon');
+    if (el.classList.contains('hidden')) {
+      el.classList.remove('hidden');
+      icon.style.transform = 'rotate(180deg)';
+    } else {
+      el.classList.add('hidden');
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+</script></main><footer class="w-full bg-surface-container-low text-on-surface-variant shadow-[0_-1px_8px_rgba(15,30,54,0.03)]"><div class="w-full px-gutter py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-gutter"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-md"><img alt="GrievanceAI Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UyEwPkpea1GzCEA0nVdRs07Bnuh2GAMcpjx4SaLBTYN6saG46ui4mVPDjRuayhP74vx5eBvlbggubduq3Ci6QKwtbBl5oa8Wvfo_gjdjxjWpcpZn4CPA89RfqLAvYaZO05DE-fOFbfIhEAN1wl54h4SclI4AkqyVDx9SiBREMG8wRmjKchFT8jA4MY2wHuWejtTXEeq_z0oTbfI9Y2AsYt_AHtqRbKhu0ZtzL24vL2"/><span class="font-headline-sm text-headline-sm text-primary">GrievanceAI</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">Integrated Passenger Grievance Redressal and AI-Powered Dispatch System under the National Transport Infrastructure Commission. Real-time telemetry, rapid escalation, and citizen transparency.</p><div class="flex flex-wrap items-center gap-space-sm pt-space-xs"><span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">verified</span>ISO 10002 Certified Redressal</span><span class="inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container text-on-secondary-container font-label-sm text-label-sm"><span class="material-symbols-outlined text-[14px]">shield</span>Government Encrypted</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Emergency &amp; Hotlines</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-xs text-error font-semibold"><span class="material-symbols-outlined text-[16px]">phone_in_talk</span>National Transport: 139</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">medical_services</span>Medical Response: 108</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">local_police</span>Transit Police: 112</li><li class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">support_agent</span>Women Safety Helpline: 1091</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Transport Divisions</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" href="#">High-Speed Rail Corridor</a></li><li><a class="hover:text-primary transition-colors" href="#">Metropolitan Bus Transit</a></li><li><a class="hover:text-primary transition-colors" href="#">National Highways Agency</a></li><li><a class="hover:text-primary transition-colors" href="#">Civil Aviation Grievance Wing</a></li><li><a class="hover:text-primary transition-colors" href="#">Inland Waterways Service</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-md text-label-md text-primary uppercase tracking-wider">Citizen Governance</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li><a class="hover:text-primary transition-colors" href="#">Citizen Charter &amp; SLA Times</a></li><li><a class="hover:text-primary transition-colors" href="#">Whistleblower Protection Policy</a></li><li><a class="hover:text-primary transition-colors" href="#">Right to Information (RTI)</a></li><li><a class="hover:text-primary transition-colors" href="#">Privacy Policy &amp; Data Security</a></li><li><a class="hover:text-primary transition-colors" href="#">Terms of Service &amp; Redressal Rules</a></li></ul></div></div><div class="mt-space-xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container/50 px-space-lg py-space-md rounded-xl"><div class="flex items-center gap-space-md font-body-sm text-body-sm text-on-surface-variant"><span>© 2025 National Transport Authority. All Rights Reserved.</span></div><div class="flex items-center gap-space-lg font-label-sm text-label-sm text-on-surface-variant"><span class="inline-flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-secondary"></span>System Operational Status: 99.98%</span><span class="text-outline-variant">|</span><span>Powered by GrievanceAI Governance Engine</span></div></div></div></footer></body></html>

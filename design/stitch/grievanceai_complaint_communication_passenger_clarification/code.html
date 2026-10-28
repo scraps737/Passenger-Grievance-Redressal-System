@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GrievanceAI Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#b8c7e6","on-secondary-fixed":"#001e2f","secondary":"#006591","on-tertiary-container":"#009687","on-background":"#0b1c30","tertiary-fixed":"#71f8e4","primary-fixed":"#d7e3ff","surface-bright":"#f8f9ff","on-primary":"#ffffff","on-primary-container":"#7886a3","outline":"#75777e","surface-tint":"#515f7a","surface-container-high":"#dce9ff","background":"#f8f9ff","tertiary":"#000605","surface-container-highest":"#d3e4fe","secondary-fixed":"#c9e6ff","on-secondary-fixed-variant":"#004c6e","tertiary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","on-surface":"#0b1c30","secondary-container":"#39b8fd","on-tertiary-fixed":"#00201c","inverse-on-surface":"#eaf1ff","on-primary-fixed-variant":"#394761","on-secondary":"#ffffff","on-error":"#ffffff","inverse-surface":"#213145","surface-container":"#e5eeff","surface-dim":"#cbdbf5","inverse-primary":"#b8c7e6","on-error-container":"#93000a","surface-variant":"#d3e4fe","primary":"#000412","secondary-fixed-dim":"#89ceff","on-surface-variant":"#44474d","on-secondary-container":"#004666","surface-container-low":"#eff4ff","on-primary-fixed":"#0c1b33","surface-container-lowest":"#ffffff","primary-container":"#0f1e36","error":"#ba1a1a","outline-variant":"#c5c6ce","on-tertiary-fixed-variant":"#005048","tertiary-container":"#00231e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1.25rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"data-mono":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">commute</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">Grievance<span class="text-secondary">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rail &amp; Transit Ops</span></div></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm">PNR 4829103810: Sync Active</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="overview-dashboard" href="#">Overview</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="my-grievance-tickets" href="#">My Tickets</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="active-journeys" href="#">Active Journeys</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="resolution-proofs" href="#">Resolution Proofs</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="account" href="#">Account</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>SOS Quick</span></button><div class="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center leading-none text-[9px]">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden xl:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">PNR: 4829103810</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Operational Breadcrumb & Incident Command Header -->
+<section class="w-full bg-surface-container-lowest px-gutter py-space-sm shadow-sm">
+<div class="max-w-[1720px] mx-auto flex flex-col gap-space-sm">
+<!-- Breadcrumb row & Global Telemetry Status -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<a class="hover:text-secondary flex items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-[15px]">home</span>Ops Center
+          </a>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface-variant">Investigation Ledger</span>
+<span class="text-outline-variant">/</span>
+<span class="font-semibold text-primary font-data-mono text-data-mono">#GAI-2025-8831</span>
+<span class="text-outline-variant">/</span>
+<span class="text-secondary font-medium">Live Passenger &amp; Officer Comm Stream</span>
+</div>
+<!-- Telemetry & Encryption Status Chips -->
+<div class="flex flex-wrap items-center gap-space-xs">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span>Passenger Socket: Connected (App + SMS Fallback)</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+<span>Officer RailNet: Encrypted (SHA-256 Air-Gapped)</span>
+</div>
+</div>
+</div>
+<!-- Ticket Operational Banner -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md p-space-md bg-surface-container-low rounded-xl">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-11 h-11 rounded-lg bg-primary-container text-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[24px]">ac_unit</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">GAI-2025-8831</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold">Tier 2 • High Risk</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm">In Investigation</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Train 12952 Tejas Rajdhani • Coach B-4, Berth 28 (Side Lower) • AC Thermostat Freeze Fault</span>
+</div>
+</div>
+<div class="h-8 w-px bg-outline-variant/30 hidden md:block"></div>
+<!-- Passenger info chip -->
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold">PS</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                Priya Sharma
+                <span class="material-symbols-outlined text-[14px] text-secondary" title="DigiLocker Verified">verified</span>
+</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">PNR: 4829103810</span>
+</div>
+</div>
+<div class="h-8 w-px bg-outline-variant/30 hidden md:block"></div>
+<!-- SLA Clock -->
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<span class="material-symbols-outlined text-error text-[18px]">timer</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant leading-none">Statutory SLA Window</span>
+<span class="font-data-mono text-data-mono font-bold text-error leading-tight" id="sla-countdown">08m 42s remaining</span>
+</div>
+</div>
+</div>
+<!-- Emergency & Action Toolbar -->
+<div class="flex items-center flex-wrap gap-2">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors text-on-surface font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px] text-secondary">assignment</span>
+<span>Full Casefile</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors text-on-surface font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px] text-secondary">cell_tower</span>
+<span>Intercom PTT</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px] text-secondary-container">call</span>
+<span>Call Passenger</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error text-on-error hover:bg-error/90 transition-colors font-label-md text-label-md shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">crisis_alert</span>
+<span>Escalate DRM</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Three-Column Comms Workspace -->
+<section class="w-full px-gutter py-space-md">
+<div class="max-w-[1720px] mx-auto grid grid-cols-1 xl:grid-cols-12 gap-space-md">
+<!-- COLUMN 1: Comms & Incident Context Ledger (Left Sidebar) -->
+<aside class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- Live Thread Participants -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[19px]">group</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Thread Participants</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm">4 Active</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Passenger -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-start justify-between gap-2">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-sm">PS</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-white"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Priya Sharma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Passenger • Berth 28 (B-4)</span>
+</div>
+</div>
+<span class="text-[10px] text-secondary font-label-sm whitespace-nowrap">App Ping 1m</span>
+</div>
+<!-- Lead Officer -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start justify-between gap-2 shadow-xs">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-sm">RM</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-white"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Er. R. S. Murthy</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">SSE Electrical • Lead Officer</span>
+</div>
+</div>
+<span class="text-[10px] text-on-surface-variant font-label-sm whitespace-nowrap">CTRL-04</span>
+</div>
+<!-- Field Technician -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start justify-between gap-2 shadow-xs">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="relative">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-primary font-bold text-label-sm flex items-center justify-center">DS</div>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim ring-2 ring-white"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Tech II Dinesh K. Sharma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Field Tech • In Coach B-4</span>
+</div>
+</div>
+<span class="text-[10px] text-secondary font-label-sm whitespace-nowrap">HHT-094</span>
+</div>
+<!-- Staging Station Master -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-start justify-between gap-2 shadow-xs opacity-75">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container text-on-surface-variant font-bold text-label-sm flex items-center justify-center">RTM</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Station Master Ratlam</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Platform Halt Staging</span>
+</div>
+</div>
+<span class="text-[10px] text-error font-label-sm whitespace-nowrap">ETA 14m</span>
+</div>
+</div>
+</div>
+<!-- Cabin Telemetry & Train Real-Time Vector -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[19px]">sensors</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Berth 28 Telemetry</span>
+</div>
+<span class="font-data-mono text-label-sm text-error font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span> Live CAN-bus
+            </span>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded-lg bg-error-container/40 flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Bay Sensor Temp</span>
+<span class="font-headline-sm text-headline-sm font-bold text-error">16.2°C</span>
+<span class="text-[10px] text-on-error-container font-medium">Fault: Contactor 42B Lock</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Target Set-point</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">23.5°C</span>
+<span class="text-[10px] text-secondary font-medium">Coil Bypass Pending</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Train Velocity</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">118 <span class="text-label-sm font-normal">km/h</span></span>
+<span class="text-[10px] text-on-surface-variant font-data-mono">Sub-sector: RTM-NAD</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Next Stoppage</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">Ratlam Jn</span>
+<span class="text-[10px] text-on-surface-variant">PF #2 • Arr: 14:50 IST</span>
+</div>
+</div>
+</div>
+<!-- Smart Clarification Prompts (One-Click Canned AI Triggers) -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[19px]">auto_awesome</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">AI Smart Prompts</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">Canned Comm</span>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group" type="button">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Request Vent Directness Photo</span>
+<span class="text-[11px] text-on-surface-variant">Asks passenger for camera snapshot of ceiling louvers</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 transition-transform">send</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group" type="button">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Vulnerability / Blanket Need</span>
+<span class="text-[11px] text-on-surface-variant">Confirms senior citizen comfort &amp; dispatching blanket</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 transition-transform">send</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors flex items-center justify-between group" type="button">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-on-surface font-medium truncate">Squad Arrival ETA Notice</span>
+<span class="text-[11px] text-on-surface-variant">Broadcasts "Technician entering coach in 2 mins"</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 transition-transform">send</span>
+</button>
+<button class="w-full text-left p-2.5 rounded-lg bg-secondary/10 hover:bg-secondary/20 transition-colors flex items-center justify-between group" type="button">
+<div class="flex flex-col min-w-0 pr-2">
+<span class="font-label-md text-label-md text-secondary font-semibold truncate">Trigger 4-Digit Resolution OTP</span>
+<span class="text-[11px] text-on-secondary-fixed-variant">Sends secure sign-off handshake to Priya Sharma</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:translate-x-0.5 transition-transform">pin</span>
+</button>
+</div>
+</div>
+<!-- Cryptographic Audit Ledger Mini-Stamp -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span>Cryptographic Comm Hash</span>
+</div>
+<span class="font-data-mono text-primary font-semibold">0x7F92...B39A</span>
+</div>
+</aside>
+<!-- COLUMN 2: Dual-Stream Unified Conversation Feed & Composer (Center Main) -->
+<main class="xl:col-span-6 flex flex-col gap-space-md">
+<!-- Feed Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm flex flex-col min-h-[720px] justify-between">
+<!-- Stream Filter & Strict Isolation Banner -->
+<div class="p-space-md border-b border-surface-container flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">forum</span>
+<div class="flex flex-col">
+<h2 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Live Incident Communication Stream</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Unified Public Passenger Channel &amp; Air-Gapped Staff Ledger</span>
+</div>
+</div>
+<!-- Stream Filter Tabs -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg font-label-md text-label-md" id="feed-filter-tabs">
+<button class="px-3 py-1 rounded-md bg-surface-container-lowest text-primary font-semibold shadow-xs transition-all" type="button">All Messages (6)</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Passenger Comm (3)</button>
+<button class="px-3 py-1 rounded-md text-on-surface-variant hover:text-on-surface transition-all" type="button">Officer Notes (2)</button>
+</div>
+</div>
+<!-- Prominent Privacy / Strict Isolation Alert -->
+<div class="p-2.5 rounded-lg bg-amber-500/10 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-amber-700 text-[18px] shrink-0 mt-0.5">security</span>
+<div class="flex flex-col text-on-surface">
+<span class="font-label-md text-label-md font-semibold text-amber-900 leading-tight">Strict Officer-Airgap Active</span>
+<span class="font-label-sm text-label-sm text-amber-800 leading-normal">
+                  Internal officer notes are cryptographically restricted to railway personnel. Under statutory privacy protocol, internal annotations are never rendered on the commuter's mobile device or outbound SMS logs.
+                </span>
+</div>
+</div>
+</div>
+<!-- Chronological Chat & Telemetry Thread -->
+<div class="p-space-md flex flex-col gap-space-md overflow-y-auto max-h-[640px]" id="message-stream">
+<!-- Message 1: Initial Passenger Ingestion -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-md shrink-0">PS</div>
+<div class="flex flex-col max-w-[85%] gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Priya Sharma (Passenger)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">14:22 IST</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">Audio + Text Ingest</span>
+</div>
+<div class="p-space-md rounded-xl rounded-tl-none bg-surface-container-low text-on-surface font-body-md text-body-md shadow-xs">
+<p class="leading-relaxed">
+                    "The AC unit in Coach B-4 is blowing freezing air continuously below 16°C. My 74-year-old mother is shivering badly and her hands are cold. Coach attendant said there are no spare blankets left. Please adjust the thermostat immediately!"
+                  </p>
+<div class="mt-2.5 pt-2 border-t border-surface-container flex items-center justify-between text-on-surface-variant text-label-sm font-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">mic</span>
+                      Voice Transcript Verified (98.4% Confidence)
+                    </span>
+<span class="font-data-mono">Ticket Created via RailMadad AI</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message 2: Internal Officer Note (Strict Distinct Styling) -->
+<div class="flex items-start gap-space-sm pl-4 sm:pl-8">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">shield_lock</span>
+</div>
+<div class="flex flex-col max-w-[90%] gap-1 w-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-primary">Er. R. S. Murthy (SSE Electrical)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">14:25 IST</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-900 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">lock</span>
+                    INTERNAL NOTE — RAIL STAFF ONLY
+                  </span>
+</div>
+<div class="p-space-md rounded-xl bg-amber-500/5 text-on-surface font-body-md text-body-md shadow-xs relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 text-amber-900/5 select-none pointer-events-none font-display-lg text-[64px] font-black">
+                    RESTRICTED
+                  </div>
+<p class="leading-relaxed text-on-surface font-medium">
+                    "Checked real-time CAN-bus telemetry for Roof Mounted AC Unit RPU-2. Contactor 42B auxiliary coil is stuck closed in cooling override. Instructed Tech Dinesh to walk to Coach B-4 vestibule and inspect MCB-2 breaker switchboard. <strong class="text-error">Attention Team:</strong> Do not promise berth swap to passenger as Train 12952 is 100% capacity ex-Kota."
+                  </p>
+<div class="mt-2.5 pt-2 border-t border-amber-900/10 flex items-center justify-between text-label-sm font-label-sm text-amber-900">
+<span>Audit Node: WR-KOTA-CTRL-04</span>
+<span class="font-data-mono">Status: Air-Gapped from Commuter Feed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message 3: Passenger Clarification Request (Sent to Commuter) -->
+<div class="flex items-start gap-space-sm pl-2">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold text-label-md shrink-0">RM</div>
+<div class="flex flex-col max-w-[88%] gap-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Er. R. S. Murthy (Transit Control)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">14:28 IST</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">send</span>
+                    Passenger Visible • App &amp; SMS
+                  </span>
+</div>
+<div class="p-space-md rounded-xl rounded-tl-none bg-surface-container text-on-surface font-body-md text-body-md shadow-xs">
+<p class="leading-relaxed">
+                    "Dear Ms. Priya Sharma, our on-board electrical squad has received your urgent notification. Could you kindly clarify whether the cold air draft is venting directly downwards onto Berth 28, or if the gangway ceiling damper louvers are stuck open? Field Technician Dinesh is currently in coach B-2 en route to your bay."
+                  </p>
+<div class="mt-2.5 pt-2 border-t border-surface-container-highest flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-tertiary-fixed-dim">done_all</span>
+                      Delivered to +91 98291 03810 • Read on App 14:29 IST
+                    </span>
+<span class="font-data-mono">SMS Ref: IR-COMM-9912</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message 4: Passenger Clarification Reply -->
+<div class="flex items-start gap-space-sm">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-label-md shrink-0">PS</div>
+<div class="flex flex-col max-w-[85%] gap-1">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-on-surface">Priya Sharma (Passenger)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">14:31 IST</span>
+<span class="px-2 py-0.2 rounded-full bg-surface-container-low text-secondary font-label-sm text-label-sm">Photo Evidence Attached</span>
+</div>
+<div class="p-space-md rounded-xl rounded-tl-none bg-surface-container-low text-on-surface font-body-md text-body-md shadow-xs flex flex-col gap-space-sm">
+<p class="leading-relaxed">
+                    "It is blasting directly over Berth 28 and 29. The damper shutter will not rotate shut manually. My mother is covered with two shawls right now. Here is a picture of the cabin thermometer reading 16.0°C."
+                  </p>
+<!-- Photo Attachment with EXIF Telemetry Verification -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex items-center gap-3 shadow-xs">
+<img class="w-16 h-16 rounded-md object-cover shrink-0" data-alt="A close-up photograph of a digital thermometer displaying 16.0 degrees Celsius inside a modern Indian Railway Tejas Rajdhani air-conditioned passenger coach, with train berth fabric visible in soft ambient train cabin lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4yyErWD9UhVqpoFr54gE6hz7BQ6IFsYUElMvuO9UPsQjWiOPk8N-3l7acrbnWmn8jTmNeA16CLdgPfJZKU8oyEQjUmBC2l37ayWTXpFJZzhFnUN0_aGUHDjBPzHEvkwBOcynD_CO3JtZR46cJkduBgd7HLWGjBTwolqJ53kciYuhLNdj5C4_BT8dy3QAGayhD77963n8fzpV6VHQQg2kdipZFAMRsYe8GjrdVj3I"/>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Evidence_Photo_Berth28_Therm.jpg</span>
+<span class="font-data-mono text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+                        EXIF &amp; GPS Match: Coach B-4 (24.120° N, 75.831° E)
+                      </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Captured 14:30:18 IST • 2.4 MB</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Message 5: Internal Field Tech Update (Restricted) -->
+<div class="flex items-start gap-space-sm pl-4 sm:pl-8">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-label-md shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">engineering</span>
+</div>
+<div class="flex flex-col max-w-[90%] gap-1 w-full">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="font-label-md text-label-md font-bold text-primary">Tech II Dinesh K. Sharma (Field Squad)</span>
+<span class="font-data-mono text-label-sm text-on-surface-variant">14:36 IST</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-900 font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">handyman</span>
+                    INTERNAL STAFF NOTE • FIELD HHT
+                  </span>
+</div>
+<div class="p-space-md rounded-xl bg-amber-500/5 text-on-surface font-body-md text-body-md shadow-xs">
+<p class="leading-relaxed text-on-surface">
+                    "Reached Coach B-4 bay 28. Confirmed Contactor 42B solenoid had seized. Performed manual trip and switched auxiliary compressor loop to Circuit MCB-2. Supplemental heating coil engaged. Cabin return air temp expected to normalize to 22.5°C within 6-8 minutes. I have an extra wool blanket requested from pantry for Passenger's mother."
+                  </p>
+<div class="mt-2.5 pt-2 border-t border-amber-900/10 flex items-center justify-between text-label-sm font-label-sm text-amber-900">
+<span>Terminal: HHT-WR-094 (Geo: Kilometre Post 642/12)</span>
+<span class="font-data-mono">Internal Signal: Ready for OTP Closure</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Message 6: AI Redressal Draft Suggestion (Interactive Inline Card) -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">psychology</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">AI Copilot TransitBot: Recommended Passenger Broadcast</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm">High Confidence</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic bg-surface-container-lowest p-space-sm rounded-lg">
+                "Dear Ms. Sharma, our technician has successfully rectified the AC circuit breaker and engaged the heating system. An extra blanket is being handed to your mother immediately. Temperature should normalize to 22.5°C within 6 minutes. Please verify cabin comfort."
+              </p>
+<div class="flex flex-wrap items-center justify-end gap-2 pt-1">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors text-on-surface font-label-md text-label-md" type="button">
+                  Dismiss
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest hover:bg-surface-container transition-colors text-secondary font-label-md text-label-md" type="button">
+                  Edit in Composer
+                </button>
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 transition-colors font-label-md text-label-md flex items-center gap-1 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">send</span>
+                  Approve &amp; Dispatch to Commuter
+                </button>
+</div>
+</div>
+</div>
+<!-- High-Visibility Dual-Mode Channel Composer Dock -->
+<div class="p-space-md border-t border-surface-container bg-surface-container-lowest rounded-b-xl flex flex-col gap-space-sm">
+<!-- Dual-Mode Tabbed Selector -->
+<div class="flex items-center justify-between flex-wrap gap-2">
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg font-label-md text-label-md" id="composer-mode-selector">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-secondary text-on-secondary font-bold shadow-xs transition-all" id="tab-passenger-mode" type="button">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span>Passenger Reply (Public Comm)</span>
+</button>
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-medium transition-all" id="tab-internal-mode" type="button">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Internal Officer Note (Restricted)</span>
+</button>
+</div>
+<!-- Translation & Speed Dial Tag -->
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-Translate:</span>
+<button class="px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold" type="button">EN ⮀ HI</button>
+</div>
+</div>
+<!-- Dynamic Channel Notice Bar -->
+<div class="px-3 py-1.5 rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm flex items-center gap-1.5" id="composer-notice-bar">
+<span class="material-symbols-outlined text-[16px]">info</span>
+<span>This response will be dispatched to Priya Sharma via RailMadad In-App Socket and Push SMS.</span>
+</div>
+<!-- Input Textarea & Rich Controls -->
+<div class="relative rounded-xl p-2 bg-surface-container-low" id="composer-box-wrapper">
+<textarea class="w-full bg-transparent p-2 text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/70 focus:outline-none resize-none" id="composer-textarea" placeholder="Type clarification request or status update for Passenger Priya Sharma..." rows="3"></textarea>
+<!-- Formatting & Action Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-surface-container">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-1.5 rounded hover:bg-surface-container transition-colors" title="Bold" type="button"><span class="material-symbols-outlined text-[19px]">format_bold</span></button>
+<button class="p-1.5 rounded hover:bg-surface-container transition-colors" title="Attach Telemetry Log or Photo" type="button"><span class="material-symbols-outlined text-[19px]">attach_file</span></button>
+<button class="p-1.5 rounded hover:bg-surface-container transition-colors" title="Voice Clarification Dispatch" type="button"><span class="material-symbols-outlined text-[19px]">mic</span></button>
+<button class="p-1.5 rounded hover:bg-surface-container transition-colors" title="Select Canned Template" type="button"><span class="material-symbols-outlined text-[19px]">quickreply</span></button>
+<span class="h-4 w-px bg-outline-variant/40 mx-1"></span>
+<button class="flex items-center gap-1 px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high transition-colors font-label-sm text-label-sm text-secondary font-semibold" type="button">
+<span class="material-symbols-outlined text-[15px]">pin</span>
+<span>Attach OTP Handshake</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-data-mono text-label-sm text-on-surface-variant" id="char-counter">0 / 480</span>
+<button class="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all font-label-md text-label-md font-semibold shadow-sm" id="composer-send-cta" type="button">
+<span class="material-symbols-outlined text-[17px]">send</span>
+<span id="composer-cta-text">Send to Passenger</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- COLUMN 3: Passenger Profile, Rapid Escalations & OTP Handshake (Right Sidebar) -->
+<aside class="xl:col-span-3 flex flex-col gap-space-md">
+<!-- Passenger Identity & Concession Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[19px]">badge</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Passenger Dossier</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-on-secondary-container font-label-sm text-label-sm font-semibold">Trust Score 99.2%</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shadow-sm">
+              PS
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-bold truncate">Priya Sharma</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Aadhaar Verified via DigiLocker</span>
+<span class="font-data-mono text-label-sm text-secondary font-medium">+91 98291 03810</span>
+</div>
+</div>
+<!-- Vulnerability Flag -->
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-error font-label-sm text-label-sm font-semibold">
+<span class="material-symbols-outlined text-[16px]">elderly</span>
+<span>Co-Passenger: Senior Citizen Flagged</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface">Smt. Kanta Sharma (Age 74)</span>
+<span class="text-[11px] text-on-surface-variant">Berth 29 (Upper) • Concession: Senior Citizen • High Vulnerability to Hypothermia</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-1">
+<span>Historical Rail Redressals:</span>
+<span class="font-data-mono text-primary font-bold">0 Prior Disputes</span>
+</div>
+</div>
+<!-- Rapid Squad Actions -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[19px]">bolt</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Rapid Actions</span>
+</div>
+<span class="text-label-sm text-on-surface-variant">Direct Dispatch</span>
+</div>
+<div class="flex flex-col gap-2">
+<button class="w-full flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">hotel</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-semibold">Dispatch Extra Blanket</span>
+<span class="text-[11px] text-on-surface-variant">Auto-assign pantry attendant Coach B-4</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-error">medical_services</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-semibold">Stage Doctor at Ratlam Jn</span>
+<span class="text-[11px] text-on-surface-variant">Railway Hospital Staff on Platform #2</span>
+</div>
+</button>
+<button class="w-full flex items-center gap-2.5 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px] text-secondary">airline_seat_recline_extra</span>
+<div class="flex flex-col text-left">
+<span class="font-label-md text-label-md font-semibold">Request TTE Berth Check</span>
+<span class="text-[11px] text-on-surface-variant">Check vacancy in Coach B-5 for swap</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Live Resolution & OTP Handshake Module -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm border-l-4 border-secondary">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">pin_invoke</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">OTP Closure Handshake</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Mandatory</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">
+              To guarantee authentic ticket resolution without false sign-offs, enter the 4-digit verification code provided by Priya Sharma.
+            </span>
+<button class="w-full py-2 px-3 rounded-lg bg-secondary text-on-secondary hover:bg-secondary/90 transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[17px]">sms</span>
+<span>Push OTP Code to Passenger</span>
+</button>
+<!-- 4-Box Pin Inputs -->
+<div class="flex flex-col gap-1.5 pt-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Commuter Redressal PIN</label>
+<div class="flex items-center justify-between gap-2">
+<input class="w-12 h-12 text-center text-headline-sm font-data-mono font-bold bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-primary" maxlength="1" placeholder="•" type="text" value="8"/>
+<input class="w-12 h-12 text-center text-headline-sm font-data-mono font-bold bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-primary" maxlength="1" placeholder="•" type="text" value="4"/>
+<input class="w-12 h-12 text-center text-headline-sm font-data-mono font-bold bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-primary" maxlength="1" placeholder="•" type="text" value="1"/>
+<input class="w-12 h-12 text-center text-headline-sm font-data-mono font-bold bg-surface-container-low rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary text-primary" maxlength="1" placeholder="•" type="text"/>
+</div>
+</div>
+<button class="w-full mt-2 py-2.5 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-colors font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">verified</span>
+<span>Mark Redressed &amp; Issue Certificate</span>
+</button>
+</div>
+</div>
+<!-- Outbound Multi-Channel Telemetry Ledger -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Carrier Delivery Audit</span>
+<span class="font-data-mono text-label-sm text-secondary">SLA: 99.98%</span>
+</div>
+<div class="flex flex-col gap-2 font-label-sm text-label-sm">
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">smartphone</span>
+                In-App WebSocket
+              </span>
+<span class="text-secondary font-semibold font-data-mono">Active (12ms)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">sms</span>
+                Govt SMS Gateway (CDAC)
+              </span>
+<span class="text-on-surface font-semibold font-data-mono">Delivered (14:31)</span>
+</div>
+<div class="flex items-center justify-between p-2 rounded bg-surface-container-low">
+<span class="flex items-center gap-1.5 text-on-surface font-medium">
+<span class="material-symbols-outlined text-[16px] text-secondary">chat</span>
+                WhatsApp Cloud Sync
+              </span>
+<span class="text-on-surface font-semibold font-data-mono">2-Way Read Receipt</span>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</section>
+</div>
+<script>
+  (function initWorkspaceInteractions() {
+    // SLA Countdown simulation
+    const countdownEl = document.getElementById('sla-countdown');
+    if (countdownEl) {
+      let secondsLeft = 522; // 8m 42s
+      setInterval(() => {
+        if (secondsLeft > 0) {
+          secondsLeft--;
+          const m = Math.floor(secondsLeft / 60);
+          const s = secondsLeft % 60;
+          countdownEl.textContent = `${String(m).padStart(2, '0')}m ${String(s).padStart(2, '0')}s remaining`;
+        }
+      }, 1000);
+    }
+
+    // Composer Mode Switcher (Public Comm vs Private Officer Note)
+    const tabPassenger = document.getElementById('tab-passenger-mode');
+    const tabInternal = document.getElementById('tab-internal-mode');
+    const noticeBar = document.getElementById('composer-notice-bar');
+    const boxWrapper = document.getElementById('composer-box-wrapper');
+    const textarea = document.getElementById('composer-textarea');
+    const ctaBtn = document.getElementById('composer-send-cta');
+    const ctaText = document.getElementById('composer-cta-text');
+
+    function setPassengerMode() {
+      tabPassenger.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-secondary text-on-secondary font-bold shadow-xs transition-all";
+      tabInternal.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-medium transition-all";
+      
+      noticeBar.className = "px-3 py-1.5 rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm flex items-center gap-1.5";
+      noticeBar.innerHTML = '<span class="material-symbols-outlined text-[16px]">info</span><span>This response will be dispatched to Priya Sharma via RailMadad In-App Socket and Push SMS.</span>';
+      
+      boxWrapper.className = "relative rounded-xl p-2 bg-surface-container-low transition-all";
+      textarea.placeholder = "Type clarification request or status update for Passenger Priya Sharma...";
+      ctaBtn.className = "flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary transition-all font-label-md text-label-md font-semibold shadow-sm";
+      ctaText.textContent = "Send to Passenger";
+    }
+
+    function setInternalMode() {
+      tabInternal.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-amber-500 text-on-primary font-bold shadow-xs transition-all";
+      tabPassenger.className = "flex items-center gap-1.5 px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-medium transition-all";
+      
+      noticeBar.className = "px-3 py-1.5 rounded-lg bg-amber-500/15 text-amber-900 font-label-sm text-label-sm flex items-center gap-1.5 font-semibold";
+      noticeBar.innerHTML = '<span class="material-symbols-outlined text-[16px] text-amber-700">lock</span><span>AIR-GAPPED INTERNAL NOTE: Strictly hidden from commuter mobile app and SMS. Stored in RailNet audit log.</span>';
+      
+      boxWrapper.className = "relative rounded-xl p-2 bg-amber-500/5 transition-all";
+      textarea.placeholder = "Log confidential technical inspection note or coordination directive for staff...";
+      ctaBtn.className = "flex items-center gap-1.5 px-4 py-2 rounded-lg bg-amber-600 text-on-primary hover:bg-amber-700 transition-all font-label-md text-label-md font-semibold shadow-sm";
+      ctaText.textContent = "Log Internal Staff Note";
+    }
+
+    if (tabPassenger && tabInternal) {
+      tabPassenger.addEventListener('click', setPassengerMode);
+      tabInternal.addEventListener('click', setInternalMode);
+    }
+
+    // Dynamic character counter
+    const charCounter = document.getElementById('char-counter');
+    if (textarea && charCounter) {
+      textarea.addEventListener('input', (e) => {
+        const len = e.target.value.length;
+        charCounter.textContent = `${len} / 480`;
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col md:flex-row items-center gap-space-md text-center md:text-left"><div class="flex items-center gap-space-xs text-error font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">call</span><span>Emergency Railway Helpline: Dial 139 (24x7)</span></div><span class="hidden md:inline text-outline-variant">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Transit Grievance Redressal &amp; AI Escalation Monitoring Cell</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 GrievanceAI National Transit Authority.</span><a class="hover:text-on-surface transition-colors" data-path="account" href="#">Security &amp; SLA Terms</a></div></div></footer></body></html>

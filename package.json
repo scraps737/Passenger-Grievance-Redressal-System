@@ -1,0 +1,29 @@
+{
+  "name": "grievanceai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GrievanceAI — AI-Enhanced Passenger Grievance Redressal System (MERN)",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "npm run preflight && concurrently -n api,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "start": "npm run preflight && npm run build && npm --workspace server run start",
+    "preflight": "node scripts/preflight.mjs",
+    "setup": "npm run preflight",
+    "dev:server": "npm --workspace server run dev",
+    "dev:client": "npm --workspace client run dev",
+    "build": "npm --workspace client run build",
+    "seed": "node scripts/preflight.mjs --force-seed --no-db-start",
+    "seed:only": "npm --workspace server run seed",
+    "test": "npm --workspace server run test",
+    "lint": "npm --workspace client run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

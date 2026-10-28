@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>GrievanceAI Portal</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","on-tertiary":"#ffffff","primary-fixed-dim":"#b8c7e6","on-secondary-fixed":"#001e2f","secondary":"#006591","on-tertiary-container":"#009687","on-background":"#0b1c30","tertiary-fixed":"#71f8e4","primary-fixed":"#d7e3ff","surface-bright":"#f8f9ff","on-primary":"#ffffff","on-primary-container":"#7886a3","outline":"#75777e","surface-tint":"#515f7a","surface-container-high":"#dce9ff","background":"#f8f9ff","tertiary":"#000605","surface-container-highest":"#d3e4fe","secondary-fixed":"#c9e6ff","on-secondary-fixed-variant":"#004c6e","tertiary-fixed-dim":"#4fdbc8","surface":"#f8f9ff","on-surface":"#0b1c30","secondary-container":"#39b8fd","on-tertiary-fixed":"#00201c","inverse-on-surface":"#eaf1ff","on-primary-fixed-variant":"#394761","on-secondary":"#ffffff","on-error":"#ffffff","inverse-surface":"#213145","surface-container":"#e5eeff","surface-dim":"#cbdbf5","inverse-primary":"#b8c7e6","on-error-container":"#93000a","surface-variant":"#d3e4fe","primary":"#000412","secondary-fixed-dim":"#89ceff","on-surface-variant":"#44474d","on-secondary-container":"#004666","surface-container-low":"#eff4ff","on-primary-fixed":"#0c1b33","surface-container-lowest":"#ffffff","primary-container":"#0f1e36","error":"#ba1a1a","outline-variant":"#c5c6ce","on-tertiary-fixed-variant":"#005048","tertiary-container":"#00231e"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","space-lg":"1.25rem","space-md":"0.75rem","gutter":"1.25rem","space-xl":"2rem"},"fontFamily":{"body-lg":["Inter"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"data-mono":["Inter"],"label-md":["Inter"],"body-sm":["Inter"],"body-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.03em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.01em","fontWeight":"600"}],"display-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"data-mono":["13px",{"lineHeight":"18px","letterSpacing":"-0.01em","fontWeight":"500"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.015em","fontWeight":"700"}],"display-lg":["36px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.005em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">commute</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">Grievance<span class="text-secondary">AI</span></span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Rail &amp; Transit Ops</span></div></div><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm">PNR 4829103810: Sync Active</span></div></div><nav class="hidden lg:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="overview-dashboard" href="#">Overview</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="grievanceai-officer-complaint-queue-dispatch-ledger" href="#">Queue Ledger</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="escalation-assignment" href="#">Escalation &amp; Assignment</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="my-grievance-tickets" href="#">My Tickets</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="active-journeys" href="#">Active Journeys</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="resolution-proofs" href="#">Resolution Proofs</a><a class="px-space-md py-space-sm text-on-surface-variant hover:text-on-surface rounded-lg transition-colors font-body-md text-body-md" data-path="account" href="#">Account</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-1.5 px-space-md py-1.5 rounded-lg bg-error text-on-error font-label-md text-label-md shadow-sm hover:bg-error-container hover:text-on-error-container transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">e911_emergency</span><span>SOS Quick</span></button><div class="relative flex items-center justify-center w-9 h-9 rounded-lg hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center leading-none text-[9px]">3</span></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="hidden xl:flex flex-col text-right"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Priya Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant">PNR: 4829103810</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><main class="w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Command Header & Operational Telemetry Banner -->
+<section class="w-full px-gutter pt-space-lg pb-space-md bg-surface-container-low">
+<div class="w-full flex flex-col gap-space-md">
+<!-- Breadcrumbs and Telemetry Sub-strip -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<nav aria-label="Breadcrumb" class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="hover:text-on-surface transition-colors cursor-pointer">Transit Command</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Ops Command</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface transition-colors cursor-pointer">Triage &amp; Dispatch</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Escalation &amp; Assignment Console</span>
+</nav>
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-data-mono text-data-mono font-medium">Model v4.8 Adaptive Dispatch</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">router</span>
+<span class="font-data-mono text-data-mono">WR-DISPATCH-ZONE-01</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-lowest shadow-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">schedule</span>
+<span class="font-label-sm text-label-sm">Shift 1 (08:00 - 16:00 IST)</span>
+</div>
+<div class="flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary-container text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">shield_person</span>
+<span class="font-label-sm text-label-sm font-semibold">Lead: Er. R. S. Murthy (SSE Electrical)</span>
+</div>
+</div>
+</div>
+<!-- SLA Health Real-time Telemetry KPIs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1: SLA Breached -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-error"></div>
+<div class="flex items-center justify-between pl-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SLA Breached (&gt;0m)</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">crisis_alert</span>
+              Critical
+            </span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm pl-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-error font-bold leading-none">02</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Incidents</span>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">notification_important</span> DRM Alerted
+            </span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm pl-1">
+            Immediate divisional escalation protocol running
+          </div>
+</div>
+<!-- KPI 2: Imminent Breach -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-secondary-container"></div>
+<div class="flex items-center justify-between pl-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Imminent Breach (&lt;15m)</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+              Countdown
+            </span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm pl-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-secondary font-bold leading-none">05</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Incidents</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[16px]">alt_route</span> Rerouting
+            </span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm pl-1">
+            Handoff suggested at next intermediate halts
+          </div>
+</div>
+<!-- KPI 3: Pending Department Assignment -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-outline-variant"></div>
+<div class="flex items-center justify-between pl-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Pending Assignment</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">pending_actions</span>
+              Unassigned
+            </span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm pl-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold leading-none">06</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Incidents</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Awaiting manual gate</span>
+</div>
+<div class="mt-2 text-on-surface-variant font-body-sm text-body-sm pl-1">
+            AI confidence scores &gt; 92% available
+          </div>
+</div>
+<!-- KPI 4: Multi-Department Fleet Capacity -->
+<div class="flex flex-col justify-between p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex items-center justify-between pl-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Fleet Utilization</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold">
+              18 Squads Total
+            </span>
+</div>
+<div class="flex items-baseline justify-between mt-space-sm pl-1">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-display-lg text-display-lg text-on-surface font-bold leading-none">78%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Engaged</span>
+</div>
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">14 Active</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Standby</span>
+</div>
+</div>
+<div class="w-full bg-surface-container rounded-full h-1.5 mt-2">
+<div class="bg-secondary h-1.5 rounded-full" style="width: 78%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Operational Canvas: Split Panel Architecture -->
+<div class="w-full px-gutter py-space-lg grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT PANEL: Ticket Watchlist & Interactive Escalation Worktable (7 Cols in 12-Grid) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Table Filter Bar & Dispatch Batch Operations -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-1 max-w-lg">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full pl-10 pr-4 py-2 text-body-sm font-body-sm rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm transition-all" placeholder="Filter by Ticket Ref, Train No, PNR, Coach, or Squad..." type="text"/>
+</div>
+<button class="px-space-sm py-2 rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors flex items-center gap-1 text-on-surface font-label-md text-label-md" title="Filter presets">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="hidden sm:inline">Refine</span>
+</button>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>HHT Broadcast</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px]">swap_horiz</span>
+<span>Batch Reassign</span>
+</button>
+</div>
+</div>
+<!-- Filter Segment Strips -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-2 bg-surface-container-lowest">
+<div class="flex flex-wrap items-center gap-1 bg-surface-container-low p-1 rounded-lg">
+<button class="px-3 py-1 text-label-sm font-label-sm rounded-md bg-surface-container-lowest text-on-surface font-bold shadow-sm">All (28)</button>
+<button class="px-3 py-1 text-label-sm font-label-sm rounded-md text-error hover:bg-surface-container transition-colors font-medium">Breached (2)</button>
+<button class="px-3 py-1 text-label-sm font-label-sm rounded-md text-secondary hover:bg-surface-container transition-colors font-medium">&lt;15m Imminent (5)</button>
+<button class="px-3 py-1 text-label-sm font-label-sm rounded-md text-on-surface-variant hover:bg-surface-container transition-colors font-medium">Unassigned (6)</button>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span>Department:</span>
+<select class="px-2 py-1 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm focus:outline-none">
+<option>All Divisions</option>
+<option>Electrical &amp; HVAC</option>
+<option>OBHS Sanitation</option>
+<option>Mechanical Engineering</option>
+<option>Commercial &amp; Catering</option>
+<option>Transit Medical &amp; RPF</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Live Incident Escalation Ledger Table -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<div class="p-space-md bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface">Escalation &amp; SLA Watchlist</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-data-mono text-data-mono font-bold">5 Priority Queued</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-updating telemetry every 10s</span>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md w-12 text-center">
+<input class="rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3 px-space-sm">Incident &amp; Train</th>
+<th class="py-3 px-space-sm">Priority Tier</th>
+<th class="py-3 px-space-sm">Department</th>
+<th class="py-3 px-space-sm">SLA Status / Countdown</th>
+<th class="py-3 px-space-sm">Assigned Squad / Depot</th>
+<th class="py-3 px-space-md text-right">Quick Dispatch</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container text-body-sm font-body-sm">
+<!-- Row 1: Breached -->
+<tr class="hover:bg-surface-container-low/50 transition-colors bg-error-container/10">
+<td class="py-3 px-space-md text-center">
+<input class="rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">GAI-2025-8852</span>
+<span class="w-1.5 h-1.5 rounded-full bg-error animate-ping"></span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">12010 Shatabdi</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs">Rear Brake Sensor Telemetry Drop</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center w-fit gap-1">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                    Tier 1 (Critical)
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Mechanical &amp; Traction</span>
+<span class="text-error font-label-sm text-label-sm font-semibold">DRM Operations</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-error font-bold">+04m 12s OVERDUE</span>
+<span class="font-label-sm text-label-sm text-on-error-container">SLA Level 4 Breached</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">SSE Rolling Stock HQ</span>
+<span class="font-data-mono text-data-mono text-on-surface-variant">Escalated HQ Pool</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-error text-on-error font-label-sm text-label-sm font-bold hover:bg-on-error-container transition-colors shadow-sm">
+                    Reassign SOS
+                  </button>
+</td>
+</tr>
+<!-- Row 2: Critical Medical countdown -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">GAI-2025-8845</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">12009 Shatabdi Exp (C-2)</span>
+<span class="font-body-sm text-body-sm text-error truncate max-w-xs font-medium">Cardiac Distress - Senior Berth 14</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center w-fit gap-1">
+<span class="material-symbols-outlined text-[13px]">emergency</span>
+                    Tier 1 (SOS)
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Medical &amp; Transit Safety</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Surat Staging Depot</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1 font-data-mono text-data-mono text-error font-bold">
+<span class="material-symbols-outlined text-[15px] animate-pulse">timer</span>
+                      03m 15s left
+                    </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Halt in 4 mins (PF 3)</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">Dr. A. Verma (Surat Med)</span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">Deploying to Platform 3</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+                    Handoff Squad
+                  </button>
+</td>
+</tr>
+<!-- Row 3: SELECTED / ACTIVE ROW FOR REASSIGNMENT PANEL -->
+<tr class="bg-surface-container-high/60 transition-colors">
+<td class="py-3 px-space-md text-center">
+<input checked="" class="rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-data-mono text-data-mono font-bold text-secondary">GAI-2025-8831</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-[10px] font-bold">ACTIVE FOCUS</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">12952 Tejas Rajdhani (B-4 / 28)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs">AC Cooling Complete Trip Fault</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center w-fit gap-1">
+<span class="material-symbols-outlined text-[13px]">priority_high</span>
+                    Tier 2 (High)
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Electrical &amp; HVAC</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">AI Reassign Hint</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-secondary font-bold">09m 40s left</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Approaching Ratlam Jn</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">Tech II Dinesh Sharma</span>
+<span class="font-label-sm text-label-sm text-error font-medium">Overloaded (2 active)</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm font-bold shadow-sm">
+                    Overrides Active
+                  </button>
+</td>
+</tr>
+<!-- Row 4: Unassigned Incident -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">GAI-2025-8860</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">22953 Gujarat Exp (D-1)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs">Vestibule Inter-Coach Door Jam</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center w-fit gap-1">
+<span class="material-symbols-outlined text-[13px]">bolt</span>
+                    Tier 2 (High)
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium w-fit">
+                    Unassigned Dept
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">24m 10s left</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SLA Stage 2</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="font-body-sm text-body-sm text-on-surface-variant italic">No squad routed</span>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors">
+                    Assign Dept
+                  </button>
+</td>
+</tr>
+<!-- Row 5: Normal SLA On-Track -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-space-md text-center">
+<input class="rounded text-secondary focus:ring-0 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono font-bold text-on-surface">GAI-2025-8839</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">12952 Tejas Exp (EC-1)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate max-w-xs">Pantry Catering Overcharge / Bill Receipt</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm font-medium flex items-center w-fit gap-1">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                    Tier 3 (Normal)
+                  </span>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-medium">Commercial &amp; Catering</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="font-data-mono text-data-mono text-on-surface font-semibold">38m 45s left</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SLA Stage 1</span>
+</div>
+</td>
+<td class="py-3 px-space-sm">
+<div class="flex flex-col">
+<span class="text-on-surface font-semibold">Inspector Saxena</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Onboard Rake</span>
+</div>
+</td>
+<td class="py-3 px-space-md text-right">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-medium hover:bg-surface-container-high transition-colors">
+                    Reassign
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-space-md bg-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Showing 5 of 28 priority incidents tracked across Western Rail Zone</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-medium">Prev</button>
+<span class="font-data-mono text-data-mono px-2">Page 1 / 6</span>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-medium">Next</button>
+</div>
+</div>
+</div>
+<!-- INCIDENT REASSIGNMENT & ESCALATION CONTROL CONSOLE (Active Focus Drawer/Card) -->
+<div class="rounded-xl bg-surface-container-lowest shadow-md overflow-hidden flex flex-col relative">
+<div class="bg-primary p-space-md text-on-primary flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm leading-tight">Incident Reassignment &amp; Escalation Calibration</span>
+<span class="font-label-sm text-label-sm text-inverse-primary">Target: GAI-2025-8831 | 12952 Tejas Rajdhani | B-4, Berth 28</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/10 text-on-primary font-data-mono text-data-mono">SLA Remaining: 09m 40s</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col gap-space-lg">
+<!-- Context Visual Strip: AI Reassignment Insight -->
+<div class="p-space-md rounded-xl bg-secondary-fixed/40 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-start gap-space-md">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">smart_toy</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">AI Dynamic Relay Recommendation</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">96% SLA Rescue Confidence</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                  Current assignee <strong class="text-on-surface">Tech II Dinesh Sharma</strong> is delayed by a concurrent transformer lock in Coach A-1. Optimal handoff: <strong class="text-secondary">Ratlam Jn Station Staging Depot (Platform 2 Crew - Lead: M. Murthy)</strong>. Train halt is in 12 minutes (ETA match 98%).
+                </p>
+</div>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary/90 transition-colors shadow-sm whitespace-nowrap self-end md:self-center">
+              Accept AI Relay
+            </button>
+</div>
+<!-- Configuration Form Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- Left Config: Priority Matrix & Department -->
+<div class="flex flex-col gap-space-md">
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">Priority Matrix Calibration</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center">
+<input class="sr-only" name="priority_tier" type="radio"/>
+<span class="font-label-md text-label-md text-error font-bold">Tier 1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">SOS / Safety</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2.5 rounded-lg bg-secondary-fixed text-on-secondary-fixed-variant cursor-pointer transition-colors text-center shadow-sm">
+<input checked="" class="sr-only" name="priority_tier" type="radio"/>
+<span class="font-label-md text-label-md font-bold">Tier 2</span>
+<span class="font-label-sm text-label-sm">High Risk</span>
+</label>
+<label class="flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors text-center">
+<input class="sr-only" name="priority_tier" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface font-bold">Tier 3</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Standard</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">Target Department Routing</label>
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-sm focus:outline-none">
+<option selected="">Electrical &amp; HVAC Systems (Current Dept)</option>
+<option>Mechanical &amp; Carriage Engineering</option>
+<option>OBHS Sanitation &amp; Bio-Toilet</option>
+<option>Commercial &amp; Catering Inspection</option>
+<option>RPF &amp; Transit Security Division</option>
+<option>Medical &amp; First Responder Wing</option>
+</select>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-2">Mandatory Transfer Reason</label>
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:shadow-sm focus:outline-none">
+<option selected="">En-route Station Relay (Approaching Staging Depot)</option>
+<option>Specialist Tooling Required (HVAC Gas/Condenser)</option>
+<option>Onboard Squad Capacity Exhaustion</option>
+<option>Passenger Distress Severity Upgrade</option>
+<option>Sensor Telemetry Data Anomaly</option>
+</select>
+</div>
+</div>
+<!-- Right Config: Squad Picker & Realtime Workload -->
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<label class="block font-label-md text-label-md text-on-surface font-semibold">Select Target Field Squad</label>
+<span class="font-label-sm text-label-sm text-secondary font-medium">3 Squads in Geo-Fence</span>
+</div>
+<div class="flex flex-col gap-2 max-h-56 overflow-y-auto pr-1">
+<!-- Squad Option 1: AI Suggested -->
+<div class="p-space-sm rounded-lg bg-secondary-fixed/30 hover:bg-secondary-fixed/50 cursor-pointer transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<input checked="" class="text-secondary focus:ring-0" name="target_squad" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-bold">Ratlam Depot PF 2 Crew (M. Murthy)</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Station Staging • 0 active cases (Idle)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm font-bold">Best Pick</span>
+</div>
+<!-- Squad Option 2: Active busy -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors flex items-center justify-between opacity-80">
+<div class="flex items-center gap-space-sm">
+<input class="text-secondary focus:ring-0" name="target_squad" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Tech II Dinesh Sharma (Current)</span>
+<span class="font-label-sm text-label-sm text-error font-medium">Onboard HHT-WR-094 • 2 Active (85% Load)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">High Load</span>
+</div>
+<!-- Squad Option 3: Kota Standby -->
+<div class="p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container cursor-pointer transition-colors flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<input class="text-secondary focus:ring-0" name="target_squad" type="radio"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Kota Junction Depot Squad #4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Downline Staging • 1 Active (30% Load)</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Downline</span>
+</div>
+</div>
+<div>
+<label class="block font-label-md text-label-md text-on-surface font-semibold mb-1">Controller Dispatch Directive (HHT Note)</label>
+<input class="w-full px-3 py-2 text-body-sm font-body-sm rounded-lg bg-surface-container-low text-on-surface focus:outline-none focus:bg-surface-container-lowest focus:shadow-sm" type="text" value="Board coach B-4 immediately on arrival Ratlam PF 2. Carry secondary compressor bypass valve."/>
+</div>
+</div>
+</div>
+<!-- Bottom Action Buttons -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-colors font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">publish</span>
+<span>Direct Escalate to DRM / HQ</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-colors">
+                Cancel
+              </button>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors shadow-md flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary-container">send</span>
+<span>Confirm Handoff &amp; Dispatch via HHT</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT PANEL: Department Workload, Live Fleet Capacity & Escalation Rules Engine (4 Cols in 12-Grid) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Departmental Workload & Fleet Capacity Live Monitor -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">bar_chart</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Departmental Load</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">WR-ZONE TELEMETRY</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Real-time saturation monitoring across technical departments for intelligent load-balancing.
+        </p>
+<!-- Department 1: Electrical & HVAC -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">ac_unit</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Electrical &amp; HVAC</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">88% Heavy Load</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 my-1">
+<div class="bg-error h-2 rounded-full" style="width: 88%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>15 Active Cases</span>
+<span class="text-error font-semibold">2 Squads Available</span>
+</div>
+</div>
+<!-- Department 2: Sanitation & OBHS -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary">cleaning_services</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Sanitation &amp; OBHS</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-bold">62% Moderate</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 my-1">
+<div class="bg-secondary-container h-2 rounded-full" style="width: 62%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>9 Active Cases</span>
+<span class="text-on-surface font-semibold">4 Squads Available</span>
+</div>
+</div>
+<!-- Department 3: Mechanical & Traction -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface">handyman</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Mechanical &amp; Traction</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-bold">45% Optimal</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 my-1">
+<div class="bg-primary h-2 rounded-full" style="width: 45%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>6 Active Cases</span>
+<span class="text-on-surface font-semibold">5 Squads Available</span>
+</div>
+</div>
+<!-- Department 4: Commercial & Catering -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">restaurant</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">Commercial &amp; Catering</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-medium">30% Low Load</span>
+</div>
+<div class="w-full bg-surface-container rounded-full h-2 my-1">
+<div class="bg-on-surface-variant h-2 rounded-full" style="width: 30%"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>4 Active Cases</span>
+<span class="text-on-surface font-semibold">6 Inspectors Available</span>
+</div>
+</div>
+<!-- Department 5: Medical SOS Rapid Response -->
+<div class="p-space-md rounded-xl bg-error-container/20 flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-error">emergency</span>
+<span class="font-label-md text-label-md text-error font-bold">Safety &amp; Medical SOS</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-bold">Rapid Squad</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface pt-1">
+<span>1 Active Distress Call</span>
+<span class="font-label-sm text-label-sm font-bold text-error">Surat PF 3 Staged</span>
+</div>
+</div>
+</div>
+<!-- Automated Escalation Hierarchy Ladder -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">stairs</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Escalation Ladder</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">STATUTORY SLA</span>
+</div>
+<!-- Vertical Stepper Timeline -->
+<div class="relative pl-6 flex flex-col gap-space-md">
+<div class="absolute left-2.5 top-2 bottom-2 w-0.5 bg-surface-container-high"></div>
+<!-- Step 1 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Level 1 • T+0m to T+15m</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Onboard Field Squad (HHT Dispatch Alert)</span>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary ring-4 ring-surface-container-lowest"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Level 2 • T+15m to T+30m</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Station Staging Depot &amp; Senior Section Eng (SSE)</span>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-secondary-container ring-4 ring-surface-container-lowest"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Level 3 • T+30m to T+45m</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Divisional Mechanical/Electrical Eng (Sr. DEE/DME)</span>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col">
+<div class="absolute -left-6 top-1 w-3 h-3 rounded-full bg-error ring-4 ring-surface-container-lowest"></div>
+<span class="font-label-md text-label-md font-bold text-error">Level 4 • &gt;45m or Tier 1 SOS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">DRM War Room &amp; Railway Board Operations Desk</span>
+</div>
+</div>
+<!-- Visual Station Staging Operations Preview (Image Integration) -->
+<div class="w-full mt-space-sm flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Station Rapid Depot Live Cam</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1 font-bold">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span> REC PF-2
+            </span>
+</div>
+<div class="w-full h-36 rounded-lg overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High-resolution security and operations telemetry view of an Indian railway transit station platform with maintenance engineers and technician staging crews wearing high-visibility orange vests and handheld dispatch terminals beside a modern train." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDn437BuyFYTYi71UDmqTiV21rNA5zL3n9QNbkl-LDsjNozHNE-a0HrQISRQXPtOQE1b0GLyMEdBdZjpPdtcMhUgREdn5PUBEbLxLhckKqHH3GkqEu1Fe8g0AKax0DlAOj8jpPq1oC6nyMYsX7UIuZAt0-iqmRLauOxu6O3gH1POKV0AU8yrp9OR3nCLJ8HF3KU9ZwgMUMd4pi-zskRGU0GhgRQXZqvFx69SVDEW-M"/>
+<div class="absolute bottom-2 left-2 px-2 py-1 rounded bg-primary-container/80 backdrop-blur-sm text-on-primary font-data-mono text-data-mono text-[11px]">
+              Ratlam Depot PF 2 Staging Squad • Ready
+            </div>
+</div>
+</div>
+</div>
+<!-- Configurable SLA Automation Rules Summary Widget -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">rule_settings</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Auto-Escalation Engine</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">CONFIG</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Rule 1 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Station Approach Handoff</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Auto-relay if train &lt;15m from next scheduled halt</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Rule 2 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Senior Citizen Auto-Priority</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Promote ticket to Tier 2 on verified concession PNR</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+<!-- Rule 3 -->
+<div class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low">
+<div class="flex flex-col pr-2">
+<span class="font-label-md text-label-md text-on-surface font-semibold">SMS Alert to DRM</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant broadcast when Tier 1 crosses 0m SLA mark</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary"></div>
+</label>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Engine v4.8 Parameters Synced</span>
+<a class="text-secondary font-semibold hover:underline" href="#">Edit Engine Thresholds</a>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-space-xl mt-space-xl"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col md:flex-row items-center gap-space-md text-center md:text-left"><div class="flex items-center gap-space-xs text-error font-semibold font-label-md text-label-md"><span class="material-symbols-outlined text-[20px]">call</span><span>Emergency Railway Helpline: Dial 139 (24x7)</span></div><span class="hidden md:inline text-outline-variant">|</span><span class="font-body-sm text-body-sm text-on-surface-variant">Transit Grievance Redressal &amp; AI Escalation Monitoring Cell</span></div><div class="flex items-center gap-space-lg text-on-surface-variant font-label-sm text-label-sm"><span>© 2025 GrievanceAI National Transit Authority.</span><a class="hover:text-on-surface transition-colors" data-path="account" href="#">Security &amp; SLA Terms</a></div></div></footer></body></html>
